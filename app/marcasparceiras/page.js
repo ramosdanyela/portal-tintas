@@ -395,7 +395,7 @@ export default function Example() {
       <div>
         <h4 className="text-lg font-bold">Worker</h4>
         <p className="mt-1">
-          Repudiandae sint consequuntur vel. Amet ut nobis explicabo numquam
+          "Repudiandae sint consequuntur vel. Amet ut nobis explicabo numquam
           expedita quia omnis voluptatem. Minus quidem ipsam quia iusto.
         </p>
 

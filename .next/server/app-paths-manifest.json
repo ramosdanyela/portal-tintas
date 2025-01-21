@@ -1,7 +1,3 @@
 {
-  "/sobrenos/page": "app/sobrenos/page.js",
-  "/home/page": "app/home/page.js",
-  "/blog/page": "app/blog/page.js",
-  "/contato/page": "app/contato/page.js",
-  "/marcasparceiras/page": "app/marcasparceiras/page.js"
+  "/page": "app/page.js"
 }
