@@ -1,26 +1,25 @@
 "use client";
+import Link from "next/link"
 import { useState } from "react";
 import React from "react";
 
 const Navbar = () => {
   // Lista de itens do menu
   const menuItems = [
-    { name: "Quem Somos", link: "#" },
-    { name: "Marcas & Produtos", link: "#" },
-    { name: "Blog", link: "#" },
-    { name: "Contato", link: "#" },
+    { name: "Quem Somos", link: "/quemsomos" },
+    { name: "Marcas & Produtos", link: "/marcaseprodutos" },
+    { name: "Blog", link: "blog" },
+    { name: "Contato", link: "contato" },
   ];
 
   return (
     <nav className="bg-white shadow-md w-full h-16 flex items-center px-6">
       {/* LOGO */}
       <div className="flex items-center">
-        <img src="https://via.placeholder.com/50" alt="Logo" className="h-10" />
-        <span className="ml-2 text-xl font-bold text-blue-600">
-          PORTAL <span className="text-orange-600">TINTAS</span>
-        </span>
-      </div>
-
+        <Link href="/home">
+        <img src="/logo.png" alt="Logo" className="w-32 h-16 object-cover cursor-pointer" />
+        </Link>
+        </div>
       {/* MENU */}
       <ul className="hidden md:flex gap-8 ml-auto text-lg text-gray-700">
         {menuItems.map((item, index) => (

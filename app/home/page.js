@@ -1,86 +1,59 @@
-import {
-  Bars3Icon,
-  ChatBubbleBottomCenterTextIcon,
-  ChatBubbleLeftRightIcon,
-  InboxIcon,
-  QuestionMarkCircleIcon,
-  XMarkIcon,
-} from "@heroicons/react/24/outline";
-import { ChevronDownIcon } from "@heroicons/react/20/solid";
-
-const solutions = [
-  {
-    name: "Inbox",
-    description:
-      "Get a better understanding of where your traffic is coming from.",
-    href: "#",
-    icon: InboxIcon,
-  },
-  {
-    name: "Messaging",
-    description: "Speak directly to your customers in a more meaningful way.",
-    href: "#",
-    icon: ChatBubbleBottomCenterTextIcon,
-  },
-  {
-    name: "Live Chat",
-    description: "Your customers' data will be safe and secure.",
-    href: "#",
-    icon: ChatBubbleLeftRightIcon,
-  },
-  {
-    name: "Knowledge Base",
-    description: "Connect with third-party tools that you're already using.",
-    href: "#",
-    icon: QuestionMarkCircleIcon,
-  },
-];
-const navigation = [
-  { name: "Pricing", href: "#" },
-  { name: "Partners", href: "#" },
-  { name: "Company", href: "#" },
-];
-
 export default function Example() {
   return (
-    <div className="bg-white">
-      <main>
-        <div>
-          {/* Hero card */}
-          <div className="relative">
-            <div className="absolute inset-x-0 bottom-0 h-1/2 bg-gray-100" />
-            <div className="mx-auto w-full sm:px-6 lg:px-8">
-              <div className="relative shadow-xl sm:overflow-hidden">
-                <div className="absolute inset-0">
-                  <img
-                    alt="People working on laptops"
-                    src="https://images.unsplash.com/photo-1521737852567-6949f3f9f2b5?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=2830&q=80&sat=-100"
-                    className="size-full object-cover"
-                  />
-                  <div className="absolute inset-0 bg-[#ee7a25] mix-blend-multiply" />
-                </div>
-                <div className="relative px-6 py-16 sm:py-24 lg:px-8 lg:py-32">
-                  <h1 className="text-center text-4xl font-bold tracking-tight sm:text-5xl lg:text-6xl">
-                    <span className="block text-white">
-                      PORTAL TINTAS
-                    </span>
-                    <span className="block text-indigo-200">
-                      Colorindo Ribas
-                    </span>
-                  </h1>
-                  <p className="mx-auto mt-6 max-w-lg text-center text-xl text-indigo-200 sm:max-w-3xl">
-                    Anim aute id magna aliqua ad ad non deserunt sunt. Qui irure
-                    qui lorem cupidatat commodo. Elit sunt amet fugiat veniam
-                    occaecat fugiat aliqua.
-                  </p>
+    <div className="bg-white p-2 object-cover">
+      <div className="flexbox-master bg-[#d65126] pb-2 rounded-xl relative">
+        <main>
+          <div>
+            {/* Hero card */}
+            <div className="herocard relative">
+              <div className="absolute inset-x-0 bottom-0 h-full w-full" />
+              <div className="mx-auto w-full ">
+                <div className="relative shadow-xl sm:overflow-hidden">
+                  <div className="absolute  inset-0 w-full h-full ">
+                    <img
+                      alt="colorful room"
+                      src="/hero.jpeg"
+                      className="opacity-90 rounded-b-xl  w-full h-full object-cover"
+                    />
+                  </div>
+                  <div className="relative px-6 py-16 sm:py-24 lg:px-8 lg:py-32">
+                    <h1 className="text-center  tracking-tight sm:text-8xl lg:text-8xl">
+                      <span className="block font-bold  text-[130px] text-white">
+                        Colorindo Ribas
+                      </span>
+                    </h1>
+                    <p className="mx-auto mt-6 max-w-lg text-center text-[30px] font-bold text-white sm:max-w-3xl">
+                      A Portal Tintas é a loja completa para o que você precisa
+                      no universo da Pintura!
+                    </p>
+                  </div>
                 </div>
               </div>
             </div>
           </div>
-        </div>
+          <div className=" flexbox-homepage m-1 bg-white h-[350px] rounded-xl p-8 shadow-lg m-2 text-center">
+            <p className="text-[#243E88] opacity-100 text-[70px] sm:text-xl md:text-2xl text-left font-semibold">
+              Marcas Parceiras
+            </p>
+          </div>
 
-        {/* More main page content here... */}
-      </main>
+          <div className=" flexbox-homepage m-1 bg-white h-[350px] opacity-80 rounded-xl p-8 shadow-lg m-2  text-center">
+            <p className="text-[#243E88] opacity-100 text-[70px] sm:text-xl md:text-2xl text-left font-semibold">
+              Dicas da Portal
+            </p>
+          </div>
+          <div className=" flexbox-homepagem m-1  bg-white h-[350px] opacity-80 rounded-xl p-8 shadow-lg m-2  text-center">
+            <p className="text-[#243E88] opacity-100 text-[70px] sm:text-xl md:text-2xl text-left font-semibold">
+              Localização
+            </p>
+          </div>
+          <div className=" flexbox-homepage m-2 bg-white h-[350px] opacity-80 rounded-xl p-8 shadow-lg m-2 text-center">
+            <p className="text-[#243E88] opacity-100 text-[70px] sm:text-xl md:text-2xl text-left font-semibold">
+              Contato{" "}
+            </p>
+          </div>
+        </main>
+      </div>
     </div>
   );
 }

@@ -1,12 +1,9 @@
 "use client";
-import Layout from "@/components/Layout";
 
-function MyApp({ Component, pageProps }) {
+export default function Page() {
   return (
-    <Layout>
-      <Component {...pageProps} />
-    </Layout>
+    <div>
+
+    </div>
   );
 }
-
-export default MyApp;
