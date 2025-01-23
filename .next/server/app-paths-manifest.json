@@ -1,6 +1,4 @@
 {
-  "/quemsomos/page": "app/quemsomos/page.js",
-  "/blog/page": "app/blog/page.js",
-  "/contato/page": "app/contato/page.js",
-  "/home/page": "app/home/page.js"
+  "/home/page": "app/home/page.js",
+  "/page": "app/page.js"
 }
