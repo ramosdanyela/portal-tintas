@@ -1,4 +1,4 @@
-// File: /Users/danyelaramos/Documents/development/react/portaltintas/app/home/page.js
+// File: /Users/danyelaramos/Documents/development/projetos-para- deploy/portaltintas/app/home/page.js
 import * as entry from '../../../../app/home/page.js'
 import type { ResolvingMetadata, ResolvingViewport } from 'next/dist/lib/metadata/types/metadata-interface.js'
 

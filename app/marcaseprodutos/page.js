@@ -1,678 +1,86 @@
-export default function Example() {
+export default function Marcas() {
   return (
-    <div className="flex-row bg-white text-gray-800">
-      <div className="mr-4 shrink-0">
-        <svg
-          fill="none"
-          stroke="currentColor"
-          viewBox="0 0 200 200"
-          preserveAspectRatio="none"
-          aria-hidden="true"
-          className="size-16 border border-gray-300 bg-white text-gray-300"
-        >
-          <path
-            d="M0 0l200 200M0 200L200 0"
-            strokeWidth={1}
-            vectorEffect="non-scaling-stroke"
-          />
-        </svg>
-      </div>
-      <div>
-        <h4 className="text-lg font-bold">Suvinil</h4>
-        <p className="mt-1">
-          Repudiandae sint consequuntur vel. Amet ut nobis explicabo numquam
-          expedita quia omnis voluptatem. Minus quidem ipsam quia iusto.
+    <div className="flex flex-row bg-white">
+      <div className="bg-white flex flex-col justify-center p-6">
+        <p className="text-[#243E88] text-4xl font-semibold text-left mb-6">
+          Marcas Parceiras
         </p>
-
-        <div className="mt-6 flex">
-          <div className="mr-4 shrink-0">
-            <svg
-              fill="none"
-              stroke="currentColor"
-              viewBox="0 0 200 200"
-              preserveAspectRatio="none"
-              aria-hidden="true"
-              className="size-12 border border-gray-300 bg-white text-gray-300"
-            >
-              <path
-                d="M0 0l200 200M0 200L200 0"
-                strokeWidth={1}
-                vectorEffect="non-scaling-stroke"
-              />
-            </svg>
-          </div>
-          <div>
-            <h4 className="text-lg font-bold">Lorem ipsum</h4>
-            <p className="mt-1">
-              Repudiandae sint consequuntur vel. Amet ut nobis explicabo numquam
-              expedita quia omnis voluptatem. Minus quidem ipsam quia iusto.
-            </p>
-          </div>
-        </div>
-        <div className="mt-6 flex">
-          <div className="mr-4 shrink-0">
-            <svg
-              fill="none"
-              stroke="currentColor"
-              viewBox="0 0 200 200"
-              preserveAspectRatio="none"
-              aria-hidden="true"
-              className="size-12 border border-gray-300 bg-white text-gray-300"
-            >
-              <path
-                d="M0 0l200 200M0 200L200 0"
-                strokeWidth={1}
-                vectorEffect="non-scaling-stroke"
-              />
-            </svg>
-          </div>
-          <div>
-            <h4 className="text-lg font-bold">xx</h4>
-            <p className="mt-1">
-              Repudiandae sint consequuntur vel. Amet ut nobis explicabo numquam
-              expedita quia omnis voluptatem. Minus quidem ipsam quia iusto.
-            </p>
-          </div>
-        </div>
-      </div>
-
-      <div className="mr-4 shrink-0">
-        <svg
-          fill="none"
-          stroke="currentColor"
-          viewBox="0 0 200 200"
-          preserveAspectRatio="none"
-          aria-hidden="true"
-          className="size-16 border border-gray-300 bg-white text-gray-300"
-        >
-          <path
-            d="M0 0l200 200M0 200L200 0"
-            strokeWidth={1}
-            vectorEffect="non-scaling-stroke"
+        <div className="flex items-center grid grid-cols-4 gap-9">
+          <img
+            src="/logos/suvinil.png"
+            alt="Suvinil"
+            className="w-[180px] h-[90px] object-contain mx-auto"
           />
-        </svg>
-      </div>
-      <div>
-        <h4 className="text-lg font-bold">Coral</h4>
-        <p className="mt-1">
-          Repudiandae sint consequuntur vel. Amet ut nobis explicabo numquam
-          expedita quia omnis voluptatem. Minus quidem ipsam quia iusto.
-        </p>
-
-        <div className="mt-6 flex">
-          <div className="mr-4 shrink-0">
-            <svg
-              fill="none"
-              stroke="currentColor"
-              viewBox="0 0 200 200"
-              preserveAspectRatio="none"
-              aria-hidden="true"
-              className="size-12 border border-gray-300 bg-white text-gray-300"
-            >
-              <path
-                d="M0 0l200 200M0 200L200 0"
-                strokeWidth={1}
-                vectorEffect="non-scaling-stroke"
-              />
-            </svg>
-          </div>
-          <div>
-            <h4 className="text-lg font-bold">xx</h4>
-            <p className="mt-1">
-              Repudiandae sint consequuntur vel. Amet ut nobis explicabo numquam
-              expedita quia omnis voluptatem. Minus quidem ipsam quia iusto.
-            </p>
-          </div>
-        </div>
-        <div className="mt-6 flex">
-          <div className="mr-4 shrink-0">
-            <svg
-              fill="none"
-              stroke="currentColor"
-              viewBox="0 0 200 200"
-              preserveAspectRatio="none"
-              aria-hidden="true"
-              className="size-12 border border-gray-300 bg-white text-gray-300"
-            >
-              <path
-                d="M0 0l200 200M0 200L200 0"
-                strokeWidth={1}
-                vectorEffect="non-scaling-stroke"
-              />
-            </svg>
-          </div>
-          <div>
-            <h4 className="text-lg font-bold">xx</h4>
-            <p className="mt-1">
-              Repudiandae sint consequuntur vel. Amet ut nobis explicabo numquam
-              expedita quia omnis voluptatem. Minus quidem ipsam quia iusto.
-            </p>
-          </div>
-        </div>
-      </div>
-
-      <div className="mr-4 shrink-0">
-        <svg
-          fill="none"
-          stroke="currentColor"
-          viewBox="0 0 200 200"
-          preserveAspectRatio="none"
-          aria-hidden="true"
-          className="size-16 border border-gray-300 bg-white text-gray-300"
-        >
-          <path
-            d="M0 0l200 200M0 200L200 0"
-            strokeWidth={1}
-            vectorEffect="non-scaling-stroke"
+          <img
+            src="/logos/coral.png"
+            alt="Coral"
+            className="w-[180px] h-[90px] object-contain mx-auto"
           />
-        </svg>
-      </div>
-      <div>
-        <h4 className="text-lg font-bold">Tintas Merko</h4>
-        <p className="mt-1">
-          Repudiandae sint consequuntur vel. Amet ut nobis explicabo numquam
-          expedita quia omnis voluptatem. Minus quidem ipsam quia iusto.
-        </p>
-
-        <div className="mt-6 flex">
-          <div className="mr-4 shrink-0">
-            <svg
-              fill="none"
-              stroke="currentColor"
-              viewBox="0 0 200 200"
-              preserveAspectRatio="none"
-              aria-hidden="true"
-              className="size-12 border border-gray-300 bg-white text-gray-300"
-            >
-              <path
-                d="M0 0l200 200M0 200L200 0"
-                strokeWidth={1}
-                vectorEffect="non-scaling-stroke"
-              />
-            </svg>
-          </div>
-          <div>
-            <h4 className="text-lg font-bold">Lorem ipsum</h4>
-            <p className="mt-1">
-              Repudiandae sint consequuntur vel. Amet ut nobis explicabo numquam
-              expedita quia omnis voluptatem. Minus quidem ipsam quia iusto.
-            </p>
-          </div>
-        </div>
-        <div className="mt-6 flex">
-          <div className="mr-4 shrink-0">
-            <svg
-              fill="none"
-              stroke="currentColor"
-              viewBox="0 0 200 200"
-              preserveAspectRatio="none"
-              aria-hidden="true"
-              className="size-12 border border-gray-300 bg-white text-gray-300"
-            >
-              <path
-                d="M0 0l200 200M0 200L200 0"
-                strokeWidth={1}
-                vectorEffect="non-scaling-stroke"
-              />
-            </svg>
-          </div>
-          <div>
-            <h4 className="text-lg font-bold">xx</h4>
-            <p className="mt-1">
-              Repudiandae sint consequuntur vel. Amet ut nobis explicabo numquam
-              expedita quia omnis voluptatem. Minus quidem ipsam quia iusto.
-            </p>
-          </div>
-        </div>
-      </div>
-
-      <div className="mr-4 shrink-0">
-        <svg
-          fill="none"
-          stroke="currentColor"
-          viewBox="0 0 200 200"
-          preserveAspectRatio="none"
-          aria-hidden="true"
-          className="size-16 border border-gray-300 bg-white text-gray-300"
-        >
-          <path
-            d="M0 0l200 200M0 200L200 0"
-            strokeWidth={1}
-            vectorEffect="non-scaling-stroke"
+          <img
+            src="/logos/quartzolit.png"
+            alt="Quartzolit"
+            className="w-[180px] h-[90px] object-contain mx-auto"
           />
-        </svg>
-      </div>
-      <div>
-        <h4 className="text-lg font-bold">Atlas</h4>
-        <p className="mt-1">
-          Repudiandae sint consequuntur vel. Amet ut nobis explicabo numquam
-          expedita quia omnis voluptatem. Minus quidem ipsam quia iusto.
-        </p>
-
-        <div className="mt-6 flex">
-          <div className="mr-4 shrink-0">
-            <svg
-              fill="none"
-              stroke="currentColor"
-              viewBox="0 0 200 200"
-              preserveAspectRatio="none"
-              aria-hidden="true"
-              className="size-12 border border-gray-300 bg-white text-gray-300"
-            >
-              <path
-                d="M0 0l200 200M0 200L200 0"
-                strokeWidth={1}
-                vectorEffect="non-scaling-stroke"
-              />
-            </svg>
-          </div>
-          <div>
-            <h4 className="text-lg font-bold">Lorem ipsum</h4>
-            <p className="mt-1">
-              Repudiandae sint consequuntur vel. Amet ut nobis explicabo numquam
-              expedita quia omnis voluptatem. Minus quidem ipsam quia iusto.
-            </p>
-          </div>
-        </div>
-        <div className="mt-6 flex">
-          <div className="mr-4 shrink-0">
-            <svg
-              fill="none"
-              stroke="currentColor"
-              viewBox="0 0 200 200"
-              preserveAspectRatio="none"
-              aria-hidden="true"
-              className="size-12 border border-gray-300 bg-white text-gray-300"
-            >
-              <path
-                d="M0 0l200 200M0 200L200 0"
-                strokeWidth={1}
-                vectorEffect="non-scaling-stroke"
-              />
-            </svg>
-          </div>
-          <div>
-            <h4 className="text-lg font-bold">Lorem ipsum</h4>
-            <p className="mt-1">
-              Repudiandae sint consequuntur vel. Amet ut nobis explicabo numquam
-              expedita quia omnis voluptatem. Minus quidem ipsam quia iusto.
-            </p>
-          </div>
-        </div>
-      </div>
-
-      <div className="mr-4 shrink-0">
-        <svg
-          fill="none"
-          stroke="currentColor"
-          viewBox="0 0 200 200"
-          preserveAspectRatio="none"
-          aria-hidden="true"
-          className="size-16 border border-gray-300 bg-white text-gray-300"
-        >
-          <path
-            d="M0 0l200 200M0 200L200 0"
-            strokeWidth={1}
-            vectorEffect="non-scaling-stroke"
+          <img
+            src="/logos/atlas.webp"
+            alt="Atlas"
+            className="w-[180px] h-[90px] object-contain mx-auto"
           />
-        </svg>
-      </div>
-      <div>
-        <h4 className="text-lg font-bold">Kala</h4>
-        <p className="mt-1">
-          Repudiandae sint consequuntur vel. Amet ut nobis explicabo numquam
-          expedita quia omnis voluptatem. Minus quidem ipsam quia iusto.
-        </p>
-
-        <div className="mt-6 flex">
-          <div className="mr-4 shrink-0">
-            <svg
-              fill="none"
-              stroke="currentColor"
-              viewBox="0 0 200 200"
-              preserveAspectRatio="none"
-              aria-hidden="true"
-              className="size-12 border border-gray-300 bg-white text-gray-300"
-            >
-              <path
-                d="M0 0l200 200M0 200L200 0"
-                strokeWidth={1}
-                vectorEffect="non-scaling-stroke"
-              />
-            </svg>
-          </div>
-          <div>
-            <h4 className="text-lg font-bold">Lorem ipsum</h4>
-            <p className="mt-1">
-              Repudiandae sint consequuntur vel. Amet ut nobis explicabo numquam
-              expedita quia omnis voluptatem. Minus quidem ipsam quia iusto.
-            </p>
-          </div>
-        </div>
-        <div className="mt-6 flex">
-          <div className="mr-4 shrink-0">
-            <svg
-              fill="none"
-              stroke="currentColor"
-              viewBox="0 0 200 200"
-              preserveAspectRatio="none"
-              aria-hidden="true"
-              className="size-12 border border-gray-300 bg-white text-gray-300"
-            >
-              <path
-                d="M0 0l200 200M0 200L200 0"
-                strokeWidth={1}
-                vectorEffect="non-scaling-stroke"
-              />
-            </svg>
-          </div>
-          <div>
-            <h4 className="text-lg font-bold">Lorem ipsum</h4>
-            <p className="mt-1">
-              Repudiandae sint consequuntur vel. Amet ut nobis explicabo numquam
-              expedita quia omnis voluptatem. Minus quidem ipsam quia iusto.
-            </p>
-          </div>
-        </div>
-      </div>
-
-      <div className="mr-4 shrink-0">
-        <svg
-          fill="none"
-          stroke="currentColor"
-          viewBox="0 0 200 200"
-          preserveAspectRatio="none"
-          aria-hidden="true"
-          className="size-16 border border-gray-300 bg-white text-gray-300"
-        >
-          <path
-            d="M0 0l200 200M0 200L200 0"
-            strokeWidth={1}
-            vectorEffect="non-scaling-stroke"
+          <img
+            src="/logos/kala.jpeg"
+            alt="Kala"
+            className="w-[180px] h-[90px] object-contain mx-auto"
           />
-        </svg>
-      </div>
-      <div>
-        <h4 className="text-lg font-bold">Worker</h4>
-        <p className="mt-1">
-          "Repudiandae sint consequuntur vel. Amet ut nobis explicabo numquam
-          expedita quia omnis voluptatem. Minus quidem ipsam quia iusto.
-        </p>
-
-        <div className="mt-6 flex">
-          <div className="mr-4 shrink-0">
-            <svg
-              fill="none"
-              stroke="currentColor"
-              viewBox="0 0 200 200"
-              preserveAspectRatio="none"
-              aria-hidden="true"
-              className="size-12 border border-gray-300 bg-white text-gray-300"
-            >
-              <path
-                d="M0 0l200 200M0 200L200 0"
-                strokeWidth={1}
-                vectorEffect="non-scaling-stroke"
-              />
-            </svg>
-          </div>
-          <div>
-            <h4 className="text-lg font-bold">Lorem ipsum</h4>
-            <p className="mt-1">
-              Repudiandae sint consequuntur vel. Amet ut nobis explicabo numquam
-              expedita quia omnis voluptatem. Minus quidem ipsam quia iusto.
-            </p>
-          </div>
-        </div>
-        <div className="mt-6 flex">
-          <div className="mr-4 shrink-0">
-            <svg
-              fill="none"
-              stroke="currentColor"
-              viewBox="0 0 200 200"
-              preserveAspectRatio="none"
-              aria-hidden="true"
-              className="size-12 border border-gray-300 bg-white text-gray-300"
-            >
-              <path
-                d="M0 0l200 200M0 200L200 0"
-                strokeWidth={1}
-                vectorEffect="non-scaling-stroke"
-              />
-            </svg>
-          </div>
-          <div>
-            <h4 className="text-lg font-bold">Lorem ipsum</h4>
-            <p className="mt-1">
-              Repudiandae sint consequuntur vel. Amet ut nobis explicabo numquam
-              expedita quia omnis voluptatem. Minus quidem ipsam quia iusto.
-            </p>
-          </div>
-        </div>
-      </div>
-
-      <div className="mr-4 shrink-0">
-        <svg
-          fill="none"
-          stroke="currentColor"
-          viewBox="0 0 200 200"
-          preserveAspectRatio="none"
-          aria-hidden="true"
-          className="size-16 border border-gray-300 bg-white text-gray-300"
-        >
-          <path
-            d="M0 0l200 200M0 200L200 0"
-            strokeWidth={1}
-            vectorEffect="non-scaling-stroke"
+          <img
+            src="/logos/worker.webp"
+            alt="Worker"
+            className="w-[180px] h-[90px] object-contain mx-auto"
           />
-        </svg>
-      </div>
-      <div>
-        <h4 className="text-lg font-bold">Lorem ipsum</h4>
-        <p className="mt-1">
-          Repudiandae sint consequuntur vel. Amet ut nobis explicabo numquam
-          expedita quia omnis voluptatem. Minus quidem ipsam quia iusto.
-        </p>
-
-        <div className="mt-6 flex">
-          <div className="mr-4 shrink-0">
-            <svg
-              fill="none"
-              stroke="currentColor"
-              viewBox="0 0 200 200"
-              preserveAspectRatio="none"
-              aria-hidden="true"
-              className="size-12 border border-gray-300 bg-white text-gray-300"
-            >
-              <path
-                d="M0 0l200 200M0 200L200 0"
-                strokeWidth={1}
-                vectorEffect="non-scaling-stroke"
-              />
-            </svg>
-          </div>
-          <div>
-            <h4 className="text-lg font-bold">Lorem ipsum</h4>
-            <p className="mt-1">
-              Repudiandae sint consequuntur vel. Amet ut nobis explicabo numquam
-              expedita quia omnis voluptatem. Minus quidem ipsam quia iusto.
-            </p>
-          </div>
-        </div>
-        <div className="mt-6 flex">
-          <div className="mr-4 shrink-0">
-            <svg
-              fill="none"
-              stroke="currentColor"
-              viewBox="0 0 200 200"
-              preserveAspectRatio="none"
-              aria-hidden="true"
-              className="size-12 border border-gray-300 bg-white text-gray-300"
-            >
-              <path
-                d="M0 0l200 200M0 200L200 0"
-                strokeWidth={1}
-                vectorEffect="non-scaling-stroke"
-              />
-            </svg>
-          </div>
-          <div>
-            <h4 className="text-lg font-bold">Lorem ipsum</h4>
-            <p className="mt-1">
-              Repudiandae sint consequuntur vel. Amet ut nobis explicabo numquam
-              expedita quia omnis voluptatem. Minus quidem ipsam quia iusto.
-            </p>
-          </div>
-        </div>
-      </div>
-
-      <div className="mr-4 shrink-0">
-        <svg
-          fill="none"
-          stroke="currentColor"
-          viewBox="0 0 200 200"
-          preserveAspectRatio="none"
-          aria-hidden="true"
-          className="size-16 border border-gray-300 bg-white text-gray-300"
-        >
-          <path
-            d="M0 0l200 200M0 200L200 0"
-            strokeWidth={1}
-            vectorEffect="non-scaling-stroke"
+          <img
+            src="/logos/brasilux.png"
+            alt="Brasilux"
+            className="w-[180px] h-[90px] object-contain mx-auto"
           />
-        </svg>
-      </div>
-      <div>
-        <h4 className="text-lg font-bold">Lorem ipsum</h4>
-        <p className="mt-1">
-          Repudiandae sint consequuntur vel. Amet ut nobis explicabo numquam
-          expedita quia omnis voluptatem. Minus quidem ipsam quia iusto.
-        </p>
-
-        <div className="mt-6 flex">
-          <div className="mr-4 shrink-0">
-            <svg
-              fill="none"
-              stroke="currentColor"
-              viewBox="0 0 200 200"
-              preserveAspectRatio="none"
-              aria-hidden="true"
-              className="size-12 border border-gray-300 bg-white text-gray-300"
-            >
-              <path
-                d="M0 0l200 200M0 200L200 0"
-                strokeWidth={1}
-                vectorEffect="non-scaling-stroke"
-              />
-            </svg>
-          </div>
-          <div>
-            <h4 className="text-lg font-bold">Lorem ipsum</h4>
-            <p className="mt-1">
-              Repudiandae sint consequuntur vel. Amet ut nobis explicabo numquam
-              expedita quia omnis voluptatem. Minus quidem ipsam quia iusto.
-            </p>
-          </div>
-        </div>
-        <div className="mt-6 flex">
-          <div className="mr-4 shrink-0">
-            <svg
-              fill="none"
-              stroke="currentColor"
-              viewBox="0 0 200 200"
-              preserveAspectRatio="none"
-              aria-hidden="true"
-              className="size-12 border border-gray-300 bg-white text-gray-300"
-            >
-              <path
-                d="M0 0l200 200M0 200L200 0"
-                strokeWidth={1}
-                vectorEffect="non-scaling-stroke"
-              />
-            </svg>
-          </div>
-          <div>
-            <h4 className="text-lg font-bold">Lorem ipsum</h4>
-            <p className="mt-1">
-              Repudiandae sint consequuntur vel. Amet ut nobis explicabo numquam
-              expedita quia omnis voluptatem. Minus quidem ipsam quia iusto.
-            </p>
-          </div>
-        </div>
-      </div>
-
-      <div className="mr-4 shrink-0">
-        <svg
-          fill="none"
-          stroke="currentColor"
-          viewBox="0 0 200 200"
-          preserveAspectRatio="none"
-          aria-hidden="true"
-          className="size-16 border border-gray-300 bg-white text-gray-300"
-        >
-          <path
-            d="M0 0l200 200M0 200L200 0"
-            strokeWidth={1}
-            vectorEffect="non-scaling-stroke"
+          <img
+            src="/logos/hydronorth.png"
+            alt="Hydronorth"
+            className="w-[180px] h-[90px] object-contain mx-auto"
           />
-        </svg>
-      </div>
-      <div>
-        <h4 className="text-lg font-bold">Lorem ipsum</h4>
-        <p className="mt-1">
-          Repudiandae sint consequuntur vel. Amet ut nobis explicabo numquam
-          expedita quia omnis voluptatem. Minus quidem ipsam quia iusto.
-        </p>
-
-        <div className="mt-6 flex">
-          <div className="mr-4 shrink-0">
-            <svg
-              fill="none"
-              stroke="currentColor"
-              viewBox="0 0 200 200"
-              preserveAspectRatio="none"
-              aria-hidden="true"
-              className="size-12 border border-gray-300 bg-white text-gray-300"
-            >
-              <path
-                d="M0 0l200 200M0 200L200 0"
-                strokeWidth={1}
-                vectorEffect="non-scaling-stroke"
-              />
-            </svg>
-          </div>
-          <div>
-            <h4 className="text-lg font-bold">Lorem ipsum</h4>
-            <p className="mt-1">
-              Repudiandae sint consequuntur vel. Amet ut nobis explicabo numquam
-              expedita quia omnis voluptatem. Minus quidem ipsam quia iusto.
-            </p>
-          </div>
-        </div>
-        <div className="mt-6 flex">
-          <div className="mr-4 shrink-0">
-            <svg
-              fill="none"
-              stroke="currentColor"
-              viewBox="0 0 200 200"
-              preserveAspectRatio="none"
-              aria-hidden="true"
-              className="size-12 border border-gray-300 bg-white text-gray-300"
-            >
-              <path
-                d="M0 0l200 200M0 200L200 0"
-                strokeWidth={1}
-                vectorEffect="non-scaling-stroke"
-              />
-            </svg>
-          </div>
-          <div>
-            <h4 className="text-lg font-bold">Lorem ipsum</h4>
-            <p className="mt-1">
-              Repudiandae sint consequuntur vel. Amet ut nobis explicabo numquam
-              expedita quia omnis voluptatem. Minus quidem ipsam quia iusto.
-            </p>
-          </div>
+          <img
+            src="/logos/maxirubber.jpg"
+            alt="MaxiRubber"
+            className="w-[180px] h-[90px] object-contain mx-auto"
+          />
+          <img
+            src="/logos/3m.png"
+            alt="3M"
+            className="w-[180px] h-[90px] object-contain mx-auto"
+          />
+          <img
+            src="/logos/adere.png"
+            alt="Adere"
+            className="w-[180px] h-[90px] object-contain mx-auto"
+          />
+          <img
+            src="/logos/eucatex.png"
+            alt="Eucatex"
+            className="w-[180px] h-[90px] object-contain mx-auto"
+          />
+          <img
+            src="/logos/arara-azul.png"
+            alt="Arara Azul"
+            className="w-[180px] h-[90px] object-contain mx-auto"
+          />
+          <img
+            src="/logos/osmocolor.png"
+            alt="Osmocolor"
+            className="w-[180px] h-[90px] object-contain mx-auto"
+          />
+          <img
+            src="/logos/grafftex.png"
+            alt="Grafftex"
+            className="w-[180px] h-[90px] object-contain mx-auto"
+          />
         </div>
       </div>
     </div>

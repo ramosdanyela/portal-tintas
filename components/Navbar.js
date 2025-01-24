@@ -8,8 +8,8 @@ const Navbar = () => {
   const menuItems = [
     { name: "Quem Somos", link: "/quemsomos" },
     { name: "Marcas & Produtos", link: "/marcaseprodutos" },
-    { name: "Blog", link: "blog" },
-    { name: "Contato", link: "contato" },
+    { name: "Dicas da Portal", link: "/blog" },
+    { name: "Contato", link: "/contato" },
   ];
 
   return (
@@ -17,7 +17,7 @@ const Navbar = () => {
       {/* LOGO */}
       <div className="flex items-center">
         <Link href="/home">
-        <img src="/logo.png" alt="Logo" className="w-32 h-16 object-cover cursor-pointer" />
+        <img src="/idv-portal/logo.png" alt="Logo" className="w-32 h-16 object-cover cursor-pointer" />
         </Link>
         </div>
       {/* MENU */}
