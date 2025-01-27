@@ -1,7 +1,7 @@
 {
-  "/quemsomos/page": "app/quemsomos/page.js",
-  "/blog/page": "app/blog/page.js",
-  "/home/page": "app/home/page.js",
   "/contato/page": "app/contato/page.js",
-  "/marcaseprodutos/page": "app/marcaseprodutos/page.js"
+  "/page": "app/page.js",
+  "/home/page": "app/home/page.js",
+  "/quemsomos/page": "app/quemsomos/page.js",
+  "/blog/page": "app/blog/page.js"
 }

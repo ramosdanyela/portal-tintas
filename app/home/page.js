@@ -1,6 +1,6 @@
 import GoogleMap from "@/components/GoogleMap";
 
-export default function Example() {
+export default function Home() {
   const posts = [
     {
       id: 1,

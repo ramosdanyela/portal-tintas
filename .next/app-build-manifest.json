@@ -21,11 +21,6 @@
       "static/chunks/main-app.js",
       "static/chunks/app/marcaseprodutos/page.js"
     ],
-    "/quemsomos/page": [
-      "static/chunks/webpack.js",
-      "static/chunks/main-app.js",
-      "static/chunks/app/quemsomos/page.js"
-    ],
     "/blog/page": [
       "static/chunks/webpack.js",
       "static/chunks/main-app.js",
@@ -35,6 +30,11 @@
       "static/chunks/webpack.js",
       "static/chunks/main-app.js",
       "static/chunks/app/contato/page.js"
+    ],
+    "/quemsomos/page": [
+      "static/chunks/webpack.js",
+      "static/chunks/main-app.js",
+      "static/chunks/app/quemsomos/page.js"
     ]
   }
 }
