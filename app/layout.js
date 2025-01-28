@@ -1,17 +1,14 @@
-import { Geist, Geist_Mono } from "next/font/google";
+import {Inter } from "next/font/google";
 import "./globals.css";
 import Navbar from "@/components/Navbar.js";
 import Footer from "@/components/Footer.js";
 
-const geistSans = Geist({
-  variable: "--font-geist-sans",
+const inter = Inter({
+  variable: "--font-inter",
   subsets: ["latin"],
+  weight: ["300","400", "700"]
 });
 
-const geistMono = Geist_Mono({
-  variable: "--font-geist-mono",
-  subsets: ["latin"],
-});
 
 export const metadata = {
   title: "Portal Tintas",
@@ -22,11 +19,13 @@ export default function RootLayout({ children }) {
   return (
     <html lang="pt">
       <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
+        className={`${inter.className} antialiased bg-white`}
       >
+        <div className="max-w-[1600px] w-full mx-auto px-4">
         <Navbar />
         <main>{children}</main> {/* O conteúdo das páginas será renderizado aqui */}
         <Footer />
+        </div>
       </body>
     </html>
   );

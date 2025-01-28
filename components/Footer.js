@@ -38,7 +38,7 @@ const navigation = {
 
 export default function Footer() {
   return (
-    <footer className="bg-white">
+    <footer className="bg-[#f9fcfd] shadow-lg">
       <div className="mx-auto max-w-7xl overflow-hidden  lg:px-1">
         <nav
           aria-label="Footer"
@@ -48,7 +48,7 @@ export default function Footer() {
             <a
               key={item.name}
               href={item.href}
-              className="text-gray-600 hover:text-gray-900"
+              className="text-gray-600 p-2 rounded-full hover:bg-gray-300 text-bold"
             >
               {item.name}
             </a>
