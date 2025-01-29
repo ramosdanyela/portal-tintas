@@ -38,7 +38,7 @@ const navigation = {
 
 export default function Footer() {
   return (
-    <footer className="bg-[#f9fcfd] shadow-lg">
+    <footer className="bg-[#f9fcfd]  drop-shadow-[0_-4px_6px_rgba(0,0,0,0.2)]">
       <div className="mx-auto max-w-7xl overflow-hidden  lg:px-1">
         <nav
           aria-label="Footer"

@@ -27,7 +27,7 @@ const features = [
 
 export default function QuemSomos() {
   return (
-    <div className="overflow-hidden bg-white py-24 sm:py-32">
+    <div className="overflow-hidden bg-[#f9fcfd]  py-24 sm:py-32">
       <div className="mx-auto max-w-7xl md:px-6 lg:px-8">
         <div className="grid grid-cols-1 gap-x-8 gap-y-16 sm:gap-y-20 lg:grid-cols-2 lg:items-start">
           <div className="px-6 lg:px-0 lg:pr-4 lg:pt-4">
@@ -38,13 +38,14 @@ export default function QuemSomos() {
               <p className="mt-2 text-pretty text-4xl font-semibold tracking-tight text-gray-900 sm:text-5xl">
                 Portal Tintas
               </p>
-              <p className="mt-6 text-lg/8 text-gray-600">
-                A Portal Tintas está há pouco menos de um ano no mercado mas já
+              <p className="mt-6 text-3xl/8 text-gray-600 pt-8 leading-relaxed">
+               <span> A Portal Tintas está há pouco menos de um ano no mercado mas já
                 conta com uma grande bagagem de referências em atendimento em
-                nosso município e região. Tendo como referência nossos
+                nosso município e região.  </span>
+                <span>Tendo como referência nossos
                 atendimentos constante às grandes empresas envolvidas no Projeto
                 Cerrado, temos uma loja completa para tudo o que você precisar
-                no universo da Pintura!
+                no universo da Pintura! </span>
               </p>
               <dl className="mt-10 max-w-xl space-y-8 text-base/7 text-gray-600 lg:max-w-none">
                 {features.map((feature) => (

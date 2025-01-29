@@ -43,8 +43,8 @@ export default function Contato() {
               <h2 className="text-pretty text-4xl font-semibold tracking-tight text-gray-900">
                 Fale conosco diretamente
               </h2>
-              <p className="mt-4 text-base/7 text-gray-600">
-                Estamos à disposição
+              <p className="mt-4 text-base/7 text-[#d85b17]">
+                Faça seu orçamento hoje mesmo
               </p>
             </div>
             <div className="grid grid-cols-1 gap-6 sm:grid-cols-2 lg:col-span-2 lg:gap-8">
@@ -79,7 +79,7 @@ export default function Contato() {
               </div>
               <div className="rounded-2xl bg-gray-50 p-10">
                               <h3 className="text-base/7 font-semibold text-gray-900">
-                 Nossas Redes Sociais
+                 Acompanhe nossas Redes Sociais
                 </h3>
                 <div className="mt-2 flex flex-col  space-y-2 justify-center gap-x-10">
           {navigation.social.map((item) => (
@@ -105,8 +105,9 @@ export default function Contato() {
               <h2 className="text-pretty text-4xl font-semibold tracking-tight text-gray-900">
                 Localização
               </h2>
-              <p className="mt-4 text-base/7 text-gray-600">
-                Visite a nossa loja! Estamos te esperando para um cafézinho
+              <p className="mt-4 whitespace-pre-line text-base/7 text-[#d85b17]">
+                Visite a nossa loja!
+                Estamos te esperando para um cafézinho
               </p>
             </div>
             <div className="flex-row gap-6 sm:grid-cols-2 lg:col-span-2 lg:gap-8">

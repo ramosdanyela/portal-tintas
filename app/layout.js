@@ -21,11 +21,11 @@ export default function RootLayout({ children }) {
       <body
         className={`${inter.className} antialiased bg-white`}
       >
-        <div className="max-w-[1600px] w-full mx-auto px-4">
+       
         <Navbar />
-        <main>{children}</main> {/* O conteúdo das páginas será renderizado aqui */}
+        <main className="max-w-[1600px] w-full mx-auto px-4">{children}</main> {/* O conteúdo das páginas será renderizado aqui */}
         <Footer />
-        </div>
+        
       </body>
     </html>
   );

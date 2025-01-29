@@ -21,7 +21,7 @@ const Navbar = () => {
         </Link>
         </div>
       {/* MENU */}
-      <ul className="hidden md:flex gap-8 ml-auto text-lg font-bold text-gray-700">
+      <ul className="hidden md:flex gap-8 ml-auto text-xl font-bold pr-6 text-gray-700">
         {menuItems.map((item, index) => (
           <li key={index}>
             <a href={item.link} className= "hover:bg-gray-300 rounded-full p-2 text-bold">
