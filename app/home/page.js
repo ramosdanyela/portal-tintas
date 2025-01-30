@@ -22,8 +22,8 @@ export default function Home() {
   ];
 
   return (
-    <div className="bg-[#f9fcfd] p-2 object-cover">
-      <div className="flexbox-master bg-[#d65126] pb-2 rounded-xl relative">
+    <div className="bg-[#f9fcfd] py-2 object-cover">
+      <div className="flexbox-master bg-[#d65126] rounded-xl relative">
         <main>
           <div>
             {/* Hero card */}
@@ -61,11 +61,12 @@ export default function Home() {
                 Conheça a Portal
               </p>
               <p className="mt-6 text-3xl/8 text-gray-600 pt-8 leading-relaxed">
-             A Portal Tintas conta com as melhores marcas para construções e reformas.
-                Com ampla bagagem e referência em atendimento, contamos com profissionais especializados com mais de 20 anos de expertise no segmento e atendimento totalmente personalizado para sua necessidade.
-             
+                A Portal Tintas conta com as melhores marcas para construções e
+                reformas. Com ampla bagagem e referência em atendimento,
+                contamos com profissionais especializados com mais de 20 anos de
+                expertise no segmento e atendimento totalmente personalizado
+                para sua necessidade.
               </p>
-              
             </div>
 
             {/* Coluna Direita - Imagem do Rolo de Pintura preenchendo altura */}
@@ -277,15 +278,17 @@ export default function Home() {
             </div>
           </div>
 
-          <div className=" flexbox-homepage relative flex shadow-lg flex-row bg-[#eaebee] backdrop-blur-3xl  m-16 h-[450px] rounded-xl p-8 justify-between">
-            <div className=" flexbox-homepage flex flex-col">
-              <p className="text-[#011F4B]  text-4xl font-bold opacity-100  text-left">
-                Contato{" "}
-              </p>
+          {/* Seção de Contato */}
+          <div className="relative flex flex-row items-start h-[370px] mt-16 bg-[#f6f7fa]">
+            {/* Fundo da Seção */}
 
-              {/* Linha do WhatsApp */}
+            {/* Conteúdo */}
+            <div className="flex left-side justify-center ml-[80px] flex-col p-4 h-full w-full">
+              <h2 className="text-[#011F4B] text-4xl font-bold">Contato</h2>
+
+              {/* WhatsApp */}
               <div className="flex items-center gap-3 mt-4">
-                <span className="text-[#011F4B] mt-8 font-bold text-2xl">
+                <span className="text-[#011F4B] font-bold text-2xl">
                   Faça seu orçamento:
                 </span>
               </div>
@@ -295,10 +298,12 @@ export default function Home() {
                   alt="WhatsApp"
                   className="w-8 h-8"
                 />
-                <span className="text-[#011F4B] text-2xl">(067) 99885-7070</span>
+                <span className="text-[#011F4B] text-2xl">
+                  (067) 99885-7070
+                </span>
               </div>
 
-              {/* Linha do Email */}
+              {/* Email */}
               <div className="flex items-center gap-3 mt-3">
                 <img
                   src="/icons/email-icon.svg"
@@ -310,11 +315,12 @@ export default function Home() {
                 </span>
               </div>
             </div>
-            <div className="flexbox-right inset-0 flex relative">
+
+            <div className="flex object-cover mt-2 mr-[120px] h-full w-full right-side">
               <img
-                src="/equipe-portal/painter-contato.jpg"
                 alt="painter"
-                className="flex rounded-lg relative"
+                src="/equipe-portal/painter-contato2.png"
+                className="w-full h-full object-cover"
               />
             </div>
           </div>

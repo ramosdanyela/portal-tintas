@@ -19,11 +19,10 @@ export default function RootLayout({ children }) {
   return (
     <html lang="pt">
       <body
-        className={`${inter.className} antialiased bg-white`}
-      >
+        className= {`flex flex-col max-w-[1600px] w-full my-auto mx-auto px-4 ${inter.className} antialiased bg-white`}>
        
         <Navbar />
-        <main className="max-w-[1600px] w-full mx-auto px-4">{children}</main> {/* O conteúdo das páginas será renderizado aqui */}
+        <main>{children}</main> {/* O conteúdo das páginas será renderizado aqui */}
         <Footer />
         
       </body>
