@@ -1,28 +1,29 @@
 import {
-  CloudArrowUpIcon,
-  LockClosedIcon,
-  ServerIcon,
+  UserGroupIcon,
+  StarIcon,
+  PaintBrushIcon,
 } from "@heroicons/react/20/solid";
 
 const features = [
   {
+    name: "Atendimento totalmente personalizado.",
+    description:
+      " Contamos com atendimento on-line, via whatsapp e presencial em nossa loja física.",
+    icon: StarIcon,
+  },
+  {
     name: "Melhores marcas.",
     description:
       "Trabalhamos com um portfólio diverso e com as melhores marcas do mercado.",
-    icon: CloudArrowUpIcon,
+    icon: PaintBrushIcon,
   },
   {
     name: "Equipe especializada.",
     description:
       "Nosso time conta com profissionais especializados e com mais de 20 anos de expertise na área.",
-    icon: LockClosedIcon,
+    icon: UserGroupIcon,
   },
-  {
-    name: "Atendimento on-line e presencial.",
-    description:
-      " Contamos atendimento on-line, via whatsapp e presencial em nossa loja física.",
-    icon: ServerIcon,
-  },
+  
 ];
 
 export default function QuemSomos() {
@@ -35,17 +36,17 @@ export default function QuemSomos() {
               <h2 className="text-base/7 font-semibold text-[#d85b17]">
                 Colorindo Ribas
               </h2>
-              <p className="mt-2 text-pretty text-4xl font-semibold tracking-tight text-gray-900 sm:text-5xl">
+              <p className="mt-2 text-pretty text-4xl leading-relaxed font-semibold  text-gray-900 sm:text-5xl">
                 Portal Tintas
               </p>
-              <p className="mt-6 text-3xl/8 text-gray-600 pt-8 leading-relaxed">
-               <span> A Portal Tintas está há pouco menos de um ano no mercado mas já
+              <p className="mt-6 text-2xl/8 text-gray-600 pt-8 leading-relaxed">
+               <p> A Portal Tintas está há pouco menos de um ano no mercado mas já
                 conta com uma grande bagagem de referências em atendimento em
-                nosso município e região.  </span>
-                <span>Tendo como referência nossos
+                nosso município e região.  </p>
+                <p>Tendo como referência nossos
                 atendimentos constante às grandes empresas envolvidas no Projeto
                 Cerrado, temos uma loja completa para tudo o que você precisar
-                no universo da Pintura! </span>
+                no universo da Pintura! </p>
               </p>
               <dl className="mt-10 max-w-xl space-y-8 text-base/7 text-gray-600 lg:max-w-none">
                 {features.map((feature) => (

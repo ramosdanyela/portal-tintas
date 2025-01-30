@@ -1,4 +1,9 @@
 import GoogleMap from "@/components/GoogleMap";
+import {
+  UserGroupIcon,
+  PaintBrushIcon,
+  StarIcon,
+} from "@heroicons/react/20/solid";
 
 export default function Home() {
   const posts = [
@@ -19,6 +24,28 @@ export default function Home() {
         imageUrl: "/blog/artigo1.webp",
       },
     },
+  ];
+
+  const features = [
+    {
+      name: "Atendimento totalmente personalizado.",
+      description:
+        " Contamos com atendimento on-line, via whatsapp e presencial em nossa loja física.",
+      icon: StarIcon,
+    },
+    {
+      name: "Melhores marcas.",
+      description:
+        "Trabalhamos com um portfólio diverso e com as melhores marcas do mercado.",
+      icon: PaintBrushIcon,
+    },
+    {
+      name: "Equipe especializada.",
+      description:
+        "Nosso time conta com profissionais especializados e com mais de 20 anos de expertise na área.",
+      icon: UserGroupIcon,
+    },
+    
   ];
 
   return (
@@ -48,25 +75,40 @@ export default function Home() {
                       A Portal Tintas é a loja completa para o que você precisa
                       no universo da Pintura!
                     </p>
+                 
                   </div>
                 </div>
               </div>
             </div>
           </div>
 
-          <div className="flex flex-row bg-white rounded-xl shadow-lg pr-0 pt-0 pb-0 p-6 m-16 h-[800px]">
+          <div className="flex flex-row bg-white rounded-xl shadow-lg pr-0 pt-0 pb-0 p-8 m-16 h-[900px]">
             {/* Coluna Esquerda - Texto + Logos */}
-            <div className="w-[60%] flex flex-col justify-center p-6">
-              <p className="text-[#011F4B]  text-4xl font-bold text-left mb-6">
-                Conheça a Portal
+            <div className="w-[60%] flex flex-col">
+              <p className="text-gray-900 leading-relaxed pt-8 text-5xl font-bold text-left">
+                As melhores marcas para sua obra
               </p>
-              <p className="mt-6 text-3xl/8 text-gray-600 pt-8 leading-relaxed">
-                A Portal Tintas conta com as melhores marcas para construções e
-                reformas. Com ampla bagagem e referência em atendimento,
-                contamos com profissionais especializados com mais de 20 anos de
-                expertise no segmento e atendimento totalmente personalizado
-                para sua necessidade.
-              </p>
+              <p className="mt-2 text-lg/8 text-gray-600 pt-4 ">
+              Na Portal Tintas, oferecemos <b>qualidade em produtos</b> e <b>agilidade no atendimento</b> para a sua construção ou reforma. Trabalhamos com as principais marcas do mercado, garantindo excelência em cada projeto.</p>
+
+<p className="text-lg/8 text-gray-600 pt-2 "> Nossa equipe de especialistas está pronta para oferecer um <b>atendimento personalizado</b>, auxiliando você na escolha dos melhores produtos para suas necessidades.</p>
+
+<p className="text-lg/8 text-gray-600 pt-2 ">Transforme seus espaços com cores e acabamentos de alta performance. <b>Conte com a Portal Tintas!</b> </p>
+              
+              <div><dl className="flex flex-col mt-14 max-w-xl space-y-8 text-base/7 text-gray-600 lg:max-w-none">
+                {features.map((feature) => (
+                  <div key={feature.name} className="relative pl-9">
+                    <dt className="inline font-semibold text-gray-900">
+                      <feature.icon
+                        aria-hidden="true"
+                        className="absolute left-1 top-1 size-5 text-[#d85b17]"
+                      />
+                      {feature.name}
+                    </dt>{" "}
+                    <dd className="inline">{feature.description}</dd>
+                  </div>
+                ))}
+              </dl></div>
             </div>
 
             {/* Coluna Direita - Imagem do Rolo de Pintura preenchendo altura */}
@@ -82,8 +124,8 @@ export default function Home() {
           {/* Flexbox1 - Marcas Parceiras */}
           <div className="flex flex-row bg-white rounded-xl shadow-lg pr-0 pt-0 pb-0 p-6 m-16 h-[800px]">
             {/* Coluna Esquerda - Texto + Logos */}
-            <div className="w-[60%] flex flex-col justify-center p-6">
-              <p className="text-[#011F4B]  text-4xl font-bold text-left mb-6">
+            <div className="w-[60%] flex flex-col p-6">
+              <p className="text-gray-900  text-5xl font-bold text-left mt-8 mb-16">
                 Marcas Parceiras
               </p>
               <div className="grid grid-cols-3 gap-6">
@@ -189,13 +231,13 @@ export default function Home() {
             />
 
             {/* Container principal respeitando os limites da imagem */}
-            <div className="flex flex-col relative p-8 w-[60%] backdrop-blur-3xl">
+            <div className="flex flex-col relative p-16 w-[60%] backdrop-blur-3xl">
               <div className="flex flex-col max-w-2xl lg:max-w-4xl mx-auto">
                 {/* Título */}
-                <h2 className="text-[#011F4B]  text-4xl font-bold text-left mb-6">
+                <h2 className="text-gray-900 text-5xl font-bold text-left mb-4">
                   Dicas da Portal
                 </h2>
-                <p className="mt-2 text-lg text-white text-left">
+                <p className=" text-lg text-white font-bold text-left">
                   Tudo o que você precisa saber para acertar na pintura
                 </p>
 
@@ -249,9 +291,12 @@ export default function Home() {
 
           <div className=" flexbox-homepage flex flex-row bg-white h-[550px] opacity-100 rounded-xl p-8 shadow-lg m-16 justify-between text-center">
             <div className="flexbox-left flex-row w-[50%] items-start gap-4">
-              <p className="text-[#011F4B] font-bold opacity-100 text-4xl  text-left">
+              <p className="text-gray-900 font-bold opacity-100 text-4xl  text-left">
                 Venha nos visitar
               </p>
+              <p className=" text-lg text-gray-600  text-left">
+                  Estamos te esperando para um cafézinho!
+                </p>
               <div className="w-full mt-4 mb-4 flex bg-white opacity-100 rounded-lg shadow-md overflow-hidden ">
                 <GoogleMap />{" "}
               </div>
@@ -279,11 +324,11 @@ export default function Home() {
           </div>
 
           {/* Seção de Contato */}
-          <div className="relative flex flex-row items-start h-[370px] mt-16 bg-[#f6f7fa]">
+          <div className="relative flex flex-row items-start h-[390px] mt-16 bg-[#f6f7fa]">
             {/* Fundo da Seção */}
 
             {/* Conteúdo */}
-            <div className="flex left-side justify-center ml-[80px] flex-col p-4 h-full w-full">
+            <div className="flex left-side justify-center ml-[400px] flex-col p-4 h-full w-full">
               <h2 className="text-[#011F4B] text-4xl font-bold">Contato</h2>
 
               {/* WhatsApp */}
@@ -316,7 +361,7 @@ export default function Home() {
               </div>
             </div>
 
-            <div className="flex object-cover mt-2 mr-[120px] h-full w-full right-side">
+            <div className="flex object-cover mt-2 mr-[300px] h-full w-full right-side">
               <img
                 alt="painter"
                 src="/equipe-portal/painter-contato2.png"
