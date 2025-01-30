@@ -16,7 +16,7 @@ const Navbar = () => {
     <nav className="bg-[#f9fcfd] relative shadow-2xl w-full h-20 flex items-center px-0">
       {/* LOGO */}
       <div className="flex absolute pl-6 items-center">
-        <Link href="/home">
+        <Link href="/">
         <img src="/idv-portal/logo.png" alt="Logo" className="w-45 h-20 object-cover cursor-pointer" />
         </Link>
         </div>
