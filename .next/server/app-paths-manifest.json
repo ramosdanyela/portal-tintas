@@ -1,8 +1,7 @@
 {
-  "/_not-found/page": "app/_not-found/page.js",
-  "/blog/page": "app/blog/page.js",
+  "/home/page": "app/home/page.js",
   "/quemsomos/page": "app/quemsomos/page.js",
   "/marcaseprodutos/page": "app/marcaseprodutos/page.js",
-  "/home/page": "app/home/page.js",
-  "/contato/page": "app/contato/page.js"
+  "/contato/page": "app/contato/page.js",
+  "/blog/page": "app/blog/page.js"
 }

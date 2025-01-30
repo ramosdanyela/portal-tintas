@@ -1,7 +1,7 @@
 const posts = [
   {
     id: 1,
-    title: "Escolher a Tinta Perfeita para Sua Casa",
+    title: "Escolha a Tinta Perfeita para Sua Casa",
     href: "#",
     description:
       "Como acertar na cor e no tipo de tinta para transformar seus ambientes.",
