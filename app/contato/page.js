@@ -43,7 +43,7 @@ export default function Contato() {
               <h2 className="text-pretty text-4xl font-semibold tracking-tight text-gray-900">
                 Fale conosco diretamente
               </h2>
-              <p className="mt-4 text-base/7 text-[#d85b17]">
+              <p className="mt-4 text-base/7 font-bold text-[#d85b17]">
                 Faça seu orçamento hoje mesmo
               </p>
             </div>
@@ -105,7 +105,7 @@ export default function Contato() {
               <h2 className="text-pretty text-4xl font-semibold tracking-tight text-gray-900">
                 Localização
               </h2>
-              <p className="mt-4 whitespace-pre-line text-base/7 text-[#d85b17]">
+              <p className="mt-4 whitespace-pre-line font-bold text-base/7 text-[#d85b17]">
                 Visite a nossa loja!
                <p>Estamos te esperando para um cafézinho</p>
               </p>
