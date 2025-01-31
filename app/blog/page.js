@@ -13,7 +13,7 @@ const posts = [
       name: "Portal Tintas",
       role: "",
       href: "#",
-      imageUrl: "/blog/artigo1.webp",
+      imageUrl: "/icons/favicon2.png",
     },
   },
   {
@@ -30,7 +30,7 @@ const posts = [
       name: "Portal Tintas",
       role: "",
       href: "#",
-      imageUrl: "/blog/artigo1.webp",
+      imageUrl: "/icons/favicon2.png",
     },
   },
   {
@@ -48,10 +48,19 @@ const posts = [
       name: "Portal Tintas",
       role: "",
       href: "#",
-      imageUrl: "/blog/artigo1.webp",
+      imageUrl: "/icons/favicon2.png",
     },
   },
 ];
+
+const slugify = (text) =>
+  text
+    .normalize("NFD") // Remove acentos
+    .replace(/[\u0300-\u036f]/g, "") // Remove diacríticos
+    .toLowerCase()
+    .replace(/\s+/g, "-") // Substitui espaços por "-"
+    .replace(/[^\w-]+/g, ""); // Remove caracteres especiais
+
 
 export default function Example() {
   return (
@@ -93,7 +102,7 @@ export default function Example() {
                 </div>
                 <div className="group relative">
                   <h3 className="mt-3 text-lg/6 font-semibold text-gray-900 group-hover:text-gray-600">
-                    <a href={post.href}>
+                    <a href={`/blog/${slugify(post.title)}`}>
                       <span className="absolute inset-0" />
                       {post.title}
                     </a>

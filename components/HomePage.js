@@ -313,14 +313,14 @@ export default function Home() {
                 <GoogleMap />{" "}
               </div>
             </div>
-            <div className="flex flex-col m-6">
+            <div className="flex flex-col m-6 mt-12">
               <div className="flex rounded-2xl w-fit self-start bg-gray-50 m-8 p-4 items-center flex-col">
                 <h3 className=" text-2xl font-semibold text-gray-900">
                   Horário de Funcionamento
                 </h3>
                 <address className="mt-3 space-y-1 justify-end  text-2xl not-italic text-gray-600">
-                  <p>Segunda a Sexta 07:30 - 18:30</p>
-                  <p>Sábado 07:30 - 11:30</p>
+                  <p>Segunda a Sexta 07:30 - 18:00</p>
+                  <p>Sábado 08:00 - 12:00</p>
                 </address>
               </div>
               <div className="flex rounded-2xl w-fit self-start bg-gray-50 m-8 p-4 items-center flex-col">
@@ -353,7 +353,7 @@ export default function Home() {
                 <img
                   src="/icons/wpp-icon.gif"
                   alt="WhatsApp"
-                  className="w-8 h-8"
+                  className="w-8 h-8 rounded-full"
                 />
                 <span className="text-[#011F4B] text-2xl">
                   (067) 99885-7070

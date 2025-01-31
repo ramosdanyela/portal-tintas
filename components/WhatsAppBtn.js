@@ -9,10 +9,10 @@ export default function WhatsAppBtn() {
       href={`https://wa.me/${phoneNumber}`}
       target="_blank"
       rel="noopener noreferrer"
-      className="fixed bottom-4 right-4 m-4 mr-[200px] bg-green-500 text-white p-3 rounded-full shadow-lg hover:bg-green-600 transition-all duration-300 flex items-center justify-center w-30 h-30"
+      className="fixed bottom-4 right-4 m-4 mr-[100px] bg-green-500 text-white p-2 rounded-full shadow-lg hover:bg-green-600 transition-all duration-300 flex items-center justify-center w-30 h-30"
     >
-      <div className="bg-green-500 text-white font-bold rounded-full flex items-center text-lg hover:bg-green-600 transition-all duration-300">
-      <FaWhatsapp className="w-16 h-8" />
+      <div className="bg-green-500 text-white gap-2 font-bold rounded-full flex items-center text-lg hover:bg-green-600 transition-all duration-300">
+      <FaWhatsapp className="w-8 h-8" />
       <span>WhatsApp</span>
     </div>
     </a>

@@ -4,7 +4,7 @@ const navigation = {
     social: [
     {
       name: "Facebook",
-      href: "#",
+      href: "https://www.facebook.com/share/1Cmf69Spsd/",
       icon: (props) => (
         <svg fill="currentColor" viewBox="0 0 24 24" {...props}>
           <path
@@ -116,8 +116,8 @@ export default function Contato() {
                   Horário de Funcionamento
                 </h3>
                 <address className="mt-3 space-y-1 text-sm/6 not-italic text-gray-600">
-                  <p>Segunda a Sexta 07:30 - 18:30</p>
-                  <p>Sábado 07:30 - 11:30</p>
+                  <p>Segunda a Sexta 07:30 - 18:00</p>
+                  <p>Sábado 08:00 - 12:00</p>
                 </address>
               </div>
               <div className="rounded-2xl mt-8 bg-gray-50 p-10">

@@ -13,6 +13,7 @@ const inter = Inter({
 export const metadata = {
   title: "Portal Tintas",
   description: "Colorindo Ribas",
+  icons: "icons/favicon2.png",
 };
 
 export default function RootLayout({ children }) {
