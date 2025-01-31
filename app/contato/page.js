@@ -107,7 +107,7 @@ export default function Contato() {
               </h2>
               <p className="mt-4 whitespace-pre-line text-base/7 text-[#d85b17]">
                 Visite a nossa loja!
-                Estamos te esperando para um cafézinho
+               <p>Estamos te esperando para um cafézinho</p>
               </p>
             </div>
             <div className="flex-row gap-6 sm:grid-cols-2 lg:col-span-2 lg:gap-8">
