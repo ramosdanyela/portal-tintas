@@ -4,8 +4,49 @@ import {
   PaintBrushIcon,
   StarIcon,
 } from "@heroicons/react/20/solid";
+import { useEffect, useRef } from "react";
+import gsap from "gsap";
+import { ScrollTrigger } from "gsap/ScrollTrigger";
+
+gsap.registerPlugin(ScrollTrigger);
+
 
 export default function Home() {
+  
+  const flexboxRef1 = useRef(null);
+  const flexboxRef2 = useRef(null);
+  const flexboxRef3 = useRef(null);
+  const flexboxRef4 = useRef(null);
+  const flexboxRef5 = useRef(null);
+
+  useEffect(() => {
+    const animateSection = (ref) => {
+      if (ref.current) {
+        gsap.from(ref.current.children, {
+          opacity: 0,
+          y: 50, // Move os itens de baixo para cima
+          duration: 1,
+          ease: "power2.out",
+          stagger: 0.2,
+          scrollTrigger: {
+            trigger: ref.current,
+            start: "top 90%", // Começa quando a seção aparece 90% na tela
+            end: "top 50%",
+            toggleActions: "play none none none",
+          },
+        });
+      }
+    };
+
+    // Aplicar animações em cada flexbox separadamente
+    animateSection(flexboxRef1);
+    animateSection(flexboxRef2);
+    animateSection(flexboxRef3);
+    animateSection(flexboxRef4);
+    animateSection(flexboxRef5);
+  }, []);
+
+
   const posts = [
     {
       id: 1,
@@ -80,7 +121,7 @@ export default function Home() {
             </div>
           </div>
 
-          <div className="flex flex-row bg-white rounded-xl shadow-lg pr-0 pt-0 pb-0 p-8 m-16 h-[900px]">
+          <div ref={flexboxRef1} className="flex flex-row bg-white rounded-xl shadow-lg pr-0 pt-0 pb-0 p-8 m-16 h-[900px]">
             {/* Coluna Esquerda - Texto + Logos */}
             <div className="w-[60%] flex flex-col">
               <p className="text-gray-900 leading-relaxed pt-8 text-5xl font-bold text-left">
@@ -105,7 +146,7 @@ export default function Home() {
                 performance. <b>Conte com a Portal Tintas!</b>{" "}
               </p>
 
-              <div>
+              <div ref={flexboxRef2}>
                 <dl className="flex flex-col mt-14 max-w-xl space-y-8 text-base/7 text-gray-600 lg:max-w-none">
                   {features.map((feature) => (
                     <div key={feature.name} className="relative pl-9">
@@ -134,7 +175,7 @@ export default function Home() {
           </div>
 
           {/* Flexbox1 - Marcas Parceiras */}
-          <div className="flex flex-row bg-white rounded-xl shadow-lg pr-0 pt-0 pb-0 p-6 m-16 h-[800px]">
+          <div ref={flexboxRef3} className="flex flex-row bg-white rounded-xl shadow-lg pr-0 pt-0 pb-0 p-6 m-16 h-[800px]">
             {/* Coluna Esquerda - Texto + Logos */}
             <div className="w-[60%] flex flex-col p-6">
               <p className="text-gray-900  text-5xl font-bold text-left mt-8 mb-16">
@@ -301,7 +342,7 @@ export default function Home() {
             </div>
           </div>
 
-          <div className=" flexbox-homepage flex flex-row bg-white h-[550px] opacity-100 rounded-xl p-8 shadow-lg m-16 justify-between text-center">
+          <div ref={flexboxRef4} className=" flexbox-homepage flex flex-row bg-white h-[550px] opacity-100 rounded-xl p-8 shadow-lg m-16 justify-between text-center">
             <div className="flexbox-left flex-row w-[50%] items-start gap-4">
               <p className="text-gray-900 font-bold opacity-100 text-4xl  text-left">
                 Venha nos visitar
@@ -340,7 +381,7 @@ export default function Home() {
             {/* Fundo da Seção */}
 
             {/* Conteúdo */}
-            <div className="flex left-side justify-center ml-[400px] flex-col p-4 h-full w-full">
+            <div ref={flexboxRef5} className="flex left-side justify-center ml-[400px] flex-col p-4 h-full w-full">
               <h2 className="text-[#011F4B] text-4xl font-bold">Contato</h2>
 
               {/* WhatsApp */}

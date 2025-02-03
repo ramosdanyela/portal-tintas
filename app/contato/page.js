@@ -1,7 +1,7 @@
 import GoogleMap from "@/components/GoogleMap";
 
 const navigation = {
-    social: [
+  social: [
     {
       name: "Facebook",
       href: "https://www.facebook.com/share/1Cmf69Spsd/",
@@ -30,8 +30,6 @@ const navigation = {
     },
   ],
 };
-
-
 
 export default function Contato() {
   return (
@@ -78,22 +76,21 @@ export default function Contato() {
                 </dl>
               </div>
               <div className="rounded-2xl bg-gray-50 p-10">
-                              <h3 className="text-base/7 font-semibold text-gray-900">
-                 Acompanhe nossas Redes Sociais
+                <h3 className="text-base/7 font-semibold text-gray-900">
+                  Acompanhe nossas Redes Sociais
                 </h3>
                 <div className="mt-2 flex flex-col  space-y-2 justify-center gap-x-10">
-          {navigation.social.map((item) => (
-            <a
-              key={item.name}
-              href={item.href}
-              className="text-gray-600 flex flex-row  hover:text-gray-800"
-            >
-             
-              <item.icon aria-hidden="true" className="size-6" />
-              <span className="font-normal">{item.name}</span>
-            </a>
-          ))}
-        </div>
+                  {navigation.social.map((item) => (
+                    <a
+                      key={item.name}
+                      href={item.href}
+                      className="text-gray-600 flex flex-row  hover:text-gray-800"
+                    >
+                      <item.icon aria-hidden="true" className="size-6" />
+                      <span className="font-normal">{item.name}</span>
+                    </a>
+                  ))}
+                </div>
               </div>
             </div>
           </div>
@@ -107,12 +104,12 @@ export default function Contato() {
               </h2>
               <p className="mt-4 whitespace-pre-line font-bold text-base/7 text-[#d85b17]">
                 Visite a nossa loja!
-               <p>Estamos te esperando para um cafézinho</p>
+                <p>Estamos te esperando para um cafézinho</p>
               </p>
             </div>
             <div className="flex-row gap-6 sm:grid-cols-2 lg:col-span-2 lg:gap-8">
               <div className="rounded-2xl bg-gray-50 p-10">
-                              <h3 className="text-base/7 font-semibold text-gray-900">
+                <h3 className="text-base/7 font-semibold text-gray-900">
                   Horário de Funcionamento
                 </h3>
                 <address className="mt-3 space-y-1 text-sm/6 not-italic text-gray-600">
@@ -133,7 +130,6 @@ export default function Contato() {
                   </div>
                 </address>
               </div>
-              
             </div>
           </div>
         </div>
