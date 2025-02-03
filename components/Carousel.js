@@ -1,6 +1,8 @@
 import useEmblaCarousel from "embla-carousel-react";
 import { useCallback, useEffect, useState } from "react";
 import Autoplay from "embla-carousel-autoplay";
+import { ChevronLeftIcon, ChevronRightIcon } from "@heroicons/react/24/solid";
+
 
 // Array de posts
 const posts = [
@@ -79,10 +81,10 @@ export function Carousel() {
   }, [emblaApi, onSelect]);
 
   return (
-    <div className="flex relative mt-6 mx-auto">
+    <div className="flex relative mt-6 max-w-[650px] mx-auto">
       {/* Contêiner do Carousel */}
-      <div className="overflow-hidden" ref={emblaRef}>
-        <div className="flex w-full">
+      <div className="overflow-hidden w-full" ref={emblaRef}>
+        <div className="flex gap-4 w-full">
           {posts.map((post) => (
             <article key={post.id} className="flex-shrink-0 embla-slide">
               <div className="flex flex-row gap-8 bg-white/70 backdrop-blur-lg shadow-lg rounded-xl p-12 border border-gray-200 max-w-[650px] h-[400px]">
@@ -127,26 +129,25 @@ export function Carousel() {
       </div>
 
       {/* Botões de Navegação */}
-      <div className="absolute top-1/2 left-3 transform -translate-y-1/2">
+      <div className="absolute top-1/2 left-1 transform -translate-y-1/2">
         <button
-          className={`bg-gray-500 opacity-50 text-white p-3 rounded-full shadow-md transition ${
+          className={`bg-gray-400 opacity-50 text-white p-2 rounded-full shadow-md transition ${
             prevDisabled ? "opacity-50 cursor-not-allowed" : "hover:bg-gray-600"
           }`}
           onClick={() => emblaApi && emblaApi.scrollPrev()}
           disabled={prevDisabled}
         >
-          ←
-        </button>
+<ChevronLeftIcon className="h-6 w-6 text-white" />        </button>
       </div>
-      <div className="absolute top-1/2 right-[1250px] transform -translate-y-1/2">
+      <div className="absolute top-1/2 right-1 transform -translate-y-1/2">
         <button
-          className={`bg-gray-500 text-white opacity-50 p-3 rounded-full shadow-md transition ${
+          className={`bg-gray-400 text-white opacity-50 p-2 rounded-full shadow-md transition ${
             nextDisabled ? "opacity-50 cursor-not-allowed" : "hover:bg-gray-600"
           }`}
           onClick={() => emblaApi && emblaApi.scrollNext()}
           disabled={nextDisabled}
         >
-          →
+          <ChevronRightIcon className="h-6 w-6 text-white" />
         </button>
       </div>
     </div>
