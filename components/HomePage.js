@@ -7,6 +7,8 @@ import {
 import { useEffect, useRef } from "react";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
+import { Carousel } from "@/components/Carousel";
+
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -90,7 +92,7 @@ export default function Home() {
 
   return (
     <div className="bg-[#f9fcfd] py-2 object-cover">
-      <div className="flexbox-master bg-[#d65126] rounded-xl relative">
+      <div className=" flex flexbox-master bg-[#d65126] rounded-xl relative">
         <main>
           <div>
             {/* Hero card */}
@@ -272,10 +274,10 @@ export default function Home() {
           </div>
 
           {/* Flexbox2 - Dicas da Portal */}
-          <div className="relative flex mt-16 mb-16 justify-end">
+          <div className=" relative flex mt-16 mb-16 justify-end">
             {/* Fundo da Seção */}
             <div
-              className="flex flex-row absolute inset-0 items-end justify-end bg-cover bg-center opacity-90"
+              className="flex flex-row absolute inset-0 items-end max-w-[1600px] justify-end bg-cover bg-center opacity-90"
               style={{
                 backgroundImage: "url('/bg/bg3.jpg')",
                 backgroundColor: "rgba(255, 255, 255, 0.1)", // Branco com 90% de opacidade
@@ -284,7 +286,7 @@ export default function Home() {
             />
 
             {/* Container principal respeitando os limites da imagem */}
-            <div className="flex flex-col relative p-16 w-[60%] backdrop-blur-3xl">
+            <div className="flex flex-col  p-12 w-[60%] backdrop-blur-3xl">
               <div className="flex flex-col max-w-2xl lg:max-w-4xl mx-auto">
                 {/* Título */}
                 <h2 className="text-gray-900 text-5xl font-bold text-left mb-4">
@@ -294,54 +296,12 @@ export default function Home() {
                   Tudo o que você precisa saber para acertar na pintura
                 </p>
 
-                {/* Blog Post */}
-                <div className="mt-12 space-y-12 lg:mt-16 lg:space-y-16">
-                  {posts.map((post) => (
-                    <article
-                      key={post.id}
-                      className="relative flex flex-row gap-8 bg-white/70 backdrop-blur-lg shadow-lg rounded-xl p-8 border border-gray-200"
-                    >
-                      {/* Imagem à esquerda */}
-                      <div className="relative w-full lg:w-1/3 flex-shrink-0">
-                        <img
-                          alt=""
-                          src={post.imageUrl}
-                          className="rounded-2xl w-full h-full object-cover"
-                        />
-                        <div className="absolute inset-0 rounded-2xl ring-1 ring-gray-900/10" />
-                      </div>
+                 {/* Embla Carousel */}
 
-                      {/* Texto do post */}
-                      <div className="w-full lg:w-2/3">
-                        <div className="flex items-center gap-x-4 text-xs text-gray-500">
-                          <time dateTime={post.datetime}>{post.date}</time>
-                          <a
-                            href={post.category.href}
-                            className="relative z-10 rounded-full bg-gray-100 px-3 py-1.5 font-medium text-gray-600 hover:bg-gray-200"
-                          >
-                            {post.category.title}
-                          </a>
-                        </div>
-
-                        <div className="group relative mt-4">
-                          <h3 className="text-xl font-semibold text-gray-900 group-hover:text-gray-600">
-                            <a href={post.href}>
-                              <span className="absolute inset-0" />
-                              {post.title}
-                            </a>
-                          </h3>
-                          <p className="mt-4 text-sm text-gray-600">
-                            {post.description}
-                          </p>
-                        </div>
-                      </div>
-                    </article>
-                  ))}
-                </div>
-              </div>
-            </div>
-          </div>
-
+      <Carousel />
+    </div>
+  </div>
+</div>
           <div ref={flexboxRef4} className=" flexbox-homepage flex flex-row bg-white h-[550px] opacity-100 rounded-xl p-8 shadow-lg m-16 justify-between text-center">
             <div className="flexbox-left flex-row w-[50%] items-start gap-4">
               <p className="text-gray-900 font-bold opacity-100 text-4xl  text-left">
