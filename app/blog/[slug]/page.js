@@ -94,24 +94,31 @@ export default function BlogPost({ params }) {
   if (!post) return notFound();
 
   return (
-    <div className="max-w-3xl mx-auto p-6">
-      <h1 className="text-4xl font-bold text-gray-900">{post.title}</h1>
-      <p className="text-gray-600 mt-2">{post.date} - {post.category}</p>
-      <img src={post.imageUrl} alt={post.title} className="my-6 rounded-lg w-full" />
-      <div
-        className="prose prose-lg text-gray-600 leading-7"
-        dangerouslySetInnerHTML={{ __html: post.content }}
-      />
+    <div className="overflow-hidden bg-[#f9fcfd] py-24 sm:py-32">
+      <div className="max-w-3xl mx-auto p-6">
+        <h1 className="text-4xl font-bold text-gray-900">{post.title}</h1>
+        <p className="text-gray-600 mt-2">
+          {post.date} - {post.category}
+        </p>
+        <img
+          src={post.imageUrl}
+          alt={post.title}
+          className="my-6 rounded-lg w-full"
+        />
+        <div
+          className="prose prose-lg text-gray-600 leading-7"
+          dangerouslySetInnerHTML={{ __html: post.content }}
+        />
+      </div>
     </div>
   );
 }
 
 // Função para criar URLs amigáveis
 const slugify = (text) =>
-    text
-      .normalize("NFD") // Remove acentos
-      .replace(/[\u0300-\u036f]/g, "") // Remove diacríticos
-      .toLowerCase()
-      .replace(/\s+/g, "-") // Substitui espaços por "-"
-      .replace(/[^\w-]+/g, ""); // Remove caracteres especiais
-  
+  text
+    .normalize("NFD") // Remove acentos
+    .replace(/[\u0300-\u036f]/g, "") // Remove diacríticos
+    .toLowerCase()
+    .replace(/\s+/g, "-") // Substitui espaços por "-"
+    .replace(/[^\w-]+/g, ""); // Remove caracteres especiais
