@@ -1,3 +1,10 @@
+"use client";
+import { useRef, useEffect } from "react";
+import gsap from "gsap";
+import { ScrollTrigger } from "gsap/ScrollTrigger";
+
+gsap.registerPlugin(ScrollTrigger);
+
 const posts = [
   {
     id: 1,
@@ -61,12 +68,40 @@ const slugify = (text) =>
     .replace(/\s+/g, "-") // Substitui espaços por "-"
     .replace(/[^\w-]+/g, ""); // Remove caracteres especiais
 
-
 export default function Example() {
+  const flexboxRef1 = useRef(null);
+  const flexboxRef2 = useRef(null);
+
+  useEffect(() => {
+    const animateSection = (ref) => {
+      if (ref.current) {
+        gsap.fromTo(
+          ref.current,
+          { opacity: 0, y: 50 }, // Estado inicial
+          { 
+            opacity: 1, y: 0, 
+            duration: 1, 
+            ease: "power2.out", 
+            stagger: 0.2, 
+            scrollTrigger: {
+              trigger: ref.current,
+              start: "top 80%", 
+              end: "top 50%",
+              toggleActions: "play none none none",
+            },
+          }
+        );
+      }
+    };
+  
+    animateSection(flexboxRef1);
+    animateSection(flexboxRef2);
+  }, []);
+  
   return (
     <div className="bg-[#f9fcfd] py-24 sm:py-32">
       <div className="mx-auto max-w-7xl px-6 lg:px-8">
-        <div className="mx-auto max-w-2xl text-center">
+        <div ref={flexboxRef1} className="opacity-0 translate-y-10 mx-auto max-w-2xl text-center">
           <h2 className="text-balance text-4xl font-semibold tracking-tight text-gray-900 sm:text-5xl">
             Dicas da Portal
           </h2>
@@ -74,7 +109,7 @@ export default function Example() {
             Tudo o que você precisa saber para acertar na pintura.
           </p>
         </div>
-        <div className="mx-auto mt-16 grid max-w-2xl grid-cols-1 gap-x-8 gap-y-20 lg:mx-0 lg:max-w-none lg:grid-cols-3">
+        <div ref={flexboxRef2} className="opacity-0 translate-y-10 mx-auto mt-16 grid max-w-2xl grid-cols-1 gap-x-8 gap-y-20 lg:mx-0 lg:max-w-none lg:grid-cols-3">
           {posts.map((post) => (
             <article
               key={post.id}

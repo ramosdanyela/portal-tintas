@@ -1,4 +1,12 @@
+"use client";
+
 import GoogleMap from "@/components/GoogleMap";
+import { useRef, useEffect } from "react";
+import gsap from "gsap";
+import { ScrollTrigger } from "gsap/ScrollTrigger";
+
+gsap.registerPlugin(ScrollTrigger);
+
 
 const navigation = {
   social: [
@@ -31,10 +39,43 @@ const navigation = {
   ],
 };
 
+
+
+
 export default function Contato() {
+  const flexboxRef1 = useRef(null);
+  
+
+  useEffect(() => {
+    const animateSection = (ref) => {
+      if (ref.current) {
+        gsap.fromTo(
+          ref.current,
+          { opacity: 0, y: 50 }, // Estado inicial
+          { 
+            opacity: 1, y: 0, 
+            duration: 1, 
+            ease: "power2.out", 
+            stagger: 0.2, 
+            scrollTrigger: {
+              trigger: ref.current,
+              start: "top 80%", 
+              end: "top 50%",
+              toggleActions: "play none none none",
+            },
+          }
+        );
+      }
+    };
+  
+    animateSection(flexboxRef1);
+    
+  }, []);
+
+
   return (
     <div className="bg-white py-24 sm:py-32">
-      <div className="mx-auto max-w-7xl px-6 lg:px-8">
+      <div ref={flexboxRef1} className="opacity-0 translate-y-10 mx-auto max-w-7xl px-6 lg:px-8">
         <div className="mx-auto max-w-2xl space-y-16 divide-y divide-gray-100 lg:mx-0 lg:max-w-none">
           <div className="grid grid-cols-1 gap-10 lg:grid-cols-3">
             <div>

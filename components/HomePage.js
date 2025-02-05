@@ -24,23 +24,26 @@ export default function Home() {
   useEffect(() => {
     const animateSection = (ref) => {
       if (ref.current) {
-        gsap.from(ref.current.children, {
-          opacity: 0,
-          y: 50, // Move os itens de baixo para cima
-          duration: 1,
-          ease: "power2.out",
-          stagger: 0.2,
-          scrollTrigger: {
-            trigger: ref.current,
-            start: "top 90%", // Começa quando a seção aparece 90% na tela
-            end: "top 50%",
-            toggleActions: "play none none none",
-          },
-        });
+        gsap.fromTo(
+          ref.current,
+          { opacity: 0, y: 50 }, // Estado inicial
+          {
+            opacity: 1,
+            y: 0,
+            duration: 0.5,
+            ease: "power2.out",
+            stagger: 0.2,
+            scrollTrigger: {
+              trigger: ref.current,
+              start: "top 20%",
+              end: "top 30%",
+              toggleActions: "play none none none",
+            },
+          }
+        );
       }
     };
 
-    // Aplicar animações em cada flexbox separadamente
     animateSection(flexboxRef1);
     animateSection(flexboxRef2);
     animateSection(flexboxRef3);
@@ -123,7 +126,7 @@ export default function Home() {
             </div>
           </div>
 
-          <div ref={flexboxRef1} className="flex flex-row bg-white rounded-xl shadow-lg pr-0 pt-0 pb-0 p-8 m-16 h-[900px]">
+          <div className=" flex flex-row bg-white rounded-xl shadow-lg pr-0 pt-0 pb-0 p-8 m-16 h-[900px]">
             {/* Coluna Esquerda - Texto + Logos */}
             <div className="w-[60%] flex flex-col">
               <p className="text-gray-900 leading-relaxed pt-8 text-5xl font-bold text-left">
@@ -148,7 +151,7 @@ export default function Home() {
                 performance. <b>Conte com a Portal Tintas!</b>{" "}
               </p>
 
-              <div ref={flexboxRef2}>
+              <div ref={flexboxRef2} className="opacity-0 translate-y-10">
                 <dl className="flex flex-col mt-14 max-w-xl space-y-8 text-base/7 text-gray-600 lg:max-w-none">
                   {features.map((feature) => (
                     <div key={feature.name} className="relative pl-9">
@@ -177,7 +180,7 @@ export default function Home() {
           </div>
 
           {/* Flexbox1 - Marcas Parceiras */}
-          <div ref={flexboxRef3} className="flex flex-row bg-white rounded-xl shadow-lg pr-0 pt-0 pb-0 p-6 m-16 h-[800px]">
+          <div ref={flexboxRef3} className="opacity-0 translate-y-10 flex flex-row bg-white rounded-xl shadow-lg pr-0 pt-0 pb-0 p-6 m-16 h-[800px]">
             {/* Coluna Esquerda - Texto + Logos */}
             <div className="w-[60%] flex flex-col p-6">
               <p className="text-gray-900  text-5xl font-bold text-left mt-8 mb-16">
@@ -302,7 +305,7 @@ export default function Home() {
     </div>
   </div>
 </div>
-          <div ref={flexboxRef4} className=" flexbox-homepage flex flex-row bg-white h-[550px] opacity-100 rounded-xl p-8 shadow-lg m-16 justify-between text-center">
+          <div ref={flexboxRef4} className="translate-y-10 flexbox-homepage flex flex-row bg-white h-[550px] opacity-100 rounded-xl p-8 shadow-lg m-16 justify-between text-center">
             <div className="flexbox-left flex-row w-[50%] items-start gap-4">
               <p className="text-gray-900 font-bold opacity-100 text-4xl  text-left">
                 Venha nos visitar
@@ -341,7 +344,7 @@ export default function Home() {
             {/* Fundo da Seção */}
 
             {/* Conteúdo */}
-            <div ref={flexboxRef5} className="flex left-side justify-center ml-[400px] flex-col p-4 h-full w-full">
+            <div ref={flexboxRef5} className="opacity-0 translate-y-10 flex left-side justify-center ml-[400px] flex-col p-4 h-full w-full">
               <h2 className="text-[#011F4B] text-4xl font-bold">Contato</h2>
 
               {/* WhatsApp */}
