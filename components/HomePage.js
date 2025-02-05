@@ -9,12 +9,9 @@ import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import { Carousel } from "@/components/Carousel";
 
-
 gsap.registerPlugin(ScrollTrigger);
 
-
 export default function Home() {
-  
   const flexboxRef1 = useRef(null);
   const flexboxRef2 = useRef(null);
   const flexboxRef3 = useRef(null);
@@ -50,7 +47,6 @@ export default function Home() {
     animateSection(flexboxRef4);
     animateSection(flexboxRef5);
   }, []);
-
 
   const posts = [
     {
@@ -180,7 +176,10 @@ export default function Home() {
           </div>
 
           {/* Flexbox1 - Marcas Parceiras */}
-          <div ref={flexboxRef3} className="opacity-0 translate-y-10 flex flex-row bg-white rounded-xl shadow-lg pr-0 pt-0 pb-0 p-6 m-16 h-[800px]">
+          <div
+            ref={flexboxRef3}
+            className="opacity-0 translate-y-10 flex flex-row bg-white rounded-xl shadow-lg pr-0 pt-0 pb-0 p-6 m-16 h-[800px]"
+          >
             {/* Coluna Esquerda - Texto + Logos */}
             <div className="w-[60%] flex flex-col p-6">
               <p className="text-gray-900  text-5xl font-bold text-left mt-8 mb-16">
@@ -299,13 +298,16 @@ export default function Home() {
                   Tudo o que você precisa saber para acertar na pintura
                 </p>
 
-                 {/* Embla Carousel */}
+                {/* Embla Carousel */}
 
-      <Carousel />
-    </div>
-  </div>
-</div>
-          <div ref={flexboxRef4} className="translate-y-10 flexbox-homepage flex flex-row bg-white h-[550px] opacity-100 rounded-xl p-8 shadow-lg m-16 justify-between text-center">
+                <Carousel />
+              </div>
+            </div>
+          </div>
+          <div
+            ref={flexboxRef4}
+            className="translate-y-10 flexbox-homepage flex flex-row bg-white h-[550px] opacity-100 rounded-xl p-8 shadow-lg m-16 justify-between text-center"
+          >
             <div className="flexbox-left flex-row w-[50%] items-start gap-4">
               <p className="text-gray-900 font-bold opacity-100 text-4xl  text-left">
                 Venha nos visitar
@@ -344,7 +346,10 @@ export default function Home() {
             {/* Fundo da Seção */}
 
             {/* Conteúdo */}
-            <div ref={flexboxRef5} className="opacity-0 translate-y-10 flex left-side justify-center ml-[400px] flex-col p-4 h-full w-full">
+            <div
+              ref={flexboxRef5}
+              className="opacity-0 translate-y-10 flex left-side justify-center ml-[400px] flex-col p-4 h-full w-full"
+            >
               <h2 className="text-[#011F4B] text-4xl font-bold">Contato</h2>
 
               {/* WhatsApp */}
