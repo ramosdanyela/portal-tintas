@@ -8,6 +8,7 @@ import { useEffect, useRef } from "react";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import { Carousel } from "@/components/Carousel";
+import Link from "next/link";
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -48,32 +49,12 @@ export default function Home() {
     animateSection(flexboxRef5);
   }, []);
 
-  const posts = [
-    {
-      id: 1,
-      title: "Escolha a Tinta Perfeita para Sua Casa",
-      href: "#",
-      description:
-        "Como acertar na cor e no tipo de tinta para transformar seus ambientes.",
-      imageUrl: "/blog/artigo1.webp",
-      date: "Jan 05, 2025",
-      datetime: "2020-03-16",
-      category: { title: "Paredes", href: "#" },
-      author: {
-        name: "Portal Tintas",
-        role: "",
-        href: "#",
-        imageUrl: "/blog/artigo1.webp",
-      },
-    },
-  ];
-
   const features = [
     {
-      name: "Atendimento totalmente personalizado.",
+      name: "Equipe especializada.",
       description:
-        " Contamos com atendimento on-line, via whatsapp e presencial em nossa loja física.",
-      icon: StarIcon,
+        "Nosso time conta com profissionais especializados e com mais de 20 anos de expertise na área.",
+      icon: UserGroupIcon,
     },
     {
       name: "Melhores marcas.",
@@ -82,10 +63,10 @@ export default function Home() {
       icon: PaintBrushIcon,
     },
     {
-      name: "Equipe especializada.",
+      name: "Rede de profissionais parceiros.",
       description:
-        "Nosso time conta com profissionais especializados e com mais de 20 anos de expertise na área.",
-      icon: UserGroupIcon,
+        "Temos uma ampla rede de pintores parceiros altamente qualificados.",
+      icon: StarIcon,
     },
   ];
 
@@ -162,11 +143,34 @@ export default function Home() {
                     </div>
                   ))}
                 </dl>
+
+                <div className="flex flex-col items-center">
+                  <Link
+                    href="/quemsomos"
+                    className="flex hover:bg-gray-300 rounded-full p-2 text-bold mt-6 text-gray-600 gap-1  hover:underline"
+                  >
+                    Veja mais
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      fill="none"
+                      viewBox="0 0 24 24"
+                      strokeWidth="1"
+                      stroke="currentColor"
+                      className="w-5 h-5"
+                    >
+                      <path
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
+                        d="M9 5l7 7-7 7"
+                      />
+                    </svg>
+                  </Link>
+                </div>
               </div>
             </div>
 
             {/* Coluna Direita - Imagem do Rolo de Pintura preenchendo altura */}
-            <div className="w-[50%]  bg-[#d65126] rounded-xl m-16 flex justify-end items-center">
+            <div className="w-[50%]  rounded-xl ml-16 mb-16 mr-16 pt-8 flex justify-end items-center">
               <img
                 src="/idv-portal/fachada-loja-3.jpeg"
                 alt="Fachada"
@@ -263,6 +267,28 @@ export default function Home() {
                   className="w-[180px] h-[90px] object-contain mx-auto"
                 />
               </div>
+              <div className="flex flex-col items-center">
+                <Link
+                  href="/marcaseprodutos"
+                  className="flex hover:bg-gray-300 rounded-full p-2 text-bold mt-6 text-gray-600 gap-1  hover:underline"
+                >
+                  Veja mais
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    strokeWidth="1"
+                    stroke="currentColor"
+                    className="w-5 h-5"
+                  >
+                    <path
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                      d="M9 5l7 7-7 7"
+                    />
+                  </svg>
+                </Link>
+              </div>
             </div>
 
             {/* Coluna Direita - Imagem do Rolo de Pintura preenchendo altura */}
@@ -301,6 +327,29 @@ export default function Home() {
                 {/* Embla Carousel */}
 
                 <Carousel />
+                <div className="flex flex-col items-center">
+                  <Link
+                    href="/blog"
+                    className="flex hover:bg-gray-600 hover:text-gray-200 rounded-full p-2 text-bold mt-6 text-[#f9fcfd] gap-1  hover:underline"
+                  >
+                    Veja mais
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      fill="none"
+                      viewBox="0 0 24 24"
+                      strokeWidth="1"
+                      stroke="currentColor"
+                      className="w-5 h-5"
+                    >
+                      <path
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
+                        d="M9 5l7 7-7 7"
+                      />
+                    </svg>
+                  </Link>
+                </div>
+                
               </div>
             </div>
           </div>
@@ -313,7 +362,7 @@ export default function Home() {
                 Venha nos visitar
               </p>
               <p className=" text-lg text-gray-600  text-left">
-                Estamos te esperando para um cafézinho!
+              Estamos te esperando para um cafézinho ☕
               </p>
               <div className="w-full mt-4 mb-4 flex bg-white opacity-100 rounded-lg shadow-md overflow-hidden ">
                 <GoogleMap />{" "}
@@ -346,10 +395,7 @@ export default function Home() {
             {/* Fundo da Seção */}
 
             {/* Conteúdo */}
-            <div
-              
-              className="flex left-side justify-center ml-[400px] flex-col p-4 h-full w-full"
-            >
+            <div className="flex left-side justify-center ml-[400px] flex-col p-4 h-full w-full">
               <h2 className="text-[#011F4B] text-4xl font-bold">Contato</h2>
 
               {/* WhatsApp */}

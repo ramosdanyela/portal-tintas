@@ -226,8 +226,7 @@ export default function QuemSomos() {
                 Rede de Profissionais Parceiros
               </p>
               <p className="mt-6 text-3xl/8 text-gray-600 pt-8 leading-relaxed">
-                Temos uma ampla rede de parceiros profissionais altamente
-                qualificados.
+              Temos uma ampla rede de pintores parceiros altamente qualificados.
               </p>
               <GenWppBtn />
             </div>

@@ -136,17 +136,17 @@ export default function Contato() {
             </div>
           </div>
 
-          {/* 🔴 Essa div estava faltando ser fechada corretamente */}
-
-          <div className="grid grid-cols-1 gap-10 pt-16 lg:grid-cols-3">
+                   <div className="grid grid-cols-1 gap-10 pt-16 lg:grid-cols-3">
             <div>
               <h2 className="text-pretty text-4xl font-semibold tracking-tight text-gray-900">
                 Localização
               </h2>
               <p className="mt-4 whitespace-pre-line font-bold text-base/7 text-[#d85b17]">
-                Visite a nossa loja!
-                <p>Estamos te esperando para um cafézinho</p>
-              </p>
+  Visite a nossa loja!
+  <span className="block mt-2 ">Estamos te esperando para um cafézinho ☕</span>
+</p>
+
+
             </div>
             <div className="flex-row gap-6 sm:grid-cols-2 lg:col-span-2 lg:gap-8">
               <div className="rounded-2xl bg-gray-50 p-10">

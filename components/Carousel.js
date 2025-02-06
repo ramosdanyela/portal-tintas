@@ -2,61 +2,46 @@ import useEmblaCarousel from "embla-carousel-react";
 import { useCallback, useEffect, useState } from "react";
 import Autoplay from "embla-carousel-autoplay";
 import { ChevronLeftIcon, ChevronRightIcon } from "@heroicons/react/24/solid";
+import Link from "next/link";
 
+// Função para gerar slugs (URL amigável)
+const slugify = (text) =>
+  text
+    .normalize("NFD") // Remove acentos
+    .replace(/[\u0300-\u036f]/g, "") // Remove diacríticos
+    .toLowerCase()
+    .replace(/\s+/g, "-") // Substitui espaços por "-"
+    .replace(/[^\w-]+/g, ""); // Remove caracteres especiais
 
 // Array de posts
 const posts = [
   {
     id: 1,
     title: "Escolha a Tinta Perfeita para Sua Casa",
-    href: "#",
     description:
       "Como acertar na cor e no tipo de tinta para transformar seus ambientes.",
     imageUrl: "/blog/artigo1.webp",
     date: "Jan 05, 2025",
-    datetime: "2020-03-16",
-    category: { title: "Paredes", href: "#" },
-    author: {
-      name: "Portal Tintas",
-      role: "",
-      href: "#",
-      imageUrl: "/icons/favicon2.png",
-    },
+    category: "Paredes",
   },
   {
     id: 2,
     title: "Como Cuidar da Sua Pintura para Manter a Parede Sempre Bonita",
-    href: "#",
     description:
       "Dicas práticas para conservar suas paredes pintadas por mais tempo.",
     imageUrl: "/blog/artigo2.webp",
     date: "Jan 05, 2025",
-    datetime: "2020-03-16",
-    category: { title: "Paredes", href: "#" },
-    author: {
-      name: "Portal Tintas",
-      role: "",
-      href: "#",
-      imageUrl: "/icons/favicon2.png",
-    },
+    category: "Paredes",
   },
   {
     id: 3,
     title:
       "Cores Tendência para 2025: As Paletas que Irão Transformar Seu Espaço",
-    href: "#",
     description:
       "Descubra as cores que estarão em alta no próximo ano e como aplicá-las em sua decoração.",
     imageUrl: "/blog/artigo3.webp",
     date: "Jan 05, 2025",
-    datetime: "2020-03-16",
-    category: { title: "Paredes", href: "#" },
-    author: {
-      name: "Portal Tintas",
-      role: "",
-      href: "#",
-      imageUrl: "/icons/favicon2.png",
-    },
+    category: "Decoração",
   },
 ];
 
@@ -86,14 +71,18 @@ export function Carousel() {
       <div className="overflow-hidden w-full" ref={emblaRef}>
         <div className="flex gap-4 w-full">
           {posts.map((post) => (
-            <article key={post.id} className="flex-shrink-0 embla-slide">
-              <div className="flex flex-row gap-8 bg-white/70 backdrop-blur-lg shadow-lg rounded-xl p-12 border border-gray-200 max-w-[650px] h-[400px]">
+            <Link
+              key={post.id}
+              href={`/blog/${slugify(post.title)}`}
+              className="block flex-shrink-0 embla-slide"
+            >
+              <article className="flex flex-row gap-8 bg-white/70 backdrop-blur-lg shadow-lg rounded-xl p-12 border border-gray-200 max-w-[650px] h-[400px] cursor-pointer transition hover:bg-gray-100">
                 {/* Imagem à esquerda */}
-                <div className="flex relative  ">
+                <div className="flex relative">
                   <img
-                    alt=""
+                    alt={post.title}
                     src={post.imageUrl}
-                    className="rounded-2xl  h-full object-cover"
+                    className="rounded-2xl h-full object-cover"
                   />
                   <div className="absolute inset-0 rounded-2xl ring-1 ring-gray-900/10" />
                 </div>
@@ -101,30 +90,26 @@ export function Carousel() {
                 {/* Texto do post */}
                 <div className="w-2/3 flex flex-col justify-center">
                   <div className="flex items-center gap-x-4 text-xs text-gray-500">
-                    <time dateTime={post.datetime}>{post.date}</time>
-                    <a
-                      href={post.category.href}
-                      className="relative z-10 rounded-full bg-gray-100 px-3 py-1.5 font-medium text-gray-600 hover:bg-gray-200"
-                    >
-                      {post.category.title}
-                    </a>
+                    <span className="relative z-10 rounded-full bg-gray-100 px-3 py-1.5 font-medium text-gray-600">
+                      {post.category}
+                    </span>
                   </div>
 
                   <div className="group relative mt-4">
                     <h3 className="text-xl font-semibold text-gray-900 group-hover:text-gray-600">
-                      <a href={post.href}>
-                        <span className="absolute inset-0" />
-                        {post.title}
-                      </a>
+                      {post.title}
                     </h3>
                     <p className="mt-4 text-sm text-gray-600">
                       {post.description}
                     </p>
                   </div>
                 </div>
-              </div>
-            </article>
+                              </article>
+                          
+            </Link>
           ))}
+
+
         </div>
       </div>
 
@@ -137,7 +122,8 @@ export function Carousel() {
           onClick={() => emblaApi && emblaApi.scrollPrev()}
           disabled={prevDisabled}
         >
-<ChevronLeftIcon className="h-6 w-6 text-white" />        </button>
+          <ChevronLeftIcon className="h-6 w-6 text-white" />
+        </button>
       </div>
       <div className="absolute top-1/2 right-1 transform -translate-y-1/2">
         <button
