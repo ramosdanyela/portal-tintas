@@ -33,8 +33,8 @@ export default function QuemSomos() {
             stagger: 0.2,
             scrollTrigger: {
               trigger: ref.current,
-              start: "top 50%",
-              end: "top 50%",
+              start: "top 80%",
+              end: "top 90%",
               toggleActions: "play none none none",
             },
           }

@@ -32,8 +32,8 @@ export default function Home() {
             stagger: 0.2,
             scrollTrigger: {
               trigger: ref.current,
-              start: "top 20%",
-              end: "top 30%",
+              start: "top 80%",
+              end: "top 90%",
               toggleActions: "play none none none",
             },
           }
@@ -347,8 +347,8 @@ export default function Home() {
 
             {/* Conteúdo */}
             <div
-              ref={flexboxRef5}
-              className="opacity-0 translate-y-10 flex left-side justify-center ml-[400px] flex-col p-4 h-full w-full"
+              
+              className="flex left-side justify-center ml-[400px] flex-col p-4 h-full w-full"
             >
               <h2 className="text-[#011F4B] text-4xl font-bold">Contato</h2>
 

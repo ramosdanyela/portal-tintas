@@ -1359,6 +1359,9 @@ video {
 .left-1\/2 {
   left: 50%;
 }
+.right-0 {
+  right: 0px;
+}
 .right-1 {
   right: 0.25rem;
 }
@@ -1371,20 +1374,17 @@ video {
 .top-1\/2 {
   top: 50%;
 }
-.right-0 {
-  right: 0px;
-}
 .isolate {
   isolation: isolate;
+}
+.-z-0 {
+  z-index: 0;
 }
 .-z-10 {
   z-index: -10;
 }
 .z-10 {
   z-index: 10;
-}
-.-z-0 {
-  z-index: 0;
 }
 .m-16 {
   margin: 4rem;
@@ -1412,6 +1412,9 @@ video {
 }
 .-mb-12 {
   margin-bottom: -3rem;
+}
+.-mb-2 {
+  margin-bottom: -0.5rem;
 }
 .mb-16 {
   margin-bottom: 4rem;
@@ -1476,15 +1479,6 @@ video {
 .mt-auto {
   margin-top: auto;
 }
-.-mb-8 {
-  margin-bottom: -2rem;
-}
-.-mb-0 {
-  margin-bottom: -0px;
-}
-.-mb-2 {
-  margin-bottom: -0.5rem;
-}
 .line-clamp-3 {
   overflow: hidden;
   display: -webkit-box;
@@ -1531,9 +1525,6 @@ video {
 .h-14 {
   height: 3.5rem;
 }
-.h-16 {
-  height: 4rem;
-}
 .h-20 {
   height: 5rem;
 }
@@ -1570,20 +1561,11 @@ video {
 .h-full {
   height: 100%;
 }
-.h-\[50rem\] {
-  height: 50rem;
-}
-.h-\[55rem\] {
-  height: 55rem;
-}
 .min-h-\[500px\] {
   min-height: 500px;
 }
 .w-14 {
   width: 3.5rem;
-}
-.w-16 {
-  width: 4rem;
 }
 .w-2\/3 {
   width: 66.666667%;
@@ -1671,10 +1653,6 @@ video {
 }
 .skew-x-\[-30deg\] {
   --tw-skew-x: -30deg;
-  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
-}
-.skew-x-\[30deg\] {
-  --tw-skew-x: 30deg;
   transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
 }
 .-scale-x-100 {
@@ -1993,10 +1971,6 @@ video {
   padding-top: 6rem;
   padding-bottom: 6rem;
 }
-.py-4 {
-  padding-top: 1rem;
-  padding-bottom: 1rem;
-}
 .pb-0 {
   padding-bottom: 0px;
 }
@@ -2154,6 +2128,9 @@ video {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
+.opacity-0 {
+  opacity: 0;
+}
 .opacity-100 {
   opacity: 1;
 }
@@ -2165,9 +2142,6 @@ video {
 }
 .opacity-90 {
   opacity: 0.9;
-}
-.opacity-0 {
-  opacity: 0;
 }
 .shadow-2xl {
   --tw-shadow: 0 25px 50px -12px rgb(0 0 0 / 0.25);
