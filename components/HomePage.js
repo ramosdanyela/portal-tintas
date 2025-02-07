@@ -89,7 +89,7 @@ export default function Home() {
   ];
 
   return (
-    <div className="flexbox-master lg:max-w-screen-xl max-w-screen-sm flex flex-col w-full bg-[#d65126] ">
+    <div className="flexbox-master flex flex-col w-full bg-[#d65126] ">
      
        
           {/* Hero card */}
@@ -368,7 +368,7 @@ export default function Home() {
             </div>
           </div>
 
-          <div className="flex object-cover mt-2 mr-[300px] h-full w-full right-side">
+          <div className="flex object-cover mt-2 h-full w-full right-side">
             <img
               alt="painter"
               src="/equipe-portal/painter-contato2.png"

@@ -11,7 +11,7 @@ const Navbar = () => {
   ];
 
   return (
-    <nav className="bg-[#f9fcfd] flex justify-between fixed w-full overflow-hidden z-50 shadow-2xl lg:max-w-screen-xl max-w-screen-sm mx-auto items-center">
+    <nav className="bg-[#f9fcfd] flex justify-between fixed w-full overflow-hidden z-50 shadow-2xl lg:max-w-screen-xl sm:max-w-screen-sm mx-auto items-center">
       {/* LOGO */}
       <div className="flex pl-6">
         <Link href="/">

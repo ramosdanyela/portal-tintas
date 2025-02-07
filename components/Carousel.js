@@ -66,7 +66,7 @@ export function Carousel() {
   }, [emblaApi, onSelect]);
 
   return (
-    <div className="flex relative mt-6 max-w-[650px] mx-auto">
+    <div className="flex relative mt-6 mx-auto">
       {/* Contêiner do Carousel */}
       <div className="overflow-hidden w-full" ref={emblaRef}>
         <div className="flex gap-4 w-full">
@@ -104,12 +104,9 @@ export function Carousel() {
                     </p>
                   </div>
                 </div>
-                              </article>
-                          
+              </article>
             </Link>
           ))}
-
-
         </div>
       </div>
 
