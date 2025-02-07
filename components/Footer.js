@@ -35,7 +35,7 @@ export default function Footer() {
             <a
               key={item.name}
               href={item.href}
-              className="text-gray-600 p-2 rounded-full text-lg hover:bg-gray-300 text-bold"
+              className="text-gray-600 p-2 rounded-full lg:text-lg text-sm md:text-md hover:bg-gray-300 text-bold"
             >
               {item.name}
             </a>

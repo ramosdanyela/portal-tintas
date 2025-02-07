@@ -11,7 +11,7 @@ const Navbar = () => {
   ];
 
   return (
-    <nav className="bg-[#f9fcfd] flex justify-between fixed w-full overflow-hidden z-50 shadow-2xl lg:max-w-screen-xl sm:max-w-screen-sm mx-auto items-center">
+    <nav className="bg-[#f9fcfd] flex justify-between fixed w-full overflow-hidden z-50 shadow-2xl items-center max-w-screen-sm mx-auto md:max-screen-md lg:max-w-screen-xl">
       {/* LOGO */}
       <div className="flex pl-6">
         <Link href="/">
@@ -23,12 +23,12 @@ const Navbar = () => {
         </Link>
       </div>
       {/* MENU */}
-      <ul className="hidden md:flex gap-6 font-bold">
+      <ul className="hidden md:flex lg:gap-6 font-bold">
         {menuItems.map((item, index) => (
           <li key={index}>
             <a
               href={item.link}
-              className="hover:bg-gray-300 text-gray-700 text-xl rounded-full p-2 text-bold"
+              className="hover:bg-gray-300  text-gray-700 lg:text-xl rounded-full lg:p-2 text-bold"
             >
               {item.name}
             </a>
