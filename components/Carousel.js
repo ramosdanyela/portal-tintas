@@ -66,9 +66,9 @@ export function Carousel() {
   }, [emblaApi, onSelect]);
 
   return (
-    <div className="flex mt-6 mx-auto">
+    <div className="flex lg:mt-6 items-center overflow-hidden ">
       {/* Contêiner do Carousel */}
-      <div className="overflow-hidden w-full" ref={emblaRef}>
+      <div className="h-full w-full" ref={emblaRef}>
         <div className="flex gap-4 w-full">
           {posts.map((post) => (
             <Link
@@ -78,11 +78,11 @@ export function Carousel() {
             >
               <article className="flex flex-col md:flex-col lg:flex-row lg:gap-8 bg-white/70 backdrop-blur-lg shadow-lg rounded-xl p-2 md:p-8 lg:p-12 border border-gray-200 lg:max-w-[650px] lg:h-[400px] md:max-w-[500px] md:h-[308px] max-w-[320px] h-[197px] cursor-pointer transition hover:bg-gray-100">
                 {/* Imagem à esquerda */}
-                <div className="flex">
+                <div className="flex flex-col md:flex-row lg:flex-row">
                   <img
                     alt={post.title}
                     src={post.imageUrl}
-                    className="rounded-2xl h-full object-cover"
+                    className="rounded-2xl object-cover"
                   />
                   <div className="inset-0 rounded-2xl ring-1 ring-gray-900/10" />
                 </div>
@@ -96,10 +96,10 @@ export function Carousel() {
                   </div>
 
                   <div className="group relative mt-4">
-                    <h3 className="text-xl font-semibold text-gray-900 group-hover:text-gray-600">
+                    <h3 className="lg:text-xl font-semibold text-gray-900 group-hover:text-gray-600">
                       {post.title}
                     </h3>
-                    <p className="mt-4 text-sm text-gray-600">
+                    <p className="mt-4 text-sm lg:text-lg text-gray-600">
                       {post.description}
                     </p>
                   </div>

@@ -91,21 +91,19 @@ export default function Home() {
   return (
     <div className="flexbox-master flex flex-col w-full bg-[#d65126] ">
       {/* Hero card */}
-      <div className="herocard items-center w-full h- bg-cover inset-0 bottom-0 mx-auto shadow-xl"
-      
+      <div
+        className="herocard items-center w-full h- bg-cover inset-0 bottom-0 mx-auto shadow-xl"
         style={{
           backgroundImage: "url('bg/hero.jpeg')",
-          backgroundColor: "rgba(255, 255, 255, 0.2)", // Branco com 90% de opacidade
+          backgroundColor: "rgba(255, 255, 255, 0.1)", // Branco com 90% de opacidade
           backgroundBlendMode: "overlay", // Mistura a cor branca com a imagem
-        }}>
-       
-        <div className="relative flex flex-col items-center pt-24 md:py-24 lg:py-32">
-          <h1 className="tracking-tight text-6xl md:text-4xl lg:text-[130px] font-bold">
-            <span className="block text-center backdrop-blur-2xl text-white">
-              Colorindo Ribas
-            </span>
+        }}
+      >
+        <div className="relative flex flex-col items-center pt-32 pb-12 md:py-24 lg:py-32">
+          <h1 className="text-center text-white backdrop-blur-sm tracking-tight text-6xl md:text-4xl lg:text-[130px] font-bold">
+            Colorindo Ribas
           </h1>
-          <p className="mt-6  text-center text-xl md:text-2xl lg:text-3xl p-4 font-bold text-white">
+          <p className=" lg:mt-6  text-center text-xl md:text-2xl lg:text-3xl lg:p-4 font-bold text-white backdrop-blur-sm">
             A Portal Tintas é a loja completa para o que você precisa no
             universo da Pintura!
           </p>
@@ -254,7 +252,7 @@ export default function Home() {
         }}
       >
         {/* Container principal respeitando os limites da imagem */}
-        <div className="flex flex-col lg:p-12 p-4 lg:w-[60%] backdrop-blur-3xl">
+        <div className="flex flex-col lg:p-12 p-4 lg:w-[70%] backdrop-blur-3xl">
           <div className="flex flex-col">
             {/* Título */}
             <h2 className="text-gray-900 lg:text-4xl md:text-3xl text-3xl font-bold lg:text-left md:text-center text-center  lg:mb-4">
@@ -297,18 +295,18 @@ export default function Home() {
         className="translate-y-10 flexbox-homepage flex flex-col md:flex-col lg:flex-row bg-white h-auto opacity-100 rounded-xl p-2 lg:p-8 shadow-lg m-6 lg:m-16 justify-between text-center"
       >
         <div className="flexbox-left md:flex-col lg:flex-row items-start gap-4">
-          <p className="text-gray-900 font-bold opacity-100 lg:text-4xl md:text-3xl text-3xl  text-left">
+          <p className="text-gray-900 font-bold opacity-100 lg:text-4xl md:text-3xl text-3xl  text-center md:text-center lg:text-left">
             Venha nos visitar
           </p>
-          <p className=" text-lg text-gray-600  text-left">
+          <p className=" text-lg text-gray-600  text-center md:text-center lg:text-left">
             Estamos te esperando para um cafézinho ☕
           </p>
           <div className="w-full mt-4 mb-4 flex bg-white opacity-100 rounded-lg shadow-md overflow-hidden ">
             <GoogleMap />{" "}
           </div>
         </div>
-        <div className="flex flex-col m-6 mt-12">
-          <div className="flex rounded-2xl w-fit self-start bg-gray-50 lg:m-8 lg:p-4 m-2 p-1 items-center flex-col">
+        <div className="flex flex-col items-center lg:m-6 lg:mt-12">
+          <div className="flex rounded-2xl w-fit lg:self-start bg-gray-50 lg:m-8 lg:p-4 m-2 p-1 items-center flex-col">
             <h3 className="text-sm lg:text-2xl font-semibold text-gray-900">
               Horário de Funcionamento
             </h3>
@@ -317,7 +315,7 @@ export default function Home() {
               <p>Sábado 08:00 - 12:00</p>
             </address>
           </div>
-          <div className="flex rounded-2xl w-fit self-start bg-gray-50 lg:m-8 lg:p-4 m-2 p-1 items-center flex-col">
+          <div className="flex rounded-2xl w-fit lg:self-start bg-gray-50 lg:m-8 lg:p-4 m-2 p-1 items-center flex-col">
             <h3 className=" text-sm md:text-md lg:text-2xl font-semibold text-gray-900">
               Nosso endereço
             </h3>
@@ -330,11 +328,11 @@ export default function Home() {
       </div>
 
       {/* Seção de Contato */}
-      <div className="relative flex flex-col md:flex-col lg:flex-row items-start lg:mt-16  bg-[#f6f7fa]">
+      <div className="flex flex-col md:flex-col lg:flex-row items-center md:items-center lg:items-start lg:mt-16  bg-[#f6f7fa]">
         {/* Fundo da Seção */}
 
         {/* Conteúdo */}
-        <div className="flex left-side justify-center flex-col p-4 h-full w-full">
+        <div className="flex relative left-side items-center lg:justify-center flex-col p-4 h-full w-full">
           <h2 className="text-[#011F4B] lg:text-4xl md:text-3xl text-3xl font-bold">
             Contato
           </h2>
