@@ -50,7 +50,7 @@ export default function QuemSomos() {
   }, []);
 
   return (
-    <div className="overflow-hidden bg-[#f9fcfd] py-24 sm:py-32">
+    <div className="flex flex-col lg:w-full overflow-hidden bg-[#f9fcfd] py-24 sm:py-32">
       <div
         ref={flexboxRef1}
         className="opacity-0 translate-y-10 mx-auto max-w-8xl md:px-6 lg:px-8"

@@ -19,14 +19,16 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="pt">
-      <body
-        className={`flex flex-col max-w-[1600px] w-full my-auto mx-auto px-4 ${inter.className} antialiased bg-white`}
-      >
-        <main>
-          {" "}
-          <Navbar /> {children} <Footer /> <WhatsAppBtn />
-        </main>{" "}
-        {/* O conteúdo das páginas será renderizado aqui */}
+      <body className={`${inter.className} antialiased bg-[#f9fcfd]`}>
+        <div className="flex flex-col items-center max-w-screen-sm mx-auto lg:max-w-screen-xl">
+          <Navbar />
+
+          {children}
+
+          <Footer />
+        </div>
+
+        <WhatsAppBtn />
       </body>
     </html>
   );

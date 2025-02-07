@@ -3,9 +3,5 @@
 import HomePage from "@/components/HomePage.js";
 
 export default function Page() {
-  return (
-    <div>
-      <HomePage />
-    </div>
-  );
+  return <HomePage />;
 }
