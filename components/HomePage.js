@@ -331,17 +331,17 @@ export default function Home() {
       </div>
 
       {/* Seção de Contato */}
-      <div className="contato flex flex-col md:flex-col lg:flex-row shadow-lg mt-3 md:mt-4 lg:mt-8 bg-white">
+      <div className="contato flex flex-col md:flex-col lg:flex-row shadow-lg mt-3 md:mt-4 lg:mt-8 bg-white h-full w-full">
         {/* Fundo da Seção */}
 
         {/* Conteúdo */}
-        <div className="flex relative left-side items-center lg:justify-center flex-col p-4 h-full w-full">
+        <div className="left-side flex flex-col  my-auto items-center lg:justify-center lg:items-start p-4 h-full w-full">
           <h2 className="text-[#011F4B] lg:text-4xl md:text-3xl text-3xl font-bold">
             Contato
           </h2>
 
           {/* WhatsApp */}
-          <div className="flex items-center gap-3 lg:mt-4">
+          <div className="flex items-center lg:items-start gap-3 lg:mt-4">
             <span className="text-[#011F4B] font-bold sm:text-2xl md:text-xl lg:text-2xl">
               Faça seu orçamento:
             </span>

@@ -1469,6 +1469,10 @@ video {
   margin-left: 4rem;
   margin-right: 4rem;
 }
+.my-auto {
+  margin-top: auto;
+  margin-bottom: auto;
+}
 .-mb-12 {
   margin-bottom: -3rem;
 }
@@ -1732,6 +1736,9 @@ video {
 }
 .items-center {
   align-items: center;
+}
+.items-stretch {
+  align-items: stretch;
 }
 .justify-end {
   justify-content: flex-end;
@@ -2297,6 +2304,10 @@ body {
   color: var(--foreground);
   background: var(--background);
   font-family: "Inter";
+}
+
+.\*\:flex > * {
+  display: flex;
 }
 
 .hover\:bg-gray-100:hover {
