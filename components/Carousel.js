@@ -66,10 +66,10 @@ export function Carousel() {
   }, [emblaApi, onSelect]);
 
   return (
-    <div className="flex lg:mt-6 items-center overflow-hidden ">
+    <div className="flex mt-4 lg:mt-6 items-center overflow-hidden">
       {/* Contêiner do Carousel */}
       <div className="h-full w-full" ref={emblaRef}>
-        <div className="flex gap-4 w-full">
+        <div className="flex gap-4 w-full h-full">
           {posts.map((post) => (
             <Link
               key={post.id}

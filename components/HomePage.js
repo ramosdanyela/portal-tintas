@@ -111,7 +111,7 @@ export default function Home() {
       </div>
 
       {/* 1st container*/}
-      <div className="flex flex-col md:flex-col lg:flex-row bg-white rounded-xl shadow-lg p-8 gap-4  m-6 lg:m-16 h-auto">
+      <div className="flex flex-col md:flex-col lg:flex-row bg-white rounded-xl shadow-lg p-8 gap-4 mt-8 mx-6 lg:m-16 h-auto">
         {/* Coluna Esquerda - Texto + Logos */}
         <div className="flex flex-col">
           <p className="text-gray-900 leading-relaxed lg:text-4xl md:text-3xl text-3xl font-bold text-center md:text-center lg:text-left">
@@ -190,28 +190,28 @@ export default function Home() {
       {/* Flexbox1 - Marcas Parceiras */}
       <div
         ref={flexboxRef3}
-        className="opacity-0 translate-y-10 flex flex-col lg:flex-row bg-white rounded-xl shadow-lg lg:p-6 m-6 lg:m-16 h-auto"
+        className="opacity-0 translate-y-10 flex flex-col lg:flex-row bg-white rounded-xl shadow-lg p-8 lg:p-6 mt-8 mx-6  lg:m-16"
       >
         {/* Coluna Esquerda - Texto + Logos */}
-        <div className="flex flex-col p-6">
-          <p className="text-gray-900 lg:text-4xl md:text-3xl text-3xl font-bold text-center md:text-center lg:text-left mb-8 lg:mb-16">
+        <div className="flex flex-col">
+          <p className="text-gray-900 lg:text-4xl md:text-3xl text-3xl font-bold text-center md:text-center lg:text-left">
             Marcas Parceiras
           </p>
 
-          <div className="grid grid-cols-3 gap-6">
+          <div className="grid grid-cols-3 pt-6 gap-4 md:gap-3 lg:gap-6 justify-center items-center">
             {logos.map((logo, index) => (
               <img
                 key={index}
                 src={logo.src}
                 alt={logo.alt}
-                className="lg:w-[120px] md:w-[180px] h-auto object-contain mx-auto"
+                className="flex w-full lg:w-[120px]  object-cover mx-auto"
               />
             ))}
           </div>
           <div className="flex flex-col items-center">
             <Link
               href="/marcaseprodutos"
-              className="flex hover:bg-gray-300 rounded-full p-2 text-bold mt-6 text-gray-600 gap-1  hover:underline"
+              className="flex hover:bg-gray-300 rounded-full p-1 text-bold mt-2 lg:mt-6 text-gray-600 gap-1  hover:underline"
             >
               Veja mais
               <svg
@@ -244,7 +244,7 @@ export default function Home() {
 
       {/* Flexbox2 - Dicas da Portal */}
       <div
-        className="flex flex-col lg:justify-end bg-cover"
+        className="flex flex-col lg:justify-end bg-cover mt-8"
         style={{
           backgroundImage: "url('/bg/bg3.jpg')",
           backgroundColor: "rgba(255, 255, 255, 0.1)", // Branco com 90% de opacidade
@@ -252,7 +252,7 @@ export default function Home() {
         }}
       >
         {/* Container principal respeitando os limites da imagem */}
-        <div className="flex flex-col lg:p-12 p-4 lg:w-[70%] backdrop-blur-3xl">
+        <div className="flex flex-col lg:p-12 lg:w-[70%] p-8  lg:m-16 backdrop-blur-3xl">
           <div className="flex flex-col">
             {/* Título */}
             <h2 className="text-gray-900 lg:text-4xl md:text-3xl text-3xl font-bold lg:text-left md:text-center text-center  lg:mb-4">
