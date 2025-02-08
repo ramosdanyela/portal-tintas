@@ -25,27 +25,27 @@ const navigation = {
 
 export default function Footer() {
   return (
-    <footer className="flex lg:w-full bg-[#f9fcfd] pt-4 shadow-[0_-4px_6px_rgba(0,0,0,0.2)]">
-      <div className="mx-auto max-w-7xl overflow-hidden  lg:px-1">
-        <nav
+    <footer className="flex flex-col w-full bg-[#f9fcfd] shadow-[0_-4px_6px_rgba(0,0,0,0.2)]">
+              <nav
           aria-label="Footer"
-          className=" flex flex-wrap justify-center gap-x-12 gap-y-3 text-sm/6"
+          className=" mx-auto lg:pt-4 flex flex-wrap justify-center lg:gap-x-8 lg:gap-y-3 text-sm/6"
         >
           {navigation.main.map((item) => (
             <a
               key={item.name}
               href={item.href}
-              className="text-gray-600 p-2 rounded-full lg:text-lg text-sm md:text-md hover:bg-gray-300 text-bold"
+              className="text-gray-600 p-2 rounded-full lg:font-bold lg:text-lg text-sm md:text-md hover:bg-gray-300 text-bold"
             >
               {item.name}
             </a>
           ))}
+         
         </nav>
-
-        <p className="mt-2 mb-4 text-center text-sm/6 text-gray-600">
+        <p className="mt-2 mb-4 text-center text-sm/4 lg:text-sm/6 text-gray-600">
           &copy; 2025 Portal Tintas. All rights reserved.
         </p>
-      </div>
+        
+      
     </footer>
   );
 }

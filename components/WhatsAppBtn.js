@@ -32,9 +32,9 @@ export default function WhatsAppBtn() {
       target="_blank"
       rel="noopener noreferrer"
       ref={buttonRef}
-      className="flex w-full z-50 sm:left-1/2 transform -translate-x-1/2 items-center justify-center bg-green-500 text-white p-4 rounded-full shadow-lg lg:bottom-8 hover:bg-green-600 transition-all duration-300"
+      className="flex fixed z-50 bottom-8 max-w-screen-sm md:max-screen-md lg:max-w-screen-xl "
     >
-      <div className="flex absolute items-center justify-center  gap-2 font-bold text-center text-lg">
+      <div className="p-4 items-center justify-center gap-2 font-bold text-lg text-white  rounded-full shadow-lg hover:bg-green-600  bg-green-500 transition-all duration-300 transform -translate-x-1/2 ">
         <FaWhatsapp className="w-8 h-8" />
         <p>WhatsApp</p>
       </div>

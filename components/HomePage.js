@@ -89,21 +89,21 @@ export default function Home() {
   ];
 
   return (
-    <div className="flexbox-master flex flex-col w-full bg-[#d65126] ">
+    <div className="flexbox-master flex flex-col w-full bg-[#d65126]">
       {/* Hero card */}
       <div
-        className="herocard items-center w-full h- bg-cover inset-0 bottom-0 mx-auto shadow-xl"
+        className="herocard flex flex-col bg-cover shadow-xl mt-20 mb-3 md:mb-4 lg:mb-8 gap-1 md:gap-2 lg:gap-2 py-8 md:py-16 lg:py-20"
         style={{
           backgroundImage: "url('bg/hero.jpeg')",
           backgroundColor: "rgba(255, 255, 255, 0.1)", // Branco com 90% de opacidade
           backgroundBlendMode: "overlay", // Mistura a cor branca com a imagem
         }}
       >
-        <div className="relative flex flex-col items-center pt-32 pb-12 md:py-24 lg:py-32">
-          <h1 className="text-center text-white backdrop-blur-sm tracking-tight text-6xl md:text-4xl lg:text-[130px] font-bold">
+        <div className="backdrop-blur-sm">
+          <h1 className="text-center text-white font-bold tracking-tight text-4xl md:text-7xl lg:text-[130px]">
             Colorindo Ribas
           </h1>
-          <p className=" lg:mt-6  text-center text-xl md:text-2xl lg:text-3xl lg:p-4 font-bold text-white backdrop-blur-sm">
+          <p className=" text-center text-white font-bold tracking-tight text-md md:text-2xl lg:text-3xl">
             A Portal Tintas é a loja completa para o que você precisa no
             universo da Pintura!
           </p>
@@ -111,10 +111,10 @@ export default function Home() {
       </div>
 
       {/* 1st container*/}
-      <div className="flex flex-col md:flex-col lg:flex-row bg-white rounded-xl shadow-lg p-8 gap-4 mt-8 mx-6 lg:m-16 h-auto">
+      <div className="flex flex-col md:flex-col lg:flex-row gap-4 p-8 my-3 md:my-4 lg:my-8 mx-6 md:mx-8 lg:mx-16  bg-white rounded-xl shadow-lg">
         {/* Coluna Esquerda - Texto + Logos */}
         <div className="flex flex-col">
-          <p className="text-gray-900 leading-relaxed lg:text-4xl md:text-3xl text-3xl font-bold text-center md:text-center lg:text-left">
+          <p className="text-gray-900 leading-relaxed lg:text-4xl md:text-3xl text-2xl font-bold text-center md:text-center lg:text-left">
             As melhores marcas para sua obra
           </p>
           <p className="lg:text-lg/8 md:text-md sm:text-sm text-gray-600 pt-4 ">
@@ -187,10 +187,10 @@ export default function Home() {
         </div>
       </div>
 
-      {/* Flexbox1 - Marcas Parceiras */}
+      {/* Flexbox2 - Marcas Parceiras */}
       <div
         ref={flexboxRef3}
-        className="opacity-0 translate-y-10 flex flex-col lg:flex-row bg-white rounded-xl shadow-lg p-8 lg:p-6 mt-8 mx-6  lg:m-16"
+        className="flex flex-col md:flex-col lg:flex-row gap-4 p-8 my-3 md:my-4 lg:my-8 mx-6 md:mx-8 lg:mx-16 opacity-0 translate-y-10 bg-white rounded-xl shadow-lg"
       >
         {/* Coluna Esquerda - Texto + Logos */}
         <div className="flex flex-col">
@@ -244,7 +244,8 @@ export default function Home() {
 
       {/* Flexbox2 - Dicas da Portal */}
       <div
-        className="flex flex-col lg:justify-end bg-cover mt-8"
+        className="dicas flex flex-col bg-cover shadow-lg my-3 md:my-4 lg:my-8 "
+
         style={{
           backgroundImage: "url('/bg/bg3.jpg')",
           backgroundColor: "rgba(255, 255, 255, 0.1)", // Branco com 90% de opacidade
@@ -252,10 +253,10 @@ export default function Home() {
         }}
       >
         {/* Container principal respeitando os limites da imagem */}
-        <div className="flex flex-col lg:p-12 lg:w-[70%] p-8  lg:m-16 backdrop-blur-3xl">
-          <div className="flex flex-col">
+        <div className="flex flex-col lg:w-[70%] p-8 backdrop-blur-3xl gap-1 md:gap-2 lg:gap-2 py-2 md:py-4 lg:py-8">
+         
             {/* Título */}
-            <h2 className="text-gray-900 lg:text-4xl md:text-3xl text-3xl font-bold lg:text-left md:text-center text-center  lg:mb-4">
+            <h2 className="text-gray-900 lg:text-4xl md:text-3xl text-3xl font-bold lg:text-left md:text-center text-center ">
               Dicas da Portal
             </h2>
             <p className=" text-lg text-white font-bold text-center md:text-center lg:text-left">
@@ -263,8 +264,8 @@ export default function Home() {
             </p>
 
             {/* Embla Carousel */}
-
             <Carousel />
+
             <div className="flex flex-col items-center">
               <Link
                 href="/blog"
@@ -287,12 +288,14 @@ export default function Home() {
                 </svg>
               </Link>
             </div>
-          </div>
+     
         </div>
       </div>
+
+      {/* Venha nos visitar */}
       <div
         ref={flexboxRef4}
-        className="translate-y-10 flexbox-homepage flex flex-col md:flex-col lg:flex-row bg-white h-auto opacity-100 rounded-xl p-2 lg:p-8 shadow-lg m-6 lg:m-16 justify-between text-center"
+        className="flex flex-col md:flex-col lg:flex-row gap-4 p-8 my-3 md:my-4 lg:my-8 mx-6 md:mx-8 lg:mx-16 opacity-0 translate-y-10 bg-white rounded-xl shadow-lg"
       >
         <div className="flexbox-left md:flex-col lg:flex-row items-start gap-4">
           <p className="text-gray-900 font-bold opacity-100 lg:text-4xl md:text-3xl text-3xl  text-center md:text-center lg:text-left">
@@ -328,7 +331,7 @@ export default function Home() {
       </div>
 
       {/* Seção de Contato */}
-      <div className="flex flex-col md:flex-col lg:flex-row items-center md:items-center lg:items-start lg:mt-16  bg-[#f6f7fa]">
+      <div className="contato flex flex-col md:flex-col lg:flex-row shadow-lg mt-3 md:mt-4 lg:mt-8 bg-white">
         {/* Fundo da Seção */}
 
         {/* Conteúdo */}

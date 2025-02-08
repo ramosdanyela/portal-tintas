@@ -11,9 +11,9 @@ const Navbar = () => {
   ];
 
   return (
-    <nav className="bg-[#f9fcfd] flex justify-between fixed w-full overflow-hidden z-50 shadow-2xl items-center max-w-screen-sm mx-auto md:max-screen-md lg:max-w-screen-xl">
+    <nav className="bg-[#f9fcfd] flex justify-between fixed w-full  z-50 shadow-2xl items-center max-w-screen-sm md:max-screen-md lg:max-w-screen-xl">
       {/* LOGO */}
-      <div className="flex pl-6">
+      <div className="flex">
         <Link href="/">
           <img
             src="/idv-portal/logo.png"
@@ -23,7 +23,7 @@ const Navbar = () => {
         </Link>
       </div>
       {/* MENU */}
-      <ul className="hidden md:flex lg:gap-6 font-bold">
+      <ul className="hidden md:flex lg:flex lg:gap-6">
         {menuItems.map((item, index) => (
           <li key={index}>
             <a
