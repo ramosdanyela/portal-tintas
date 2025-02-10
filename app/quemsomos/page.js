@@ -50,27 +50,25 @@ export default function QuemSomos() {
   }, []);
 
   return (
-    <div className="flex flex-col lg:w-full overflow-hidden bg-[#f9fcfd] py-24 sm:py-32">
-      <div
-        ref={flexboxRef1}
-        className="opacity-0 translate-y-10 mx-auto max-w-8xl md:px-6 lg:px-8"
-      >
-        <div className="grid grid-cols-1 gap-x-8 gap-y-16 sm:gap-y-20 lg:grid-cols-2 lg:items-start">
+    <div className="flex flex-col mt-20 bg-[#f9fcfd] w-full">
+
+      <div ref={flexboxRef1} className="md:px-6 lg:px-8">
+        <div className="flex flex-col md:flex-row lg:flex-row  w-full gap-x-4 lg:items-start">
           {/* Coluna da Esquerda - Descrição */}
-          <div className="px-6 lg:px-0 lg:pr-4 lg:pt-4">
-            <div className="mx-auto max-w-2xl lg:mx-0 lg:max-w-lg">
+          <div className="px-6 lg:pt-4">
+            <div className="mx-auto">
               <h2 className="text-base/7 font-semibold text-[#d85b17]">
                 Colorindo Ribas
               </h2>
-              <p className="mt-2 text-pretty text-4xl leading-relaxed font-semibold text-gray-900 sm:text-5xl">
+              <p className="mt-2 text-pretty text-4xl leading-relaxed font-semibold text-gray-900 lg:text-5xl">
                 Portal Tintas
               </p>
-              <p className="mt-6 text-3xl/8 text-gray-600 pt-8 leading-relaxed">
+              <p className="lg:mt-6 text-sm md:text-md lg:text-3xl/8 text-gray-600 pt-8 leading-relaxed">
                 A Portal Tintas é uma loja em Ribas do Rio Pardo que se destaca
                 pelo atendimento ágil e pela parceria com as principais marcas
                 do mercado.{" "}
               </p>
-              <p className="mt-6 text-3xl/8 text-gray-600  leading-relaxed">
+              <p className="lg:mt-6 text-sm md:text-md lg:text-3xl/8 text-gray-600 pt-8 leading-relaxed">
                 Tendo como referência nossos atendimentos constantes às grandes
                 empresas envolvidas no Projeto Cerrado, temos uma loja completa
                 para tudo o que você precisar no universo da Pintura!
@@ -80,20 +78,15 @@ export default function QuemSomos() {
 
           {/* Coluna Direita - Imagem */}
           <div className="sm:px-6 lg:px-0">
-            <div className="relative isolate overflow-hidden bg-[#d85b17] px-6 pt-8 sm:mx-auto sm:max-w-2xl sm:rounded-3xl sm:pl-16 sm:pr-0 sm:pt-16 lg:mx-0 lg:max-w-none">
-              <div
-                aria-hidden="true"
-                className="absolute -inset-y-px -left-3 -z-10 w-full origin-bottom-left skew-x-[-30deg] bg-[#D85B32] opacity-20 ring-1 ring-inset ring-white"
+            <div className="flex bg-[#d85b17]">
+              <img
+                alt="Product screenshot"
+                src="/bg/bg1.png"
+                width={2432}
+                height={1442}
+                className="w-full h-full -scale-x-100 bg-contain"
               />
-              <div className="mx-auto max-w-2xl sm:mx-0 sm:max-w-none">
-                <img
-                  alt="Product screenshot"
-                  src="/bg/bg1.png"
-                  width={2432}
-                  height={1442}
-                  className="-mb-12 w-[57rem] max-w-none rounded-tl-xl bg-gray-800 ring-1 ring-white/10"
-                />
-              </div>
+
               <div
                 aria-hidden="true"
                 className="pointer-events-none absolute inset-0 ring-1 ring-inset ring-black/10 sm:rounded-3xl"
@@ -105,7 +98,7 @@ export default function QuemSomos() {
         {/* Seção 1: Equipe especializada */}
         <div
           ref={flexboxRef2}
-          className="opacity-0 translate-y-10 flex flex-row h-full min-h-[500px] gap-x-16 justify-between mx-auto w-full mt-32 mb-32"
+          className="opacity-0 translate-y-10 flex flex-col md:flex-col lg:flex-row h-full min-h-[500px] gap-x-16 justify-between mx-auto w-full mt-32 mb-32"
         >
           <div className="sm:px-6 lg:px-0">
             <div className="flex relative isolate overflow-hidden bg-[#d85b17] px-4 pt-16 sm:mx-auto sm:max-w-2xl sm:rounded-3xl sm:pl-16 sm:pr-0 sm:pt-16 lg:mx-0 lg:max-w-none">
@@ -119,18 +112,18 @@ export default function QuemSomos() {
                   src="/equipe-portal/equipe-portal-fev.jpg"
                   width={2432}
                   height={1500}
-                  className="-mb-2 w-[57rem] max-w-none rounded-tl-xl bg-gray-800 ring-1 ring-white/10"
+                  className="-mb-2 w-[57rem] rounded-tl-xl bg-gray-800 ring-1 ring-white/10"
                 />
               </div>
             </div>
           </div>
 
-          <div className="flex flex-col flex-1 justify-between mx-auto max-w-2xl lg:mx-0 h-full w-full px-6 lg:px-0">
-            <p className="flex mt-2 text-right text-pretty text-4xl leading-relaxed font-semibold text-gray-900 sm:text-5xl items-center gap-2">
-              <UserGroupIcon className="text-4xl text-right text-[#d85b17]" />
+          <div className="flex flex-col flex-1 justify-between max-w-2xl lg:mx-0 h-full w-full px-6 lg:px-0">
+            <p className="flex mt-2 text-right text-pretty text-xl md:text-2xl lg:text-4xl leading-relaxed font-semibold text-gray-900 sm:text-5xl items-center gap-2">
+              <UserGroupIcon className="text-lg md:text-2xl lg:text-4xl text-right text-[#d85b17]" />
               Equipe especializada
             </p>
-            <p className="flex mt-6 text-3xl/8 text-gray-600 pt-4 text-right leading-relaxed">
+            <p className="lg:mt-6 text-sm md:text-md lg:text-3xl/8 text-gray-600 pt-8 leading-relaxed">
               Nosso time conta com profissionais especializados e com mais de 20
               anos de expertise na área.
             </p>
@@ -140,13 +133,13 @@ export default function QuemSomos() {
           </div>
         </div>
 
-        {/* Seção 2: Atendimento personalizado */}
+        {/* Seção 2: Atendimento   */}
         <div
           ref={flexboxRef3}
-          className="opacity-0 translate-y-10 flex flex-row gap-x-16 mx-auto mt-32 mb-32"
+          className="opacity-0 translate-y-10 flex flex-row  mt-32 mb-32"
         >
           <div className="h-full w-full px-6 lg:px-0 lg:pr-4 lg:pt-4">
-            <div className="mx-auto max-w-2xl lg:mx-0 lg:max-w-lg">
+            <div className="max-w-2xl lg:mx-0 lg:max-w-lg">
               <p className="mt-2 text-pretty text-4xl leading-relaxed font-semibold text-gray-900 sm:text-5xl flex items-center gap-2">
                 <StarIcon className="text-4xl text-[#d85b17]" />
                 Atendimento personalizado
@@ -164,13 +157,13 @@ export default function QuemSomos() {
                 aria-hidden="true"
                 className="flex absolute bottom-0 right-0 -z-0 w-full origin-bottom-right skew-x-30 bg-[#D85B32] opacity-20"
               />
-              <div className="flex mx-auto max-w-2xl shadow-4xl sm:mx-0 sm:max-w-none">
+              <div className="flex max-w-2xl shadow-4xl sm:mx-0 sm:max-w-none">
                 <img
                   alt="Atendimento personalizado"
                   src="/equipe-portal/note-cafe.jpg"
                   width={2432}
                   height={1500}
-                  className="-mb-12 w-[57rem] h-auto max-w-none rounded-tl-xl bg-gray-800 ring-1 ring-white/10"
+                  className="-mb-12 w-[57rem] h-auto rounded-tl-xl bg-gray-800 ring-1 ring-white/10"
                 />
               </div>
             </div>
@@ -194,7 +187,7 @@ export default function QuemSomos() {
                   src="/marcas-parceiras/suvinil item folder/Screenshot 2025-01-18 at 10.45.07.png"
                   width={2432}
                   height={1500}
-                  className="-mb-12 w-[57rem] max-w-none rounded-tl-xl bg-gray-800 ring-1 ring-white/10"
+                  className="-mb-12 w-[57rem] rounded-tl-xl bg-gray-800 ring-1 ring-white/10"
                 />
               </div>
             </div>
@@ -226,7 +219,8 @@ export default function QuemSomos() {
                 Rede de Profissionais Parceiros
               </p>
               <p className="mt-6 text-3xl/8 text-gray-600 pt-8 leading-relaxed">
-              Temos uma ampla rede de pintores parceiros altamente qualificados.
+                Temos uma ampla rede de pintores parceiros altamente
+                qualificados.
               </p>
               <GenWppBtn />
             </div>
@@ -243,7 +237,7 @@ export default function QuemSomos() {
                   src="/equipe-portal/dia-pintor.jpg"
                   width={2432}
                   height={1500}
-                  className="-mb-12 w-[57rem] max-w-none rounded-tl-xl bg-gray-800 ring-1 ring-white/10"
+                  className="-mb-12 w-[57rem] rounded-tl-xl bg-gray-800 "
                 />
               </div>
             </div>

@@ -88,6 +88,8 @@ export default function Home() {
     { src: "/logos/grafftex.png", alt: "Grafftex" },
   ];
 
+  const phoneNumber = "5567998857070";
+
   return (
     <div className="flexbox-master flex flex-col w-full bg-[#d65126]">
       {/* Hero card */}
@@ -233,7 +235,7 @@ export default function Home() {
         </div>
 
         {/* Coluna Direita - Imagem do Rolo de Pintura preenchendo altura */}
-        <div className="flex ">
+        <div className="hidden lg:block ">
           <img
             src="/bg/bg1.png"
             alt="Rolo de Pintura"
@@ -245,7 +247,6 @@ export default function Home() {
       {/* Flexbox2 - Dicas da Portal */}
       <div
         className="dicas flex flex-col bg-cover shadow-lg my-3 md:my-4 lg:my-8 "
-
         style={{
           backgroundImage: "url('/bg/bg3.jpg')",
           backgroundColor: "rgba(255, 255, 255, 0.1)", // Branco com 90% de opacidade
@@ -253,42 +254,40 @@ export default function Home() {
         }}
       >
         {/* Container principal respeitando os limites da imagem */}
-        <div className="flex flex-col lg:w-[70%] p-8 backdrop-blur-3xl gap-1 md:gap-2 lg:gap-2 py-2 md:py-4 lg:py-8">
-         
-            {/* Título */}
-            <h2 className="text-gray-900 lg:text-4xl md:text-3xl text-3xl font-bold lg:text-left md:text-center text-center ">
-              Dicas da Portal
-            </h2>
-            <p className=" text-lg text-white font-bold text-center md:text-center lg:text-left">
-              Tudo o que você precisa saber para acertar na pintura
-            </p>
+        <div className="flex flex-col lg:w-[60%] p-8 backdrop-blur-lg gap-1 md:gap-2 lg:gap-2 py-2 md:py-4 lg:py-8">
+          {/* Título */}
+          <h2 className="text-gray-900 lg:text-4xl md:text-3xl text-3xl font-bold lg:text-left md:text-center text-center ">
+            Dicas da Portal
+          </h2>
+          <p className=" text-lg text-white font-bold text-center md:text-center lg:text-left">
+            Tudo o que você precisa saber para acertar na pintura
+          </p>
 
-            {/* Embla Carousel */}
-            <Carousel />
+          {/* Embla Carousel */}
+          <Carousel />
 
-            <div className="flex flex-col items-center">
-              <Link
-                href="/blog"
-                className="flex hover:bg-gray-600 hover:text-gray-200 rounded-full p-2 text-bold mt-6 text-[#f9fcfd] gap-1  hover:underline"
+          <div className="flex flex-col items-center">
+            <Link
+              href="/blog"
+              className="flex hover:bg-gray-600 hover:text-gray-200 rounded-full p-2 text-bold mt-6 text-[#f9fcfd] gap-1  hover:underline"
+            >
+              Veja mais
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                strokeWidth="1"
+                stroke="currentColor"
+                className="w-5 h-5"
               >
-                Veja mais
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  fill="none"
-                  viewBox="0 0 24 24"
-                  strokeWidth="1"
-                  stroke="currentColor"
-                  className="w-5 h-5"
-                >
-                  <path
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    d="M9 5l7 7-7 7"
-                  />
-                </svg>
-              </Link>
-            </div>
-     
+                <path
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  d="M9 5l7 7-7 7"
+                />
+              </svg>
+            </Link>
+          </div>
         </div>
       </div>
 
@@ -335,7 +334,7 @@ export default function Home() {
         {/* Fundo da Seção */}
 
         {/* Conteúdo */}
-        <div className="left-side flex flex-col  my-auto items-center lg:justify-center lg:items-start p-4 h-full w-full">
+        <div className="left-side flex flex-col  my-auto items-center lg:items-end lg:text-left lg:justify-center p-4 h-full w-full">
           <h2 className="text-[#011F4B] lg:text-4xl md:text-3xl text-3xl font-bold">
             Contato
           </h2>
@@ -346,13 +345,15 @@ export default function Home() {
               Faça seu orçamento:
             </span>
           </div>
-          <div className="flex items-center gap-3 mt-4">
+          <div className="flex items-center gap-3 mt-4 lg:p-2 rounded-full hover:bg-gray-300">
             <img
               src="/icons/wpp-icon.gif"
               alt="WhatsApp"
               className="w-8 h-8 rounded-full"
             />
-            <span className="text-[#011F4B] text-2xl">(067) 99885-7070</span>
+            <a href={`https://wa.me/${phoneNumber}`}>
+              <span className="text-[#011F4B] text-2xl ">(067) 99885-7070</span>
+            </a>
           </div>
 
           {/* Email */}
