@@ -76,9 +76,9 @@ export function Carousel() {
           <Link
             key={post.id}
             href={`/blog/${slugify(post.title)}`}
-            className="block flex-shrink-0 embla-slide"
+            className="flex-shrink-0 block embla-slide"
           >
-            <article className="lg:w-[60%] md:w-full w-full flex flex-col md:flex-col lg:flex-row lg:gap-8 bg-white/70 shadow-lg rounded-xl p-2 md:p-8 lg:p-12 border border-gray-200 items-center cursor-pointer transition hover:bg-gray-100">
+            <article className="lg:w-[60%] md:w-full w-full flex flex-col md:flex-col lg:flex-row lg:gap-8 bg-white/70 shadow-lg rounded-xl p-4 md:p-6 lg:p-12 border border-gray-200 items-center cursor-pointer transition hover:bg-gray-100">
               {/* Imagem */}
               <img
                 alt={post.title}

@@ -139,7 +139,7 @@ export default function Home() {
           </p>
 
           <div ref={flexboxRef2} className="opacity-0 translate-y-10">
-            <dl className="flex flex-col mt-7 md:mt-7 lg:mt-14 max-w-xl space-y-8 lg:text-base/7 text-gray-600 lg:max-w-none">
+            <dl className="flex flex-col mt-7 md:mt-7 lg:mt-14 max-w-xl space-y-8 lg:text-base/7 md:text-md text-sm text-gray-600 lg:max-w-none">
               {features.map((feature) => (
                 <div key={feature.name} className="relative pl-9">
                   <dt className="inline font-semibold text-gray-900">
@@ -200,13 +200,13 @@ export default function Home() {
             Marcas Parceiras
           </p>
 
-          <div className="grid grid-cols-3 pt-6 gap-4 md:gap-3 lg:gap-6 justify-center items-center">
+          <div className="grid grid-cols-3 pt-6 gap-3 md:gap-3 lg:gap-6 justify-center items-center">
             {logos.map((logo, index) => (
               <img
                 key={index}
                 src={logo.src}
                 alt={logo.alt}
-                className="flex w-full lg:w-[120px]  object-cover mx-auto"
+                className="flex w-full lg:w-[120px] object-contain"
               />
             ))}
           </div>
@@ -264,7 +264,7 @@ export default function Home() {
           </p>
 
           {/* Embla Carousel */}
-          
+
           <Carousel />
 
           <div className="flex flex-col items-center">
