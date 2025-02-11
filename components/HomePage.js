@@ -113,10 +113,10 @@ export default function Home() {
       </div>
 
       {/* 1st container*/}
-      <div className="flex flex-col md:flex-col lg:flex-row gap-4 p-8 my-3 md:my-4 lg:my-8 mx-6 md:mx-8 lg:mx-16  bg-white rounded-xl shadow-lg">
+      <div className="flex flex-col md:flex-col lg:flex-row gap-4 p-8 my-3 md:my-4 lg:my-8 mx-6 md:mx-8 lg:mx-16 w-full bg-white rounded-xl shadow-lg">
         {/* Coluna Esquerda - Texto + Logos */}
         <div className="flex flex-col">
-          <p className="text-gray-900 leading-relaxed lg:text-4xl md:text-3xl text-2xl font-bold text-center md:text-center lg:text-left">
+          <p className="text-gray-800 leading-relaxed lg:text-4xl md:text-3xl text-2xl font-bold text-center md:text-center lg:text-left">
             As melhores marcas para sua obra
           </p>
           <p className="lg:text-lg/8 md:text-md sm:text-sm text-gray-600 pt-4 ">
@@ -139,17 +139,19 @@ export default function Home() {
           </p>
 
           <div ref={flexboxRef2} className="opacity-0 translate-y-10">
-            <dl className="flex flex-col mt-7 md:mt-7 lg:mt-14 max-w-xl space-y-8 lg:text-base/7 md:text-md text-sm text-gray-600 lg:max-w-none">
+            <dl className="flex flex-col mt-7 md:mt-7 lg:mt-8 space-y-8 lg:text-base/8 md:text-md text-sm text-gray-600 ">
               {features.map((feature) => (
                 <div key={feature.name} className="relative pl-9">
-                  <dt className="inline font-semibold text-gray-900">
+                  <dt className="inline font-semibold text-gray-800">
                     <feature.icon
                       aria-hidden="true"
                       className="absolute left-1 top-1 size-5 text-[#d85b17]"
                     />
                     {feature.name}
                   </dt>{" "}
-                  <dd className="inline">{feature.description}</dd>
+                  <dd className="inline lg:text-base/8 md:text-md text-sm text-gray-600">
+                    {feature.description}
+                  </dd>
                 </div>
               ))}
             </dl>
@@ -180,11 +182,11 @@ export default function Home() {
         </div>
 
         {/* Coluna Direita - Imagem da fachada*/}
-        <div className="rounded-xl  flex justify-end items-center">
+        <div className="rounded-xl flex justify-end lg:w-[50%] items-center">
           <img
             src="/idv-portal/fachada-loja-3.jpeg"
             alt="Fachada"
-            className="w-full h-full bg-contain rounded-xl  rounded-r-xl"
+            className="w-full h-full bg-contain rounded-xl"
           />
         </div>
       </div>
@@ -235,7 +237,7 @@ export default function Home() {
         </div>
 
         {/* Coluna Direita - Imagem do Rolo de Pintura preenchendo altura */}
-        <div className="hidden lg:block ">
+        <div className="hidden lg:inset-0 lg:block ">
           <img
             src="/bg/bg1.png"
             alt="Rolo de Pintura"
@@ -310,10 +312,10 @@ export default function Home() {
         </div>
         <div className="flex flex-col items-center lg:m-6 lg:mt-12">
           <div className="flex rounded-2xl w-fit lg:self-start bg-gray-50 lg:m-8 lg:p-4 m-2 p-1 items-center flex-col">
-            <h3 className="text-sm lg:text-2xl font-semibold text-gray-900">
+            <h3 className="text-sm lg:text-2xl text-center font-semibold text-gray-900">
               Horário de Funcionamento
             </h3>
-            <address className="lg:mt-3 space-y-1 mt-1  justify-end  text-sm md:text-md lg:text-2xl not-italic text-gray-600">
+            <address className="lg:mt-3 space-y-1 mt-1 text-center justify-end  text-sm md:text-md lg:text-2xl not-italic text-gray-600">
               <p>Segunda a Sexta 07:30 - 18:00</p>
               <p>Sábado 08:00 - 12:00</p>
             </address>
@@ -322,7 +324,7 @@ export default function Home() {
             <h3 className=" text-sm md:text-md lg:text-2xl font-semibold text-gray-900">
               Nosso endereço
             </h3>
-            <address className="mt-3 space-y-1 justify-end  text-sm md:text-md lg:text-2xl not-italic text-gray-600">
+            <address className="mt-3 space-y-1 justify-end text-center text-sm md:text-md lg:text-2xl not-italic text-gray-600">
               <p>Rua Conceição do Rio Pardo, 2158</p>
               <p>Ribas do Rio Pardo - MS</p>
             </address>
