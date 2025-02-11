@@ -69,7 +69,7 @@ export function Carousel() {
     <div className="flex relative">
       {/* Contêiner do Carousel */}
       <div
-        className="flex gap-16 mt-4 lg:mt-6 items-center w-full h-full overflow-hidden"
+        className="flex gap-16 mt-4 lg:mt-6  w-full h-full overflow-hidden"
         ref={emblaRef}
       >
         {posts.map((post) => (
