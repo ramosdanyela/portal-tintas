@@ -264,6 +264,7 @@ export default function Home() {
           </p>
 
           {/* Embla Carousel */}
+          
           <Carousel />
 
           <div className="flex flex-col items-center">

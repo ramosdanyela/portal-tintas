@@ -66,52 +66,44 @@ export function Carousel() {
   }, [emblaApi, onSelect]);
 
   return (
-    <div className="flex mt-4 lg:mt-6 items-center overflow-hidden">
+    
+    <div className="flex">
       {/* Contêiner do Carousel */}
-      <div className="h-full w-full" ref={emblaRef}>
-        <div className="flex gap-4 w-full h-full">
-          {posts.map((post) => (
-            <Link
-              key={post.id}
-              href={`/blog/${slugify(post.title)}`}
-              className="block flex-shrink-0 embla-slide"
-            >
-              <article className="flex flex-col md:flex-col lg:flex-row lg:gap-8 bg-white/70 backdrop-blur-lg shadow-lg rounded-xl p-2 md:p-8 lg:p-12 border border-gray-200 lg:max-w-[650px] lg:h-[400px] md:max-w-[500px] md:h-[308px] max-w-[320px] h-[197px] cursor-pointer transition hover:bg-gray-100">
-                {/* Imagem à esquerda */}
-                <div className="flex flex-col md:flex-row lg:flex-row">
-                  <img
-                    alt={post.title}
-                    src={post.imageUrl}
-                    className="rounded-2xl object-cover"
-                  />
-                  <div className="inset-0 rounded-2xl ring-1 ring-gray-900/10" />
+      <div className="flex gap-16 mt-4 lg:mt-6 items-center w-full h-full" ref={emblaRef} >
+        {posts.map((post) => (
+          <Link
+          
+            key={post.id}
+            href={`/blog/${slugify(post.title)}`}
+            className="block flex-shrink-0 embla-slide overflow-hidden"
+          >
+            <article className="lg:w-[60%] md:w-full flex flex-col md:flex-col lg:flex-row lg:gap-8 bg-white/70  shadow-lg rounded-xl p-2 md:p-8 lg:p-12 border border-gray-200 items-center cursor-pointer transition hover:bg-gray-100" >
+              {/* Imagem */}
+              <div className="flex flex-col md:flex-col lg:flex-row items-center">
+                <img
+                  alt={post.title}
+                  src={post.imageUrl}
+                  className="flex rounded-2xl lg:h-[300px] lg:w-[350px] w-[400px] h-[300px] object-cover"
+                />
+              </div>
+              {/* Texto do post */}
+              <div className="w-2/3 flex flex-col justify-center">
+                <div className="mt-4">
+                  <h3 className="lg:text-xl font-semibold text-gray-900 group-hover:text-gray-600">
+                    {post.title}
+                  </h3>
+                  <p className="mt-4 text-sm lg:text-lg text-gray-600">
+                    {post.description}
+                  </p>
                 </div>
-
-                {/* Texto do post */}
-                <div className="w-2/3 flex flex-col justify-center">
-                  <div className="flex items-center gap-x-4 text-xs text-gray-500">
-                    <span className="relative z-10 rounded-full bg-gray-100 px-3 py-1.5 font-medium text-gray-600">
-                      {post.category}
-                    </span>
-                  </div>
-
-                  <div className="group relative mt-4">
-                    <h3 className="lg:text-xl font-semibold text-gray-900 group-hover:text-gray-600">
-                      {post.title}
-                    </h3>
-                    <p className="mt-4 text-sm lg:text-lg text-gray-600">
-                      {post.description}
-                    </p>
-                  </div>
-                </div>
-              </article>
-            </Link>
-          ))}
-        </div>
+              </div>
+            </article>
+          </Link>
+        ))}
       </div>
 
       {/* Botões de Navegação */}
-      <div className=" top-1/2 left-1 transform -translate-y-1/2">
+      <div className="absolute top-1/2 left-1 transform -translate-y-1/2">
         <button
           className={`bg-gray-400 opacity-50 text-white p-2 rounded-full shadow-md transition ${
             prevDisabled ? "opacity-50 cursor-not-allowed" : "hover:bg-gray-600"
@@ -122,7 +114,7 @@ export function Carousel() {
           <ChevronLeftIcon className="h-6 w-6 text-white" />
         </button>
       </div>
-      <div className="top-1/2 right-1 transform -translate-y-1/2">
+      <div className="absolute top-1/2 right-1 transform -translate-y-1/2">
         <button
           className={`bg-gray-400 text-white opacity-50 p-2 rounded-full shadow-md transition ${
             nextDisabled ? "opacity-50 cursor-not-allowed" : "hover:bg-gray-600"
