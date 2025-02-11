@@ -113,7 +113,7 @@ export default function Home() {
       </div>
 
       {/* 1st container*/}
-      <div className="flex flex-col md:flex-col lg:flex-row gap-4 p-8 my-3 md:my-4 lg:my-8 mx-6 md:mx-8 lg:mx-16 w-full bg-white rounded-xl shadow-lg">
+      <div className="flex flex-col md:flex-col lg:flex-row gap-4 p-8 my-3 md:my-4 lg:my-8 mx-6 md:mx-8 lg:mx-16 bg-white rounded-xl shadow-lg">
         {/* Coluna Esquerda - Texto + Logos */}
         <div className="flex flex-col">
           <p className="text-gray-800 leading-relaxed lg:text-4xl md:text-3xl text-2xl font-bold text-center md:text-center lg:text-left">
