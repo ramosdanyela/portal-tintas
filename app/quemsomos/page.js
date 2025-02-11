@@ -50,8 +50,7 @@ export default function QuemSomos() {
   }, []);
 
   return (
-    <div className="flex flex-col mt-20 bg-[#f9fcfd] w-full">
-
+    <div className="flex flex-col mt-30 bg-[#f9fcfd] w-full">
       <div ref={flexboxRef1} className="md:px-6 lg:px-8">
         <div className="flex flex-col md:flex-row lg:flex-row  w-full gap-x-4 lg:items-start">
           {/* Coluna da Esquerda - Descrição */}
@@ -78,20 +77,13 @@ export default function QuemSomos() {
 
           {/* Coluna Direita - Imagem */}
           <div className="sm:px-6 lg:px-0">
-            <div className="flex bg-[#d85b17]">
-              <img
-                alt="Product screenshot"
-                src="/bg/bg1.png"
-                width={2432}
-                height={1442}
-                className="w-full h-full -scale-x-100 bg-contain"
-              />
-
-              <div
-                aria-hidden="true"
-                className="pointer-events-none absolute inset-0 ring-1 ring-inset ring-black/10 sm:rounded-3xl"
-              />
-            </div>
+            <img
+              alt="Product screenshot"
+              src="/bg/bg1.png"
+              width={2432}
+              height={1442}
+              className="w-full h-full -scale-x-100 bg-cover"
+            />
           </div>
         </div>
 
@@ -101,26 +93,18 @@ export default function QuemSomos() {
           className="opacity-0 translate-y-10 flex flex-col md:flex-col lg:flex-row h-full min-h-[500px] gap-x-16 justify-between mx-auto w-full mt-32 mb-32"
         >
           <div className="sm:px-6 lg:px-0">
-            <div className="flex relative isolate overflow-hidden bg-[#d85b17] px-4 pt-16 sm:mx-auto sm:max-w-2xl sm:rounded-3xl sm:pl-16 sm:pr-0 sm:pt-16 lg:mx-0 lg:max-w-none">
-              <div
-                aria-hidden="true"
-                className="flex absolute bottom-0 right-0 -z-0 w-full origin-bottom-right skew-x-20 bg-[#D85B32] opacity-20"
-              />
-              <div className="flex mx-auto max-w-2xl shadow-4xl sm:mx-0 sm:max-w-none">
-                <img
-                  alt="Equipe especializada"
-                  src="/equipe-portal/equipe-portal-fev.jpg"
-                  width={2432}
-                  height={1500}
-                  className="-mb-2 w-[57rem] rounded-tl-xl bg-gray-800 ring-1 ring-white/10"
-                />
-              </div>
-            </div>
+            <img
+              alt="Equipe especializada"
+              src="/equipe-portal/equipe-portal-fev.jpg"
+              width={2432}
+              height={1500}
+              className="-mb-2 w-[57rem] rounded-tl-xl bg-gray-800 ring-1 ring-white/10"
+            />
           </div>
 
           <div className="flex flex-col flex-1 justify-between max-w-2xl lg:mx-0 h-full w-full px-6 lg:px-0">
-            <p className="flex mt-2 text-right text-pretty text-xl md:text-2xl lg:text-4xl leading-relaxed font-semibold text-gray-900 sm:text-5xl items-center gap-2">
-              <UserGroupIcon className="text-lg md:text-2xl lg:text-4xl text-right text-[#d85b17]" />
+            <p className="flex mt-2 text-right text-pretty text-xl md:text-2xl lg:text-4xl leading-relaxed font-semibold text-gray-900 items-center gap-2">
+              <UserGroupIcon className="inline-block w-[1em] h-[1em] text-[#d85b17]" />
               Equipe especializada
             </p>
             <p className="lg:mt-6 text-sm md:text-md lg:text-3xl/8 text-gray-600 pt-8 leading-relaxed">
@@ -141,7 +125,7 @@ export default function QuemSomos() {
           <div className="h-full w-full px-6 lg:px-0 lg:pr-4 lg:pt-4">
             <div className="max-w-2xl lg:mx-0 lg:max-w-lg">
               <p className="mt-2 text-pretty text-4xl leading-relaxed font-semibold text-gray-900 sm:text-5xl flex items-center gap-2">
-                <StarIcon className="text-4xl text-[#d85b17]" />
+                <StarIcon className="inline-block w-[1em] h-[1em] text-[#d85b17]" />
                 Atendimento personalizado
               </p>
               <p className="mt-6 text-3xl/8 text-gray-600 pt-8 leading-relaxed">
@@ -195,7 +179,7 @@ export default function QuemSomos() {
           <div className="h-full w-full px-6 lg:px-0 lg:pr-4 lg:pt-4">
             <div className="mx-auto max-w-2xl lg:mx-0 lg:max-w-lg">
               <p className="mt-2 text-pretty text-4xl leading-relaxed font-semibold text-gray-900 sm:text-5xl flex items-center gap-2">
-                <PaintBrushIcon className="text-4xl text-[#d85b17]" />
+                <PaintBrushIcon className="inline-block w-[1em] h-[1em] text-[#d85b17]" />
                 Melhores Marcas
               </p>
               <p className="mt-6 text-3xl/8 text-gray-600 pt-8 leading-relaxed">
@@ -215,7 +199,7 @@ export default function QuemSomos() {
           <div className="h-full w-full px-6 lg:px-0 lg:pr-4 lg:pt-4">
             <div className="mx-auto max-w-2xl lg:mx-0 lg:max-w-lg">
               <p className="mt-2 text-pretty whitespace-nowrap leading-relaxed font-semibold text-gray-900 sm:text-5xl flex items-start gap-2">
-                <UserGroupIcon className="text-4xl text-[#d85b17]" />
+                <UserGroupIcon className="inline-block w-[1em] h-[1em] text-[#d85b17]" />
                 Rede de Profissionais Parceiros
               </p>
               <p className="mt-6 text-3xl/8 text-gray-600 pt-8 leading-relaxed">

@@ -7,7 +7,6 @@ import { ScrollTrigger } from "gsap/ScrollTrigger";
 
 gsap.registerPlugin(ScrollTrigger);
 
-
 const navigation = {
   social: [
     {
@@ -39,12 +38,8 @@ const navigation = {
   ],
 };
 
-
-
-
 export default function Contato() {
   const flexboxRef1 = useRef(null);
-  
 
   useEffect(() => {
     const animateSection = (ref) => {
@@ -52,14 +47,15 @@ export default function Contato() {
         gsap.fromTo(
           ref.current,
           { opacity: 0, y: 50 }, // Estado inicial
-          { 
-            opacity: 1, y: 0, 
-            duration: 1, 
-            ease: "power2.out", 
-            stagger: 0.2, 
+          {
+            opacity: 1,
+            y: 0,
+            duration: 1,
+            ease: "power2.out",
+            stagger: 0.2,
             scrollTrigger: {
               trigger: ref.current,
-              start: "top 80%", 
+              start: "top 80%",
               end: "top 50%",
               toggleActions: "play none none none",
             },
@@ -67,15 +63,16 @@ export default function Contato() {
         );
       }
     };
-  
+
     animateSection(flexboxRef1);
-    
   }, []);
 
-
   return (
-    <div className="bg-white py-24 sm:py-32">
-      <div ref={flexboxRef1} className="opacity-0 translate-y-10 mx-auto max-w-7xl px-6 lg:px-8">
+    <div className="bg-white py-24 sm:py-32 mt-20">
+      <div
+        ref={flexboxRef1}
+        className="opacity-0 translate-y-10 mx-auto max-w-7xl px-6 lg:px-8"
+      >
         <div className="mx-auto max-w-2xl space-y-16 divide-y divide-gray-100 lg:mx-0 lg:max-w-none">
           <div className="grid grid-cols-1 gap-10 lg:grid-cols-3">
             <div>
@@ -136,17 +133,17 @@ export default function Contato() {
             </div>
           </div>
 
-                   <div className="grid grid-cols-1 gap-10 pt-16 lg:grid-cols-3">
+          <div className="grid grid-cols-1 gap-10 pt-16 lg:grid-cols-3">
             <div>
               <h2 className="text-pretty text-4xl font-semibold tracking-tight text-gray-900">
                 Localização
               </h2>
               <p className="mt-4 whitespace-pre-line font-bold text-base/7 text-[#d85b17]">
-  Visite a nossa loja!
-  <span className="block mt-2 ">Estamos te esperando para um cafézinho ☕</span>
-</p>
-
-
+                Visite a nossa loja!
+                <span className="block mt-2 ">
+                  Estamos te esperando para um cafézinho ☕
+                </span>
+              </p>
             </div>
             <div className="flex-row gap-6 sm:grid-cols-2 lg:col-span-2 lg:gap-8">
               <div className="rounded-2xl bg-gray-50 p-10">

@@ -81,7 +81,7 @@ export function Carousel() {
                         <img
                            alt={post.title}
                            src={post.imageUrl}
-                           className="flex rounded-2xl lg:h-[300px] lg:w-[350px] w-[280px] h-[350px] object-cover"
+                           className="flex rounded-2xl lg:h-[300px] lg:w-[350px] w-[300px] h-[300px] object-cover"
                         />
                         {/* Texto do post */}
                         <div className="w-2/3 flex flex-col justify-center">
@@ -89,7 +89,7 @@ export function Carousel() {
                               <h3 className="lg:text-xl font-semibold text-gray-900 group-hover:text-gray-600">
                                  {post.title}
                               </h3>
-                              <p className="mt-4 text-sm lg:text-lg text-gray-600">
+                              <p className="mt-2 text-sm lg:text-lg text-gray-600">
                                  {post.description}
                               </p>
                            </div>

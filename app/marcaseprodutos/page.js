@@ -41,7 +41,7 @@ export default function Marcas() {
 
 
   return (
-    <div className="flex flex-row bg-[#f9fcfd] w-full h-full">
+    <div className="flex flex-row bg-[#f9fcfd] mt-30 w-full h-full">
       <div className="flex py-24 w-full items-center h-full   flex-col justify-center">
        <div ref={flexboxRef1} className="m-4 opacity-0 text-center translate-y-10">
         <p className="text-balance text-center sm:text-5xl  mb-4 text-4xl font-semibold tracking-tight text-gray-900 ">
