@@ -66,26 +66,25 @@ export function Carousel() {
   }, [emblaApi, onSelect]);
 
   return (
-    
-    <div className="flex">
+    <div className="flex relative">
       {/* Contêiner do Carousel */}
-      <div className="flex gap-16 mt-4 lg:mt-6 items-center w-full h-full" ref={emblaRef} >
+      <div
+        className="flex gap-16 mt-4 lg:mt-6 items-center w-full h-full overflow-hidden"
+        ref={emblaRef}
+      >
         {posts.map((post) => (
           <Link
-          
             key={post.id}
             href={`/blog/${slugify(post.title)}`}
-            className="block flex-shrink-0 embla-slide overflow-hidden"
+            className="block flex-shrink-0 embla-slide"
           >
-            <article className="lg:w-[60%] md:w-full flex flex-col md:flex-col lg:flex-row lg:gap-8 bg-white/70  shadow-lg rounded-xl p-2 md:p-8 lg:p-12 border border-gray-200 items-center cursor-pointer transition hover:bg-gray-100" >
+            <article className="lg:w-[60%] md:w-full w-full flex flex-col md:flex-col lg:flex-row lg:gap-8 bg-white/70 shadow-lg rounded-xl p-2 md:p-8 lg:p-12 border border-gray-200 items-center cursor-pointer transition hover:bg-gray-100">
               {/* Imagem */}
-              <div className="flex flex-col md:flex-col lg:flex-row items-center">
-                <img
-                  alt={post.title}
-                  src={post.imageUrl}
-                  className="flex rounded-2xl lg:h-[300px] lg:w-[350px] w-[400px] h-[300px] object-cover"
-                />
-              </div>
+              <img
+                alt={post.title}
+                src={post.imageUrl}
+                className="flex rounded-2xl lg:h-[300px] lg:w-[350px] w-[280px] h-[350px] object-cover"
+              />
               {/* Texto do post */}
               <div className="w-2/3 flex flex-col justify-center">
                 <div className="mt-4">
@@ -100,30 +99,34 @@ export function Carousel() {
             </article>
           </Link>
         ))}
-      </div>
 
-      {/* Botões de Navegação */}
-      <div className="absolute top-1/2 left-1 transform -translate-y-1/2">
-        <button
-          className={`bg-gray-400 opacity-50 text-white p-2 rounded-full shadow-md transition ${
-            prevDisabled ? "opacity-50 cursor-not-allowed" : "hover:bg-gray-600"
-          }`}
-          onClick={() => emblaApi && emblaApi.scrollPrev()}
-          disabled={prevDisabled}
-        >
-          <ChevronLeftIcon className="h-6 w-6 text-white" />
-        </button>
-      </div>
-      <div className="absolute top-1/2 right-1 transform -translate-y-1/2">
-        <button
-          className={`bg-gray-400 text-white opacity-50 p-2 rounded-full shadow-md transition ${
-            nextDisabled ? "opacity-50 cursor-not-allowed" : "hover:bg-gray-600"
-          }`}
-          onClick={() => emblaApi && emblaApi.scrollNext()}
-          disabled={nextDisabled}
-        >
-          <ChevronRightIcon className="h-6 w-6 text-white" />
-        </button>
+        {/* Botões de Navegação */}
+        <div className="absolute top-1/2 left-1 transform -translate-y-1/2">
+          <button
+            className={`bg-gray-400 opacity-50 text-white p-2 rounded-full shadow-md transition ${
+              prevDisabled
+                ? "opacity-50 cursor-not-allowed"
+                : "hover:bg-gray-600"
+            }`}
+            onClick={() => emblaApi && emblaApi.scrollPrev()}
+            disabled={prevDisabled}
+          >
+            <ChevronLeftIcon className="h-6 w-6 text-white" />
+          </button>
+        </div>
+        <div className="absolute top-1/2 right-1 transform -translate-y-1/2">
+          <button
+            className={`bg-gray-400 text-white opacity-50 p-2 rounded-full shadow-md transition ${
+              nextDisabled
+                ? "opacity-50 cursor-not-allowed"
+                : "hover:bg-gray-600"
+            }`}
+            onClick={() => emblaApi && emblaApi.scrollNext()}
+            disabled={nextDisabled}
+          >
+            <ChevronRightIcon className="h-6 w-6 text-white" />
+          </button>
+        </div>
       </div>
     </div>
   );
