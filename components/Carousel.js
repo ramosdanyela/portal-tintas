@@ -83,7 +83,7 @@ export function Carousel() {
               <img
                 alt={post.title}
                 src={post.imageUrl}
-                className="flex rounded-2xl lg:h-[300px] lg:w-[350px] w-[280px] h-[350px] object-cover"
+                className="flex rounded-2xl lg:h-[300px] lg:w-[350px] w-[400px] h-[300px] object-cover"
               />
               {/* Texto do post */}
               <div className="w-2/3 flex flex-col justify-center">

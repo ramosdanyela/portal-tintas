@@ -248,7 +248,7 @@ export default function Home() {
 
       {/* Flexbox2 - Dicas da Portal */}
       <div
-        className="dicas flex flex-col bg-cover shadow-lg my-3 md:my-4 lg:my-8 "
+        className="dicas flex flex-col bg-cover shadow-lg  my-5 md:my-4 lg:my-8 "
         style={{
           backgroundImage: "url('/bg/bg3.jpg')",
           backgroundColor: "rgba(255, 255, 255, 0.1)", // Branco com 90% de opacidade
@@ -256,7 +256,7 @@ export default function Home() {
         }}
       >
         {/* Container principal respeitando os limites da imagem */}
-        <div className="flex flex-col lg:w-[60%] p-8 backdrop-blur-lg gap-1 md:gap-2 lg:gap-2 py-2 md:py-4 lg:py-8">
+        <div className="flex flex-col lg:w-[60%] pt-10 backdrop-blur-lg gap-1 md:gap-2 lg:gap-2 py-2 md:py-4 lg:py-8">
           {/* Título */}
           <h2 className="text-gray-900 lg:text-4xl md:text-3xl text-3xl font-bold lg:text-left md:text-center text-center ">
             Dicas da Portal
@@ -272,7 +272,7 @@ export default function Home() {
           <div className="flex flex-col items-center">
             <Link
               href="/blog"
-              className="flex hover:bg-gray-600 hover:text-gray-200 rounded-full p-2 text-bold mt-6 text-[#f9fcfd] gap-1  hover:underline"
+              className="flex hover:bg-gray-600 hover:text-gray-200 rounded-full p-2 text-bold  text-[#f9fcfd] gap-1  hover:underline"
             >
               Veja mais
               <svg
