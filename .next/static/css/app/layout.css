@@ -1438,6 +1438,10 @@ video {
   margin-top: 0.75rem;
   margin-bottom: 0.75rem;
 }
+.my-5 {
+  margin-top: 1.25rem;
+  margin-bottom: 1.25rem;
+}
 .my-6 {
   margin-top: 1.5rem;
   margin-bottom: 1.5rem;
@@ -1445,14 +1449,6 @@ video {
 .my-auto {
   margin-top: auto;
   margin-bottom: auto;
-}
-.my-4 {
-  margin-top: 1rem;
-  margin-bottom: 1rem;
-}
-.my-5 {
-  margin-top: 1.25rem;
-  margin-bottom: 1.25rem;
 }
 .-mb-12 {
   margin-bottom: -3rem;
@@ -1578,8 +1574,8 @@ video {
 .h-\[350px\] {
   height: 350px;
 }
-.h-\[400px\] {
-  height: 400px;
+.h-\[450px\] {
+  height: 450px;
 }
 .h-\[90px\] {
   height: 90px;
@@ -1589,15 +1585,6 @@ video {
 }
 .h-full {
   height: 100%;
-}
-.h-\[300px\] {
-  height: 300px;
-}
-.h-\[0px\] {
-  height: 0px;
-}
-.h-\[450px\] {
-  height: 450px;
 }
 .min-h-\[500px\] {
   min-height: 500px;
@@ -1638,24 +1625,6 @@ video {
 .w-full {
   width: 100%;
 }
-.w-\[250px\] {
-  width: 250px;
-}
-.w-\[0px\] {
-  width: 0px;
-}
-.w-\[33500px\] {
-  width: 33500px;
-}
-.w-\[30px\] {
-  width: 30px;
-}
-.w-\[350px\] {
-  width: 350px;
-}
-.w-\[400px\] {
-  width: 400px;
-}
 .max-w-2xl {
   max-width: 42rem;
 }
@@ -1673,9 +1642,6 @@ video {
 }
 .flex-1 {
   flex: 1 1 0%;
-}
-.flex-shrink-0 {
-  flex-shrink: 0;
 }
 .origin-bottom-right {
   transform-origin: bottom right;
@@ -1997,6 +1963,9 @@ video {
 .pr-4 {
   padding-right: 1rem;
 }
+.pt-10 {
+  padding-top: 2.5rem;
+}
 .pt-16 {
   padding-top: 4rem;
 }
@@ -2011,9 +1980,6 @@ video {
 }
 .pt-8 {
   padding-top: 2rem;
-}
-.pt-10 {
-  padding-top: 2.5rem;
 }
 .text-center {
   text-align: center;
@@ -2230,8 +2196,7 @@ video {
 .duration-300 {
   transition-duration: 300ms;
 }
-@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Poppins:wght@300;400;700&display=swap');
-
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Poppins:wght@300;400;700&display=swap");
 
 :root {
   --background: #ffffff;
@@ -2249,6 +2214,18 @@ body {
   color: var(--foreground);
   background: var(--background);
   font-family: "Inter";
+}
+
+.embla__container {
+  display: flex;
+  touch-action: pan-y pinch-zoom;
+  margin-left: calc(20px * -1);
+}
+
+.embla__slide {
+  transform: translate3d(0, 0, 0);
+  flex: 0 0 100%;
+  min-width: 0;
 }
 
 .hover\:bg-gray-100:hover {
@@ -2453,14 +2430,6 @@ body {
     display: flex;
   }
 
-  .md\:h-\[\] {
-    height: ;
-  }
-
-  .md\:h-\[400p\] {
-    height: 400p;
-  }
-
   .md\:h-\[400px\] {
     height: 400px;
   }
@@ -2531,13 +2500,6 @@ body {
     font-size: 1.25rem;
     line-height: 1.75rem;
   }
-
-  @media (min-width: 1024px) {
-
-    .md\:lg\:h-\[400px\] {
-      height: 400px;
-    }
-  }
 }
 
 @media (min-width: 1024px) {
@@ -2597,14 +2559,6 @@ body {
     margin-top: 2rem;
   }
 
-  .lg\:mr-16 {
-    margin-right: 4rem;
-  }
-
-  .lg\:ml-16 {
-    margin-left: 4rem;
-  }
-
   .lg\:block {
     display: block;
   }
@@ -2623,14 +2577,6 @@ body {
 
   .lg\:h-\[300px\] {
     height: 300px;
-  }
-
-  .lg\:h-\[00px\] {
-    height: 00px;
-  }
-
-  .lg\:h-\[250px\] {
-    height: 250px;
   }
 
   .lg\:h-\[400px\] {
@@ -2721,16 +2667,16 @@ body {
     padding: 3rem;
   }
 
+  .lg\:p-16 {
+    padding: 4rem;
+  }
+
   .lg\:p-2 {
     padding: 0.5rem;
   }
 
   .lg\:p-4 {
     padding: 1rem;
-  }
-
-  .lg\:p-16 {
-    padding: 4rem;
   }
 
   .lg\:px-0 {
@@ -2821,12 +2767,6 @@ body {
 
   .lg\:font-bold {
     font-weight: 700;
-  }
-
-  .lg\:backdrop-blur-lg {
-    --tw-backdrop-blur: blur(16px);
-    -webkit-backdrop-filter: var(--tw-backdrop-blur) var(--tw-backdrop-brightness) var(--tw-backdrop-contrast) var(--tw-backdrop-grayscale) var(--tw-backdrop-hue-rotate) var(--tw-backdrop-invert) var(--tw-backdrop-opacity) var(--tw-backdrop-saturate) var(--tw-backdrop-sepia);
-    backdrop-filter: var(--tw-backdrop-blur) var(--tw-backdrop-brightness) var(--tw-backdrop-contrast) var(--tw-backdrop-grayscale) var(--tw-backdrop-hue-rotate) var(--tw-backdrop-invert) var(--tw-backdrop-opacity) var(--tw-backdrop-saturate) var(--tw-backdrop-sepia);
   }
 }
 
