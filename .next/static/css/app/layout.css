@@ -2566,6 +2566,14 @@ body {
     width: 60%;
   }
 
+  .lg\:w-\[40\%\] {
+    width: 40%;
+  }
+
+  .lg\:w-\[0\%\] {
+    width: 0%;
+  }
+
   .lg\:max-w-none {
     max-width: none;
   }
@@ -2612,6 +2620,14 @@ body {
 
   .lg\:justify-between {
     justify-content: space-between;
+  }
+
+  .lg\:justify-around {
+    justify-content: space-around;
+  }
+
+  .lg\:justify-evenly {
+    justify-content: space-evenly;
   }
 
   .lg\:gap-2 {

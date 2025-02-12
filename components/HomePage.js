@@ -113,9 +113,9 @@ export default function Home() {
       </div>
 
       {/* 1st container*/}
-      <div className="flex flex-col md:flex-col lg:flex-row gap-4 p-8 my-3 md:my-4 lg:my-8 mx-6 md:mx-8 lg:mx-16 bg-white rounded-xl shadow-lg">
+      <div className="flex flex-col md:flex-col lg:flex-row lg:justify-between gap-4 p-8 my-3 md:my-4 lg:my-8 mx-6 md:mx-8 lg:mx-16 bg-white rounded-xl shadow-lg">
         {/* Coluna Esquerda - Texto + Logos */}
-        <div className="flex flex-col">
+        <div className="flex flex-col lg:w-[45%]">
           <p className="text-gray-800 leading-relaxed lg:text-4xl md:text-3xl text-2xl font-bold text-center md:text-center lg:text-left">
             As melhores marcas para sua obra
           </p>
@@ -297,9 +297,9 @@ export default function Home() {
       {/* Venha nos visitar */}
       <div
         ref={flexboxRef4}
-        className="flex flex-col md:flex-col lg:flex-row gap-4 p-8 my-3 md:my-4 lg:my-8 mx-6 md:mx-8 lg:mx-16 opacity-0 translate-y-10 bg-white rounded-xl shadow-lg"
+        className="flex flex-col md:flex-col lg:flex-row lg:justify-between gap-4 p-8 my-3 md:my-4 lg:my-8 mx-6 md:mx-8 lg:mx-16 opacity-0 translate-y-10 bg-white rounded-xl shadow-lg"
       >
-        <div className="flexbox-left md:flex-col lg:flex-row items-start gap-4">
+        <div className="flexbox-left md:flex-col lg:flex-row items-start gap-4 lg:w-[50%]">
           <p className="text-gray-900 font-bold opacity-100 lg:text-4xl md:text-3xl text-3xl  text-center md:text-center lg:text-left">
             Venha nos visitar
           </p>
@@ -310,17 +310,17 @@ export default function Home() {
             <GoogleMap />{" "}
           </div>
         </div>
-        <div className="flex flex-col items-center lg:m-6 lg:mt-12">
-          <div className="flex rounded-2xl w-fit lg:self-start bg-gray-50 lg:m-8 lg:p-4 m-2 p-1 items-center flex-col">
+        <div className="flex flex-col items-center lg:m-6 lg:mt-12 lg:items-center lg:justify-start">
+          <div className="flex rounded-2xl bg-gray-50 lg:m-6 lg:p-4 m-2 p-1 items-center flex-col">
             <h3 className="text-md md:text-xl lg:text-2xl text-center font-semibold text-gray-900">
               Horário de Funcionamento
             </h3>
             <address className="lg:mt-3 space-y-1 mt-1 text-center justify-end text-md md:text-xl lg:text-2xl not-italic text-gray-600">
-              <p>Segunda a Sexta 07:30 - 18:00</p>
+              <p>Segunda à Sexta 07:30 - 18:00</p>
               <p>Sábado 08:00 - 12:00</p>
             </address>
           </div>
-          <div className="flex-col rounded-2xl lg:self-start bg-gray-50 lg:m-8 lg:p-4 mt-4 items-center">
+          <div className="flex-col rounded-2xl bg-gray-50 lg:m-6 lg:p-4 mt-4 items-center">
             <h3 className=" text-md md:text-xl lg:text-2xl text-center font-semibold text-gray-900">
               Nosso endereço
             </h3>
