@@ -101,7 +101,7 @@ export default function Example() {
   }, []);
 
   return (
-    <div className="bg-[#f9fcfd] py-24 sm:py-32">
+    <div className="bg-[#f9fcfd] pt-[8rem] sm:py-32">
       <div className="mx-auto max-w-7xl px-6 lg:px-8">
         <div
           ref={flexboxRef1}

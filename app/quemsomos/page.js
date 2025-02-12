@@ -90,7 +90,7 @@ export default function QuemSomos() {
         ref={flexboxRef2}
         className="opacity-0 translate-y-10 flex flex-col lg:mt-16 mt-6 mb-6 lg:mb-16 md:flex-col lg:flex-row gap-x-12 items-center justify-between"
       >
-        <div className="mx-6 lg:w-1/2 bg-[#d85b17] rounded-xl">
+        <div className="mx-6 lg:w-1/2 bg-[#d85b17] -scale-x-100 rounded-xl">
           <img
             alt="Equipe especializada"
             src="/equipe-portal/equipe-portal-fev.jpg"

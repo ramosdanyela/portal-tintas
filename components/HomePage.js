@@ -116,7 +116,7 @@ export default function Home() {
       <div className="flex flex-col md:flex-col lg:flex-row lg:justify-between gap-4 p-8 my-3 md:my-4 lg:my-8 mx-6 md:mx-8 lg:mx-16 bg-white rounded-xl shadow-lg">
         {/* Coluna Esquerda - Texto + Logos */}
         <div className="flex flex-col lg:w-[45%]">
-          <p className="text-gray-800 leading-relaxed lg:text-4xl md:text-3xl text-2xl font-bold text-center md:text-center lg:text-left">
+          <p className="text-gray-800 pb-2 leading-relaxed lg:text-4xl md:text-3xl text-2xl font-bold text-center md:text-center lg:text-left">
             As melhores marcas para sua obra
           </p>
           <p className="lg:text-lg/8 md:text-md sm:text-sm text-gray-600 pt-4 ">
