@@ -89,17 +89,17 @@ export default function QuemSomos() {
         {/* Seção 1: Equipe especializada */}
         <div
           ref={flexboxRef2}
-          className="opacity-0 translate-y-10 flex flex-col md:flex-col lg:flex-row h-full min-h-[500px] gap-x-16 justify-between mx-auto w-full mt-32 mb-32"
+          className="opacity-0 translate-y-10 flex flex-col md:flex-col lg:flex-row h-full min-h-[500px] gap-x-16 items-center justify-between mx-auto w-full mt-32 mb-32"
         >
-          <div className="sm:px-6 lg:px-0 w-1/2">
+          <div className="sm:px-6 lg:px-0 w-1/2 bg-[#d85b17] rounded-xl">
             <img
               alt="Equipe especializada"
               src="/equipe-portal/equipe-portal-fev.jpg"
-              className="-mb-2 object-contain rounded-xl bg-gray-800 "
+              className="bg-cover rounded-xl p-2 "
             />
           </div>
 
-          <div className="flex flex-col flex-1 justify-between max-w-2xl lg:mx-0 h-full w-full px-6 lg:px-0">
+          <div className="flex flex-col flex-1 items-start max-w-2xl lg:mx-0 h-full w-full px-6 lg:px-0">
             <p className="flex mt-2 text-left text-pretty text-xl md:text-2xl lg:text-4xl leading-relaxed font-semibold text-gray-900 items-center gap-2">
               <UserGroupIcon className="inline-block w-[1em] h-[1em] text-[#d85b17]" />
               Equipe especializada
@@ -136,8 +136,6 @@ export default function QuemSomos() {
               <img
                 alt="Atendimento personalizado"
                 src="/equipe-portal/note-cafe.jpg"
-                width={2432}
-                height={1500}
                 className="-mb-12 w-[57rem] h-auto rounded-xl bg-gray-800 ring-1 ring-white/10"
               />
             </div>
