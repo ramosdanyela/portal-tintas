@@ -256,7 +256,7 @@ export default function Home() {
         }}
       >
         {/* Container principal respeitando os limites da imagem */}
-        <div className="flex flex-col lg:w-[60%] pt-10 lg:p-16 backdrop-blur-lg gap-1 md:gap-2 lg:gap-2 py-2 md:py-4 lg:py-8">
+        <div className="flex flex-col lg:w-[60%] lg:h-full lg:pt-4 lg:p-10 backdrop-blur-lg gap-1 md:gap-2 lg:gap-2 py-2 md:py-4 lg:py-8">
           {/* Título */}
           <h2 className="text-gray-900 lg:text-4xl md:text-3xl text-3xl font-bold lg:text-left md:text-center text-center ">
             Dicas da Portal

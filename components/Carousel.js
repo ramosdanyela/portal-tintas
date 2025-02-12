@@ -66,29 +66,26 @@ export function Carousel() {
   }, [emblaApi, onSelect]);
 
   return (
-    <div className="embla">
-      <div
-        className="flex relative embla__viewport overflow-hidden"
-        ref={emblaRef}
-      >
+    <div className="flex embla w-full h-full items-start">
+      <div className="flex embla__viewport overflow-hidden" ref={emblaRef}>
         {/* Contêiner do Carousel */}
-        <div className="flex gap-16 mt-4 lg:mt-6  w-full h-full ">
+        <div className="flex items-start lg:gap-16 mt-4 lg:mt-6 ">
           {posts.map((post) => (
             <Link
               key={post.id}
               href={`/blog/${slugify(post.title)}`}
               className="embla__slide"
             >
-              <article className=" md:w-full w-full flex flex-col md:flex-col lg:flex-row lg:gap-8 bg-white/70 shadow-lg rounded-xl p-4 md:p-6 lg:p-12 border border-gray-200 items-center cursor-pointer transition hover:bg-gray-100">
+              <article className=" md:w-full w-full flex flex-col md:flex-col lg:flex-row lg:gap-6 bg-white/70 shadow-lg rounded-xl p-4 md:p-6 lg:p-6 border border-gray-200 items-center cursor-pointer transition hover:bg-gray-100">
                 {/* Imagem */}
                 <img
                   alt={post.title}
                   src={post.imageUrl}
-                  className="flex rounded-2xl lg:h-[300px] lg:w-[350px] w-[300px] h-[300px] object-cover"
+                  className="flex rounded-2xl lg:h-[250px] lg:w-[300px] w-[300px] h-[300px] object-cover"
                 />
                 {/* Texto do post */}
-                <div className="w-2/3 flex flex-col justify-center">
-                  <div className="mt-4">
+                <div className="flex flex-col justify-center">
+                  <div className="flex-col mt-4">
                     <h3 className="lg:text-xl font-semibold text-gray-900 group-hover:text-gray-600">
                       {post.title}
                     </h3>
@@ -101,7 +98,7 @@ export function Carousel() {
             </Link>
           ))}
 
-          {/* Botões de Navegação */}
+          {/* Botões de Navegação 
           <div className="hidden lg:absolute top-1/2 left-1 transform -translate-y-1/2">
             <button
               className={`bg-gray-400 opacity-50 text-white p-2 rounded-full shadow-md transition ${
@@ -127,7 +124,7 @@ export function Carousel() {
             >
               <ChevronRightIcon className="h-6 w-6 text-white" />
             </button>
-          </div>
+          </div>*/}
         </div>
       </div>
     </div>
