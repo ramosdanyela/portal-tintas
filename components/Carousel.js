@@ -1,7 +1,7 @@
 import useEmblaCarousel from "embla-carousel-react";
 import { useCallback, useEffect, useState } from "react";
 import Autoplay from "embla-carousel-autoplay";
-import { ChevronLeftIcon, ChevronRightIcon } from "@heroicons/react/24/solid";
+
 import Link from "next/link";
 
 // Função para gerar slugs (URL amigável)
@@ -97,34 +97,6 @@ export function Carousel() {
               </article>
             </Link>
           ))}
-
-          {/* Botões de Navegação 
-          <div className="hidden lg:absolute top-1/2 left-1 transform -translate-y-1/2">
-            <button
-              className={`bg-gray-400 opacity-50 text-white p-2 rounded-full shadow-md transition ${
-                prevDisabled
-                  ? "opacity-50 cursor-not-allowed"
-                  : "hover:bg-gray-600"
-              }`}
-              onClick={() => emblaApi && emblaApi.scrollPrev()}
-              disabled={prevDisabled}
-            >
-              <ChevronLeftIcon className="h-6 w-6 text-white" />
-            </button>
-          </div>
-          <div className="absolute top-1/2 right-1 transform -translate-y-1/2">
-            <button
-              className={`bg-gray-400 text-white opacity-50 p-2 rounded-full shadow-md transition ${
-                nextDisabled
-                  ? "opacity-50 cursor-not-allowed"
-                  : "hover:bg-gray-600"
-              }`}
-              onClick={() => emblaApi && emblaApi.scrollNext()}
-              disabled={nextDisabled}
-            >
-              <ChevronRightIcon className="h-6 w-6 text-white" />
-            </button>
-          </div>*/}
         </div>
       </div>
     </div>
