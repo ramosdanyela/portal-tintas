@@ -32,13 +32,13 @@ export default function WhatsAppBtn() {
       target="_blank"
       rel="noopener noreferrer"
       ref={buttonRef}
-      className="flex lg:flex-col fixed z-50 max-w-screen-sm md:max-screen-md lg:max-w-screen-xl bottom-20 lg:bottom-10 lg:right-[320px] items-center lg:justify-end transform"
+      className="flex lg:flex-col fixed z-50 max-w-screen-sm md:max-screen-md lg:max-w-screen-xl bottom-20 lg:bottom-10 lg:right-[310px] items-center lg:justify-end transform"
     >
       <div className="flex lg:flex-col lg:items-center lg:justify-center lg:p-2 lg:gap-2 lg:bg-green-500 lg:border-green-500  lg:border-2 lg:rounded-xl lg:shadow-lg ">
         <img
           src="/idv-portal/qrwpp.png"
           alt="qrcode"
-          className="lg:flex md:flex md:rounded-md lg:rounded-md hidden w-full lg:w-[120px] object-contain"
+          className="lg:flex md:hidden hidden md:rounded-md lg:rounded-md  w-full lg:w-[120px] object-contain"
         />
         <div className="flex lg:flex-row gap-2 font-bold text-lg text-white  rounded-full lg:shadow-none shadow-lg p-3 lg:p-0 hover:bg-green-600  bg-green-500 transition-all duration-300">
           {" "}
