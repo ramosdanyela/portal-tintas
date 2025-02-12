@@ -76,16 +76,16 @@ export default function Contato() {
         <div className="mx-auto max-w-2xl space-y-16 divide-y divide-gray-100 lg:mx-0 lg:max-w-none">
           <div className="grid grid-cols-1 gap-10 lg:grid-cols-3">
             <div>
-              <h2 className="text-pretty text-4xl font-semibold tracking-tight text-gray-900">
+              <h2 className="text-pretty text-4xl text-center md:text-center lg:text-left font-semibold tracking-tight text-gray-900">
                 Fale conosco diretamente
               </h2>
-              <p className="mt-4 text-base/7 font-bold text-[#d85b17]">
+              <p className="mt-4 text-base/7 text-center md:text-center lg:text-left font-bold text-[#d85b17]">
                 Faça seu orçamento hoje mesmo
               </p>
             </div>
             <div className="grid grid-cols-1 gap-6 sm:grid-cols-2 lg:col-span-2 lg:gap-8">
-              <div className="rounded-2xl bg-gray-50 p-10">
-                <h3 className="text-base/7 font-semibold text-gray-900">
+              <div className="rounded-2xl bg-gray-50 p-10 text-center md:text-center lg:text-left">
+                <h3 className="text-base/7  font-semibold text-gray-900">
                   Contato Comercial
                 </h3>
                 <dl className="mt-3 space-y-1 text-sm/6 text-gray-600">
@@ -94,7 +94,7 @@ export default function Contato() {
                     <dd>
                       <a
                         href="mailto:portaltintasribas@gmail.com"
-                        className="font-semibold text-indigo-600"
+                        className="font-semibold text-indigo-600 "
                       >
                         portaltintasribas@gmail.com
                       </a>
@@ -102,7 +102,7 @@ export default function Contato() {
                   </div>
                   <div>
                     <dt className="sr-only">Phone number</dt>
-                    <dd className="mt-1 flex items-center gap-2">
+                    <dd className="mt-1 flex items-center justify-center md:justify-center lg:justify-start gap-2">
                       <img
                         src="icons/wpp-icon.gif"
                         alt="WhatsApp"
@@ -113,7 +113,7 @@ export default function Contato() {
                   </div>
                 </dl>
               </div>
-              <div className="rounded-2xl bg-gray-50 p-10">
+              <div className="rounded-2xl bg-gray-50 p-10 text-center md:text-center lg:text-left">
                 <h3 className="text-base/7 font-semibold text-gray-900">
                   Acompanhe nossas Redes Sociais
                 </h3>
@@ -122,7 +122,7 @@ export default function Contato() {
                     <a
                       key={item.name}
                       href={item.href}
-                      className="text-gray-600 flex flex-row  hover:text-gray-800"
+                      className="text-gray-600 flex flex-row justify-center md:justify-center lg:justify-start hover:text-gray-800"
                     >
                       <item.icon aria-hidden="true" className="size-6" />
                       <span className="font-normal">{item.name}</span>
@@ -133,7 +133,7 @@ export default function Contato() {
             </div>
           </div>
 
-          <div className="grid grid-cols-1 gap-10 pt-16 lg:grid-cols-3">
+          <div className="grid grid-cols-1 gap-10 pt-16 lg:grid-cols-3 text-center md:text-center lg:text-left">
             <div>
               <h2 className="text-pretty text-4xl font-semibold tracking-tight text-gray-900">
                 Localização
