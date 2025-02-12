@@ -146,11 +146,11 @@ export default function QuemSomos() {
         ref={flexboxRef4}
         className="opacity-0 translate-y-10 flex flex-col lg:mt-16 mt-6 mb-6 lg:mb-16 md:flex-col lg:flex-row gap-x-12 items-center justify-between"
       >
-        <div className="mx-6 lg:w-1/2 bg-[#d85b17] rounded-xl">
+        <div className=" lg:flex mx-6 lg:w-1/2 lg:justify-center rounded-xl">
           <img
             alt="Melhores marcas"
             src="/marcas-parceiras/suvinil item folder/Screenshot 2025-01-18 at 10.45.07.png"
-            className="bg-cover rounded-xl p-2 "
+            className="object-contain rounded-xl p-2 border-2 bg-[#d85b17] "
           />
         </div>
 
