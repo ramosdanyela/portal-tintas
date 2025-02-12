@@ -1578,9 +1578,6 @@ video {
 .w-\[68\.5625rem\] {
   width: 68.5625rem;
 }
-.w-fit {
-  width: fit-content;
-}
 .w-full {
   width: 100%;
 }
@@ -1674,9 +1671,6 @@ video {
 }
 .gap-10 {
   gap: 2.5rem;
-}
-.gap-12 {
-  gap: 3rem;
 }
 .gap-16 {
   gap: 4rem;
@@ -1908,10 +1902,6 @@ video {
 .py-8 {
   padding-top: 2rem;
   padding-bottom: 2rem;
-}
-.px-2 {
-  padding-left: 0.5rem;
-  padding-right: 0.5rem;
 }
 .pl-9 {
   padding-left: 2.25rem;
@@ -2447,10 +2437,6 @@ body {
     margin: 1.5rem;
   }
 
-  .lg\:m-8 {
-    margin: 2rem;
-  }
-
   .lg\:mx-0 {
     margin-left: 0px;
     margin-right: 0px;
@@ -2566,14 +2552,6 @@ body {
     width: 60%;
   }
 
-  .lg\:w-\[40\%\] {
-    width: 40%;
-  }
-
-  .lg\:w-\[0\%\] {
-    width: 0%;
-  }
-
   .lg\:max-w-none {
     max-width: none;
   }
@@ -2610,10 +2588,6 @@ body {
     justify-content: flex-start;
   }
 
-  .lg\:justify-end {
-    justify-content: flex-end;
-  }
-
   .lg\:justify-center {
     justify-content: center;
   }
@@ -2622,12 +2596,8 @@ body {
     justify-content: space-between;
   }
 
-  .lg\:justify-around {
-    justify-content: space-around;
-  }
-
-  .lg\:justify-evenly {
-    justify-content: space-evenly;
+  .lg\:gap-12 {
+    gap: 3rem;
   }
 
   .lg\:gap-2 {
@@ -2642,10 +2612,6 @@ body {
     gap: 2rem;
   }
 
-  .lg\:gap-12 {
-    gap: 3rem;
-  }
-
   .lg\:gap-x-10 {
     column-gap: 2.5rem;
   }
@@ -2656,10 +2622,6 @@ body {
 
   .lg\:gap-y-3 {
     row-gap: 0.75rem;
-  }
-
-  .lg\:self-start {
-    align-self: flex-start;
   }
 
   .lg\:p-12 {
