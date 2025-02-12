@@ -38,7 +38,7 @@ export default function WhatsAppBtn() {
         <img
           src="/idv-portal/qrwpp.png"
           alt="qrcode"
-          className="lg:relative md:relative md:rounded-md lg:rounded-md hidden w-full lg:w-[120px] object-contain"
+          className="lg:flex md:flex md:rounded-md lg:rounded-md hidden w-full lg:w-[120px] object-contain"
         />
         <div className="flex lg:flex-row gap-2 font-bold text-lg text-white  rounded-full lg:shadow-none shadow-lg p-3 lg:p-0 hover:bg-green-600  bg-green-500 transition-all duration-300">
           {" "}
