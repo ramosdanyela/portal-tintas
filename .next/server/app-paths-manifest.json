@@ -1,4 +1,5 @@
 {
-  "/marcaseprodutos/page": "app/marcaseprodutos/page.js",
-  "/contato/page": "app/contato/page.js"
+  "/quemsomos/page": "app/quemsomos/page.js",
+  "/contato/page": "app/contato/page.js",
+  "/marcaseprodutos/page": "app/marcaseprodutos/page.js"
 }

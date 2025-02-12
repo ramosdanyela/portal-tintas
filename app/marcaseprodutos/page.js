@@ -76,13 +76,13 @@ export default function Marcas() {
           ref={flexboxRef2}
           className="opacity-0 translate-y-10 h-full w-full place-items-center "
         >
-          <div className="grid place-items-center grid-cols-4 gap-12">
+          <div className="grid place-items-center grid-cols-4 lg:gap-12 md:gap-6 gap-4 px-4">
             {logos.map((logo, index) => (
               <img
                 key={index}
                 src={logo.src}
                 alt={logo.alt}
-                className="flex w-full lg:w-[120px] object-contain"
+                className="flex w-full lg:w-[120px] bg-cover"
               />
             ))}
           </div>
