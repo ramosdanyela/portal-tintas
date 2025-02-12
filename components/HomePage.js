@@ -194,10 +194,10 @@ export default function Home() {
       {/* Flexbox2 - Marcas Parceiras */}
       <div
         ref={flexboxRef3}
-        className="flex flex-col md:flex-col lg:flex-row gap-4 p-8 my-3 md:my-4 lg:my-8 mx-6 md:mx-8 lg:mx-16 opacity-0 translate-y-10 bg-white rounded-xl shadow-lg"
+        className="flex flex-col md:flex-col lg:flex-row lg:justify-between gap-4 p-8 my-3 md:my-4 lg:my-8 mx-6 md:mx-8 lg:mx-16 opacity-0 translate-y-10 bg-white rounded-xl shadow-lg"
       >
         {/* Coluna Esquerda - Texto + Logos */}
-        <div className="flex flex-col">
+        <div className="flex flex-col lg:w-[45%]">
           <p className="text-gray-900 lg:text-4xl md:text-3xl text-3xl font-bold text-center md:text-center lg:text-left">
             Marcas Parceiras
           </p>
@@ -237,18 +237,18 @@ export default function Home() {
         </div>
 
         {/* Coluna Direita - Imagem do Rolo de Pintura preenchendo altura */}
-        <div className="hidden lg:inset-0 lg:block ">
+        <div className="hidden lg:relative md:hidden lg:items-end lg:block lg:w-[55%]">
           <img
             src="/bg/bg1.png"
             alt="Rolo de Pintura"
-            className="w-full h-full object-cover rounded-xl  -scale-x-100 rounded-r-xl"
+            className="w-full lg:flex lg:absolute h-full object-cover lg:inset-0 rounded-xl -scale-x-100 "
           />
         </div>
       </div>
 
       {/* Flexbox2 - Dicas da Portal */}
       <div
-        className="dicas flex flex-col bg-cover shadow-lg  my-5 md:my-4 lg:my-8 "
+        className="dicas flex flex-col bg-cover shadow-lg my-5 md:my-4 lg:my-8 "
         style={{
           backgroundImage: "url('/bg/bg3.jpg')",
           backgroundColor: "rgba(255, 255, 255, 0.1)", // Branco com 90% de opacidade
@@ -355,7 +355,9 @@ export default function Home() {
               className="w-8 h-8 rounded-full"
             />
             <a href={`https://wa.me/${phoneNumber}`}>
-              <span className="text-[#011F4B] text-2xl cursor-pointer">(067) 99885-7070</span>
+              <span className="text-[#011F4B] text-2xl cursor-pointer">
+                (067) 99885-7070
+              </span>
             </a>
           </div>
 
