@@ -14,6 +14,15 @@ export const metadata = {
   title: "Portal Tintas",
   description: "Colorindo Ribas",
   icons: "icons/favicon2.png",
+  openGraph: {
+    title: "Portal Tintas",
+    description: "Colorindo Ribas",
+    url: "https://www.portaltintas.com.br", 
+    siteName: "Portal Tintas",
+    images: "https://www.portaltintas.com.br/icons/favicon2.png", // substitua pela URL da sua imagem
+    locale: "pt_BR",
+    type: "website",
+  },
 };
 
 export default function RootLayout({ children }) {
