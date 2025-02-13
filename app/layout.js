@@ -17,7 +17,7 @@ export const metadata = {
   openGraph: {
     title: "Portal Tintas",
     description: "Colorindo Ribas",
-    url: "https://www.portaltintas.com.br", 
+    url: "https://www.portaltintas.com.br",
     siteName: "Portal Tintas",
     images: "https://www.portaltintas.com.br/icons/favicon2.png", // substitua pela URL da sua imagem
     locale: "pt_BR",
@@ -37,7 +37,6 @@ export default function RootLayout({ children }) {
           <Footer />
           <WhatsAppBtn />
         </div>
-      
       </body>
     </html>
   );
