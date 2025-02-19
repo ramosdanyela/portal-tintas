@@ -9,6 +9,7 @@ import GenWppBtn from "@/components/GenWppBtn";
 import { useRef, useEffect } from "react";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
+import { CarouselPaint } from "@/components/CarouselPaint";
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -113,8 +114,8 @@ export default function QuemSomos() {
         </div>
       </div>
 
-  {/* Seção 2: Atendimento */}
-  <div
+      {/* Seção 2: Atendimento */}
+      <div
         ref={flexboxRef3}
         className="opacity-0 translate-y-10 flex flex-col lg:mt-16 mt-6 mb-6 lg:mb-16 md:flex-col lg:flex-row gap-x-12 items-center justify-between"
       >
@@ -132,8 +133,8 @@ export default function QuemSomos() {
             Atendimento personalizado
           </p>
           <p className="text-md md:text-md text-center lg:text-left lg:text-3xl/8 md:text-center text-gray-600 lg:py-8 leading-relaxed">
-          Contamos com atendimento on-line, via WhatsApp e presencial em nossa
-          loja física.
+            Contamos com atendimento on-line, via WhatsApp e presencial em nossa
+            loja física.
           </p>
           <div className="flex-col items-center w-full ">
             <GenWppBtn />
@@ -142,16 +143,12 @@ export default function QuemSomos() {
       </div>
 
       {/* Seção 3: Melhores Marcas */}
-  <div
+      <div
         ref={flexboxRef4}
         className="opacity-0 translate-y-10 flex flex-col lg:mt-16 mt-6 mb-6 lg:mb-16 md:flex-col lg:flex-row gap-x-12 items-center justify-between"
       >
-        <div className=" lg:flex mx-6 lg:w-1/2 lg:justify-center rounded-xl">
-          <img
-            alt="Melhores marcas"
-            src="/marcas-parceiras/suvinil item folder/Screenshot 2025-01-18 at 10.45.07.png"
-            className="object-contain rounded-xl p-2 border-2 bg-[#d85b17] "
-          />
+        <div className="flex justify-center lg:justify-end lg:flex mx-6 lg:w-1/2 rounded-xl p-2  border-8 md:border-8 lg:border-8 border-[#d85b17] bg-white">
+          <CarouselPaint />
         </div>
 
         <div className="flex flex-col flex-1 items-center md:items-center lg:items-start max-w-2xl lg:mx-0 h-full my-4 gap-y-4 w-full px-6 lg:px-0">
@@ -160,8 +157,8 @@ export default function QuemSomos() {
             Melhores Marcas
           </p>
           <p className="text-md md:text-md text-center lg:text-left lg:text-3xl/8 md:text-center text-gray-600 lg:py-8 leading-relaxed">
-          Trabalhamos com um portfólio diverso e com as melhores marcas do
-          mercado.
+            Trabalhamos com um portfólio diverso e com as melhores marcas do
+            mercado.
           </p>
           <div className="flex-col items-center w-full ">
             <GenWppBtn />
@@ -169,8 +166,8 @@ export default function QuemSomos() {
         </div>
       </div>
 
-       {/* Seção 4: Rede de Profissionais Parceiros */}
-  <div
+      {/* Seção 4: Rede de Profissionais Parceiros */}
+      <div
         ref={flexboxRef5}
         className="opacity-0 translate-y-10 flex flex-col lg:mt-16 mt-6 mb-6 lg:mb-16 md:flex-col lg:flex-row gap-x-12 items-center justify-between"
       >
@@ -184,17 +181,16 @@ export default function QuemSomos() {
 
         <div className="flex flex-col flex-1 items-center md:items-center lg:items-start max-w-2xl lg:mx-0 h-full my-4 gap-y-4 w-full px-6 lg:px-0">
           <p className="flex mt-2 lg:mt-0 text-center md:text-center lg:text-left text-pretty text-xl md:text-2xl lg:text-4xl leading-relaxed font-semibold text-gray-900 gap-2">
-            <UserGroupIcon  className="inline-block w-[1em] h-[1em] text-[#d85b17]" />
+            <UserGroupIcon className="inline-block w-[1em] h-[1em] text-[#d85b17]" />
             Rede de Profissionais Parceiros
           </p>
           <p className="text-md md:text-md text-center lg:text-left lg:text-3xl/8 md:text-center text-gray-600 lg:py-8 leading-relaxed">
-          Temos uma ampla rede de pintores parceiros altamente qualificados.
+            Temos uma ampla rede de pintores parceiros altamente qualificados.
           </p>
           <div className="flex-col items-center w-full ">
             <GenWppBtn />
           </div>
         </div>
-      
       </div>
     </div>
   );

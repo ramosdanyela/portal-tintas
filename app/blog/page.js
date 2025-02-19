@@ -59,6 +59,76 @@ const posts = [
       imageUrl: "/icons/favicon2.png",
     },
   },
+  {
+    id: 4,
+    title:
+      "Guia Completo para Renovação de Ambientes com Tintas de Alta Qualidade",
+    href: "#",
+    description:
+      "Descubra como transformar seus espaços com dicas avançadas e produtos de alta performance.",
+    imageUrl: "/blog/artigo1.webp",
+    date: "Jan 05, 2025",
+    datetime: "2020-03-16",
+    category: { title: "Renovação", href: "#" },
+    author: {
+      name: "Portal Tintas",
+      role: "",
+      href: "#",
+      imageUrl: "/icons/favicon2.png",
+    },
+  },
+  {
+    id: 5,
+    title:
+      "Tendências de Cores para 2025: Inspire-se para Transformar Sua Casa",
+    href: "#",
+    description:
+      "Conheça as cores que vão dominar o mercado e como aplicá-las para renovar seus ambientes com estilo.",
+    imageUrl: "/blog/artigo2.webp",
+    date: "Jan 05, 2025",
+    datetime: "2020-03-16",
+    category: { title: "Tendências", href: "#" },
+    author: {
+      name: "Portal Tintas",
+      role: "",
+      href: "#",
+      imageUrl: "/icons/favicon2.png",
+    },
+  },
+  {
+    id: 6,
+    title: "Passo a Passo para Pintura Profissional: Dicas de Especialistas",
+    href: "#",
+    description:
+      "Aprenda técnicas e segredos dos especialistas para obter um acabamento impecável em suas pinturas.",
+    imageUrl: "/blog/artigo3.webp",
+    date: "Jan 05, 2025",
+    datetime: "2020-03-16",
+    category: { title: "Tutoriais", href: "#" },
+    author: {
+      name: "Portal Tintas",
+      role: "",
+      href: "#",
+      imageUrl: "/icons/favicon2.png",
+    },
+  },
+  {
+    id: 7,
+    title: "Cuidados Essenciais na Aplicação de Tinta: Evite Erros Comuns",
+    href: "#",
+    description:
+      "Dicas práticas para evitar os erros mais comuns na hora de pintar e garantir um acabamento de qualidade.",
+    imageUrl: "/blog/artigo1.webp",
+    date: "Jan 05, 2025",
+    datetime: "2020-03-16",
+    category: { title: "Dicas", href: "#" },
+    author: {
+      name: "Portal Tintas",
+      role: "",
+      href: "#",
+      imageUrl: "/icons/favicon2.png",
+    },
+  },
 ];
 
 const slugify = (text) =>

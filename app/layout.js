@@ -13,6 +13,7 @@ const inter = Inter({
 export const metadata = {
   title: "Portal Tintas",
   description: "Colorindo Ribas",
+  keywords: "portal tintas, tintas, loja de tintas",
   icons: "/icons/favicon2.png",
   openGraph: {
     title: "Portal Tintas",

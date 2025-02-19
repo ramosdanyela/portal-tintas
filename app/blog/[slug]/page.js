@@ -25,7 +25,8 @@ const posts = [
 
       <h2>3. Faça Testes Antes de Pintar</h2>
       <p>Antes de comprar grandes quantidades de tinta, aplique pequenas amostras na parede para testar a iluminação do ambiente.</p>
-    `,
+    <p>Descubra o produto perfeito para o seu projeto de pintura <a href="https://www.portaltintas.com.br" target="_blank" rel="noopener">aqui</a> conosco.</p>
+      `,
   },
   {
     id: 2,
@@ -51,6 +52,7 @@ const posts = [
 
       <h2>3. Pequenos Reparos</h2>
       <p>Se houver riscos ou descascados, faça retoques com um pincel pequeno para manter a aparência uniforme.</p>
+      <p>Descubra o produto perfeito para o seu projeto de pintura <a href="https://www.portaltintas.com.br" target="_blank" rel="noopener">aqui</a> conosco.</p>
     `,
   },
   {
@@ -80,6 +82,145 @@ const posts = [
 
       <h2>4. Pintura com Esponja</h2>
       <p>Essa técnica cria um efeito rústico e natural, ideal para dar textura sutil às paredes.</p>
+      <p>Descubra o produto perfeito para o seu projeto de pintura <a href="https://www.portaltintas.com.br" target="_blank" rel="noopener">aqui</a> conosco.</p>
+    `,
+  },
+  {
+    id: 4,
+    title:
+      "Guia Completo para Renovação de Ambientes com Tintas de Alta Qualidade",
+    description:
+      "Descubra como transformar seus espaços com dicas avançadas e produtos de alta performance.",
+    imageUrl: "/blog/artigo1.webp",
+    date: "Fev 10, 2025",
+    category: "Renovação",
+    content: `
+        <p>Renovar um ambiente pode ser uma tarefa desafiadora, mas com as tintas certas, a transformação é garantida. Neste guia completo, abordamos tudo o que você precisa saber para revitalizar seus espaços com produtos de alta qualidade.</p>
+  
+        <h2>1. Planejamento e Preparação</h2>
+        <p>Antes de iniciar a pintura, é fundamental planejar cada etapa:</p>
+        <ul>
+          <li>Escolha as cores de acordo com a iluminação natural e a função do ambiente.</li>
+          <li>Prepare as superfícies, corrigindo imperfeições e garantindo que estejam limpas.</li>
+          <li>Proteja móveis e pisos com lonas e fitas adesivas para evitar danos.</li>
+        </ul>
+  
+        <h2>2. Seleção da Tinta Ideal</h2>
+        <p>O mercado oferece uma variedade de tintas, cada uma com características específicas. Considere fatores como durabilidade, acabamento e facilidade de aplicação para escolher o produto que melhor se adequa às suas necessidades.</p>
+  
+        <h2>3. Técnicas de Aplicação</h2>
+        <p>A aplicação correta é essencial para um resultado profissional:</p>
+        <ul>
+          <li>Utilize pincéis e rolos de qualidade para cada tipo de superfície.</li>
+          <li>Aplique demãos finas e uniformes, respeitando o tempo de secagem entre elas.</li>
+          <li>Para áreas maiores, considere o uso de equipamentos que garantam uma cobertura homogênea.</li>
+        </ul>
+  
+        <h2>4. Acabamento e Manutenção</h2>
+        <p>Após a pintura, invista em um bom acabamento para prolongar a vida útil da cor e manter a beleza do ambiente. Realize pequenos retoques periodicamente para preservar a qualidade da pintura.</p>
+  
+        <p>Descubra o produto perfeito para o seu projeto de pintura <a href="https://www.portaltintas.com.br" target="_blank" rel="noopener">aqui</a> conosco.</p>
+    `,
+  },
+  {
+    id: 5,
+    title:
+      "Tendências de Cores para 2025: Inspire-se para Transformar Sua Casa",
+    description:
+      "Conheça as cores que vão dominar o mercado e como aplicá-las para renovar seus ambientes com estilo.",
+    imageUrl: "/blog/artigo2.webp",
+    date: "Fev 15, 2025",
+    category: "Tendências",
+    content: `
+        <p>O universo da decoração está sempre em evolução e 2025 promete trazer tendências inovadoras para a escolha de cores. Este artigo apresenta as principais tendências e inspirações para transformar seu lar com harmonia e personalidade.</p>
+  
+        <h2>1. Cores Neutras com Toques Vibrantes</h2>
+        <p>As cores neutras continuam em alta, mas agora ganham vida com detalhes em tons vibrantes. Essa combinação cria ambientes sofisticados e modernos, permitindo que pequenos acentos de cor façam toda a diferença.</p>
+  
+        <h2>2. Tons Terrosos e Naturais</h2>
+        <p>Tons como bege, marrom e verde oliva remetem à natureza, trazendo aconchego e equilíbrio para salas e quartos. Essas cores ajudam a criar um ambiente relaxante e conectado com o meio ambiente.</p>
+  
+        <h2>3. Acabamentos Metálicos</h2>
+        <p>Detalhes em dourado, prata e cobre estão ganhando espaço, agregando um toque de luxo e exclusividade aos ambientes. Use-os em móveis e acessórios para criar pontos de destaque.</p>
+  
+        <h2>4. A Suavidade dos Tons Pastel</h2>
+        <p>Tons pastel, com sua leveza e delicadeza, são ideais para criar espaços que transmitem tranquilidade e sofisticação. Eles combinam perfeitamente com elementos naturais e móveis de madeira.</p>
+  
+        <p>Descubra o produto perfeito para o seu projeto de pintura <a href="https://www.portaltintas.com.br" target="_blank" rel="noopener">aqui</a> conosco.</p>
+    `,
+  },
+  {
+    id: 6,
+    title: "Passo a Passo para Pintura Profissional: Dicas de Especialistas",
+    description:
+      "Aprenda técnicas e segredos dos especialistas para obter um acabamento impecável em suas pinturas.",
+    imageUrl: "/blog/artigo3.webp",
+    date: "Mar 01, 2025",
+    category: "Tutoriais",
+    content: `
+        <p>Pintar como um profissional vai muito além de escolher uma boa tinta. Este passo a passo detalhado reúne dicas e técnicas dos maiores especialistas para que você alcance um acabamento de alto nível em seus projetos.</p>
+  
+        <h2>1. Preparação do Ambiente</h2>
+        <p>Um ambiente bem preparado é crucial para o sucesso da pintura:</p>
+        <ul>
+          <li>Proteja pisos, móveis e objetos com lonas e fitas adesivas.</li>
+          <li>Certifique-se de que as paredes estejam limpas e sem imperfeições.</li>
+          <li>Utilize um primer para garantir a aderência e a uniformidade da tinta.</li>
+        </ul>
+  
+        <h2>2. Escolha dos Materiais</h2>
+        <p>Ferramentas de qualidade fazem toda a diferença. Opte por pincéis, rolos e equipamentos que permitam uma aplicação uniforme e sem desperdícios.</p>
+  
+        <h2>3. Técnicas de Aplicação</h2>
+        <p>Algumas técnicas podem transformar a aplicação da tinta:</p>
+        <ul>
+          <li>Mantenha movimentos constantes e suaves para evitar marcas e gotejamentos.</li>
+          <li>Aplique demãos finas e aguarde o tempo de secagem adequado antes de iniciar a próxima camada.</li>
+          <li>Realize retoques para corrigir pequenas imperfeições e garantir um acabamento perfeito.</li>
+        </ul>
+  
+        <h2>4. Finalização e Cuidados Pós-Pintura</h2>
+        <p>Após a aplicação, reserve um tempo para a finalização, removendo cuidadosamente as proteções e fazendo os ajustes necessários. A manutenção periódica ajuda a conservar a beleza e a durabilidade da pintura.</p>
+  
+        <p>Descubra o produto perfeito para o seu projeto de pintura <a href="https://www.portaltintas.com.br" target="_blank" rel="noopener">aqui</a> conosco.</p>
+    `,
+  },
+  {
+    id: 7,
+    title: "Cuidados Essenciais na Aplicação de Tinta: Evite Erros Comuns",
+    description:
+      "Dicas práticas para evitar os erros mais comuns na hora de pintar e garantir um acabamento de qualidade.",
+    imageUrl: "/blog/artigo4.webp",
+    date: "Mar 05, 2025",
+    category: "Dicas",
+    content: `
+        <p>Aplicar tinta pode parecer simples, mas pequenos erros podem comprometer o resultado final. Descubra neste artigo os cuidados essenciais para uma aplicação perfeita e sem imprevistos.</p>
+  
+        <h2>1. Preparação Adequada da Superfície</h2>
+        <p>Uma boa preparação é a base para um acabamento duradouro:</p>
+        <ul>
+          <li>Limpe bem a parede, removendo poeira, gordura e resíduos.</li>
+          <li>Corrija imperfeições com massa corrida e lixe até obter uma superfície lisa.</li>
+          <li>Utilize um primer para uniformizar a absorção da tinta.</li>
+        </ul>
+  
+        <h2>2. Escolha dos Materiais Certos</h2>
+        <p>Ferramentas de qualidade evitam muitos problemas:</p>
+        <ul>
+          <li>Pincéis e rolos adequados para cada tipo de tinta e superfície.</li>
+          <li>Fitas adesivas de boa qualidade para demarcar áreas e proteger bordas.</li>
+          <li>Equipamentos de proteção, como luvas e óculos, para segurança durante a aplicação.</li>
+        </ul>
+  
+        <h2>3. Técnicas de Aplicação</h2>
+        <p>Para uma pintura uniforme, siga estas dicas:</p>
+        <ul>
+          <li>Não sobrecarregue o pincel ou rolo com tinta.</li>
+          <li>Mantenha movimentos constantes e evite repetir a mesma área várias vezes.</li>
+          <li>Respeite o tempo de secagem indicado pelo fabricante.</li>
+        </ul>
+  
+        <p>Descubra o produto perfeito para o seu projeto de pintura <a href="https://www.portaltintas.com.br" target="_blank" rel="noopener">aqui</a> conosco.</p>
     `,
   },
 ];
