@@ -96,7 +96,7 @@ export default function Contato() {
                         href="mailto:portaltintasribas@gmail.com"
                         className="font-semibold text-indigo-600 "
                       >
-                        portaltintasribas@gmail.com
+                        comercial@portaltintas.com.br
                       </a>
                     </dd>
                   </div>
@@ -151,7 +151,7 @@ export default function Contato() {
                   Horário de Funcionamento
                 </h3>
                 <address className="mt-3 space-y-1 text-sm/6 not-italic text-gray-600">
-                  <p>Segunda a Sexta 07:30 - 18:00</p>
+                  <p>Segunda à Sexta 07:30 - 18:00</p>
                   <p>Sábado 08:00 - 12:00</p>
                 </address>
               </div>
