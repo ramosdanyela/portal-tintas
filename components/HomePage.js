@@ -365,7 +365,7 @@ export default function Home() {
           <div className="flex items-center gap-3 mt-3">
             <img src="/icons/email-icon.svg" alt="Email" className="w-8 h-8" />
             <span className="text-[#011F4B] sm: lg:text-2xl">
-              portaltintasribas@gmail.com
+              comercial@portaltintas.com.br
             </span>
           </div>
         </div>
