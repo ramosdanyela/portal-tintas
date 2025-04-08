@@ -325,7 +325,7 @@ export default function Home() {
               Nosso endereço
             </h3>
             <address className="flex-col mt-2 space-y-1 items-center text-center text-md md:text-xl lg:text-2xl not-italic text-gray-600">
-              <p>Rua Conceição do Rio Pardo, 2158</p>
+              <p>Avenida Aureliano Moura Brandão, 172</p>
               <p>Ribas do Rio Pardo - MS</p>
             </address>
           </div>
@@ -365,7 +365,7 @@ export default function Home() {
           <div className="flex items-center gap-3 mt-3">
             <img src="/icons/email-icon.svg" alt="Email" className="w-8 h-8" />
             <span className="text-[#011F4B] sm: lg:text-2xl">
-              comercial@portaltintas.com.br
+              portaltintasribas@gmail.com.br
             </span>
           </div>
         </div>

@@ -94,7 +94,7 @@ export default function QuemSomos() {
         <div className="mx-6 lg:w-1/2 bg-[#d85b17] -scale-x-100 rounded-xl">
           <img
             alt="Equipe especializada"
-            src="/equipe-portal/equipe-portal-fev.jpg"
+            src="/equipe-portal/equipe-portal-abr.jpg"
             className="bg-cover rounded-xl p-2 "
           />
         </div>

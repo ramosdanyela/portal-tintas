@@ -96,7 +96,7 @@ export default function Contato() {
                         href="mailto:portaltintasribas@gmail.com"
                         className="font-semibold text-indigo-600 "
                       >
-                        comercial@portaltintas.com.br
+                        portaltintasribas@gmail.com.br
                       </a>
                     </dd>
                   </div>
@@ -161,7 +161,7 @@ export default function Contato() {
                 </h3>
                 <address className="mt-3 space-y-1 text-sm/6 not-italic text-gray-600">
                   <p>
-                    Rua Conceição do Rio Pardo, 2158 Ribas do Rio Pardo - MS
+                    Avenida Aureliano Moura Brandão, 172 Ribas do Rio Pardo - MS
                   </p>
                   <div>
                     <GoogleMap />
