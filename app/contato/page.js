@@ -151,8 +151,8 @@ export default function Contato() {
                   Horário de Funcionamento
                 </h3>
                 <address className="mt-3 space-y-1 text-sm/6 not-italic text-gray-600">
-                  <p>Segunda à Sexta 07:30 - 18:00</p>
-                  <p>Sábado 08:00 - 12:00</p>
+                  <p>Segunda à Sexta 07:00 - 17:30</p>
+                  <p>Sábado 07:30 - 11:30</p>
                 </address>
               </div>
               <div className="rounded-2xl mt-8 bg-gray-50 p-10">

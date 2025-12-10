@@ -316,8 +316,8 @@ export default function Home() {
               Horário de Funcionamento
             </h3>
             <address className="lg:mt-3 space-y-1 mt-1 text-center justify-end text-md md:text-xl lg:text-2xl not-italic text-gray-600">
-              <p>Segunda à Sexta 07:30 - 18:00</p>
-              <p>Sábado 08:00 - 12:00</p>
+              <p>Segunda à Sexta 07:00 - 17:30</p>
+              <p>Sábado 07:30 - 11:30</p>
             </address>
           </div>
           <div className="flex-col rounded-2xl bg-gray-50 lg:m-6 lg:p-4 mt-4 items-center">
